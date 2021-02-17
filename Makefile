@@ -171,6 +171,7 @@ $(wildcard $(BUILT)/*/*.o): $(CONFIG_DEPS)
 $(wildcard $(BUILT)/*/*/*.o): $(CONFIG_DEPS)
 $(wildcard $(BUILT)/*/*/*/*.o): $(CONFIG_DEPS)
 $(wildcard $(BUILT)/*/*/*/*/*.o): $(CONFIG_DEPS)
+$(OBJ): $(CONFIG_DEPS)
 
 $(BUILT)/%.o: %.s
 	@mkdir -p $(dir $@)
