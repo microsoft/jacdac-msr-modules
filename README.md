@@ -1,14 +1,21 @@
-# Project
+# Firmware for MSR prototype Jacdac modules
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repository defines configuration for experimental [Jacdac](https://aka.ms/jacdac) modules
+produced by Microsoft Research.
 
-As the maintainer of this project, please make a few updates:
+If you're building your own modules, please follow instructions at
+https://github.com/microsoft/jacdac-stm32x0/blob/master/README.md
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This is also where you learn more about this repo.
+
+## Release process
+
+This repository uses [semantic release](https://github.com/semantic-release/semantic-release) to automatically create releases upon analyzing commits.
+
+The commits can be formatted using https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines.
+
+* ``fix: some fix``, create a patch release
+* ``feat: some feature``, create a minor release
 
 ## Contributing
 
