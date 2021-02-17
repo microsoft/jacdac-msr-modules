@@ -22,7 +22,7 @@ jobs:
       with:
           node-version: 'v12'
 
-    - run: npm ci
+    - run: yarn install --frozen-lockfile
 
     - name: Restore ARM GCC Cache
       id: arm-gcc-cache
