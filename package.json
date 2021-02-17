@@ -25,7 +25,7 @@
   "homepage": "https://github.com/microsoft/jacdac-stm32x0#readme",
   "release": {
     "branches": [
-      "master"
+      "main"
     ],
     "plugins": [
       [
@@ -77,7 +77,7 @@
         {
           "assets": [
             "package.json",
-            "package-lock.json",
+            "yarn.lock",
             "dist/*"
           ]
         }
@@ -87,7 +87,7 @@
         {
           "assets": [
             "package.json",
-            "package-lock.json",
+            "yarn.lock",
             "dist/*"
           ]
         }
