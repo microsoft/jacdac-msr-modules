@@ -13,5 +13,5 @@ void acc_data_transform(int32_t sample[3]) {
 }
 
 void app_init_services() {
-    acc_init();
+    acc_init(&acc_kxtj3);
 }

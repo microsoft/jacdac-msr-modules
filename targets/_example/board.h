@@ -36,12 +36,11 @@
 
 // All i2c addresses are the 7-bit addresses.
 
-// Define the accelerometer used by the board if any
-// #define ACC_KXTJ3 // Kionix Inc. KXTJ3-1057; I2C addr 0x0E
-// #define ACC_QMA7981 // QST QMA7981; I2C addr 0x12
-
 // Override accelerometer I2C address if needed.
-// #define ACC_I2C_ADDR 0x0E
+// Defaults:  
+//   Kionix Inc. KXTJ3-1057; I2C addr 0x0E
+//   QST QMA7981; I2C addr 0x12
+// #define ACC_I2C_ADDR 0x0F
 
 // These two are used by px_init() (for RGB LED service), or alternatively dspi_init().
 // PA_5/7 are the only pins supported.
@@ -55,9 +54,6 @@
 // Set to 1, if buzzer is off, when buzzer pin set high. Set to 0 otherwise.
 // Best use pin PA_10 or PA_4 for sound (in buzzer_init()).
 // #define BUZZER_OFF 1
-
-// Temperature (and humidity) sensor type.
-// #define TEMP_TH02 1
 
 // Default is I2C_FAST_MODE=1 - 400kHz mode
 // Set to 0 to enable 100kHz mode
