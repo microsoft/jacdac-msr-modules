@@ -1,5 +1,7 @@
 #include "jdprofile.h"
 
+#include "addons/example.h" // make sure this compiles
+
 FIRMWARE_IDENTIFIER(0x3ccea1a9, "JM Acc v2.0");
 
 // this depends on physical placement of accelerometer on PCB
@@ -14,4 +16,5 @@ void acc_data_transform(int32_t sample[3]) {
 
 void app_init_services() {
     acc_init(&acc_kxtj3);
+    example_custom_function();
 }

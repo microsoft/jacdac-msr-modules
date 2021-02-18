@@ -1,7 +1,7 @@
 {
   "name": "jacdac-msr-modules",
   "version": "0.10.1",
-  "description": "JACDAC firmware for MSR modules",
+  "description": "Jacdac firmware for MSR modules",
   "private": true,
   "directories": {
     "dist": "dist",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/microsoft/jacdac-msr-modules.git"
   },
   "keywords": [
-    "JACDAC"
+    "Jacdac"
   ],
   "author": "Microsoft",
   "license": "MIT",

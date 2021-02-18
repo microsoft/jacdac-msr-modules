@@ -2,7 +2,7 @@
 // The pin is active-high (ie., the connection is MCU -> LED + resistor -> GND)
 #define PIN_LED PA_1
 
-// If this board controls a power supply (either to the JACDAC bus or to an external consumer),
+// If this board controls a power supply (either to the Jacdac bus or to an external consumer),
 // PIN_PWR should be connected an active-low enable pin of power controller
 // (typically just a P-MOSFET), with an external pull-up.
 // Function power_pin_enable() is then used to enable/disable power.
@@ -23,15 +23,15 @@
 // define the pin below.
 // #define PIN_ACC_INT PA_7
 
-// Configuration of JACDAC interface
+// Configuration of Jacdac interface
 #define USART_IDX 1 // only USART1 available on STM32F030
 // alternative function for the pin
 #define UART_PIN_AF LL_GPIO_AF_1
-// The JACDAC pin. It's best to use 5V-tolerant pin (ie., PA_9), but if that is used by I2C then use PA_2.
+// The Jacdac pin. It's best to use 5V-tolerant pin (ie., PA_9), but if that is used by I2C then use PA_2.
 #define UART_PIN PA_2
 // #define UART_PIN PA_9
 
-// Enable JACDAC Logger (console) service for debugging.
+// Enable Jacdac Logger (console) service for debugging.
 // #define JD_CONSOLE 1
 
 // All i2c addresses are the 7-bit addresses.
