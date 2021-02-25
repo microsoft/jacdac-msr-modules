@@ -16,4 +16,4 @@
 
 #define UART_PIN PA_2
 #define UART_PIN_AF LL_GPIO_AF_1
-#define USART_IDX 1
+#define USART_IDX 2
