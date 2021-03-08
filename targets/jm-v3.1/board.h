@@ -25,10 +25,15 @@
 #define PIN_INT PC_15
 // MOSI
 // MISO
-#define PIN_SCL PA_11 // I2C2
-#define PIN_SDA PA_12 // I2C2
+#define PIN_SCL PA_9 // I2C2
+#define PIN_SDA PA_10 // I2C2
 // 5V
 // GND
+
+#define BOARD_INIT_CODE LL_SYSCFG_EnablePinRemap(LL_SYSCFG_PIN_RMP_PA11 | LL_SYSCFG_PIN_RMP_PA12)
+
+#define I2C_AF LL_GPIO_AF_6
+#define I2C_IDX 1
 
 #define UART_PIN PA_2
 #define UART_PIN_AF LL_GPIO_AF_1
