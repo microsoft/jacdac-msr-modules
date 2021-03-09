@@ -9,6 +9,6 @@ _IGNORE1 := $(shell test -f $(JD_CORE)/jacdac/README.md || git submodule update 
 
 include Makefile.user
 
-DROP_TARGETS ?= jm-v2.0 jm-v2.0i jm-v2.0p jm-v2.1 jm-temp-humidity-18-1.0A 
+DROP_TARGETS ?= jm-v2.0 jm-v2.0i jm-v2.0p jm-v2.1 jm-temp-humidity-18-1.0A jm-v3.1
 
 include $(JD_STM)/build.mk
