@@ -34,12 +34,17 @@
 #define UART_PIN_AF LL_GPIO_AF_1
 #define USART_IDX 2
 
+// here, the anode (source) is common
+// #define LED_RGB_COMMON_CATHODE 1
+#define PIN_LED_R PA_7
+#define PIN_LED_G PB_0
+#define PIN_LED_B PA_6
+#define LED_R_MULT 200
+#define LED_G_MULT 80
+#define LED_B_MULT 255
+
 #ifdef PROFILE_INIT
-static const rgbled_params_t rgbled_params = //
-    {.r = {.pin = PA_7, .mult = 200},
-     .g = {.pin = PB_0, .mult = 80},
-     .b = {.pin = PA_6, .mult = 255}};
 static void board_init(void) {
-    rgbled_init(&rgbled_params);
+    rgbled_init();
 }
 #endif

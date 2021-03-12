@@ -1,11 +1,6 @@
 #define PIN_LED PA_1
 #define PIN_LED_GND -1
 
-// RGB LED sink connected to these pins
-#define PIN_LED_R PA_4
-#define PIN_LED_G PA_6
-#define PIN_LED_B PB_1
-
 #define PIN_PWR -1
 #define PIN_P0 -1
 #define PIN_P1 -1
@@ -17,3 +12,19 @@
 #define UART_PIN PA_9
 #define UART_PIN_AF LL_GPIO_AF_1
 #define USART_IDX 1
+
+
+// here, the anode (source) is common
+// #define LED_RGB_COMMON_CATHODE 1
+#define PIN_LED_R PA_4
+#define PIN_LED_G PA_6
+#define PIN_LED_B PB_1
+#define LED_R_MULT 200
+#define LED_G_MULT 80
+#define LED_B_MULT 255
+
+#ifdef PROFILE_INIT
+static void board_init(void) {
+    rgbled_init();
+}
+#endif
