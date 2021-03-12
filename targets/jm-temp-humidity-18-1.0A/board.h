@@ -2,7 +2,7 @@
 #define PIN_LED_GND -1
 
 // RGB LED sink connected to these pins
-#define PIN_LED_R PA_4
+#define PIN_LED_R PA_7
 #define PIN_LED_G PA_6
 #define PIN_LED_B PB_1
 
