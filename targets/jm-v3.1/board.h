@@ -39,9 +39,15 @@
 #define PIN_LED_R PA_7
 #define PIN_LED_G PB_0
 #define PIN_LED_B PA_6
-#define LED_R_MULT 200
-#define LED_G_MULT 80
-#define LED_B_MULT 255
+
+// calibrated to ~5lux per channel
+#define LED_R_MULT 250
+#define LED_G_MULT 14
+#define LED_B_MULT 16
+#define RGB_LED_PERIOD 260
+
+#define PIN_BL_LED PIN_LED_B
+#define PIN_BL_PERIOD 30
 
 #ifdef PROFILE_INIT
 static void board_init(void) {}
