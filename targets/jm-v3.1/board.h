@@ -44,7 +44,5 @@
 #define LED_B_MULT 255
 
 #ifdef PROFILE_INIT
-static void board_init(void) {
-    rgbled_init();
-}
+static void board_init(void) {}
 #endif

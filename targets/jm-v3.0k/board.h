@@ -13,7 +13,6 @@
 #define UART_PIN_AF LL_GPIO_AF_1
 #define USART_IDX 1
 
-
 // here, the anode (source) is common
 // #define LED_RGB_COMMON_CATHODE 1
 #define PIN_LED_R PA_4
@@ -27,7 +26,5 @@
 #define PIN_BL_PERIOD 30
 
 #ifdef PROFILE_INIT
-static void board_init(void) {
-    rgbled_init();
-}
+static void board_init(void) {}
 #endif
