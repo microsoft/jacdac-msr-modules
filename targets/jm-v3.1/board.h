@@ -48,7 +48,3 @@
 
 #define PIN_BL_LED PIN_LED_B
 #define PIN_BL_PERIOD 30
-
-#ifdef PROFILE_INIT
-static void board_init(void) {}
-#endif
