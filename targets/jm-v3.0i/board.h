@@ -10,7 +10,6 @@
 #define LED_R_MULT 250
 #define LED_G_MULT 14
 #define LED_B_MULT 16
-#define RGB_LED_PERIOD 260
 
 #define PIN_BL_LED PIN_LED_B
 #define PIN_BL_PERIOD 30
