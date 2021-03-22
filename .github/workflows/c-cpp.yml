@@ -22,8 +22,6 @@ jobs:
       with:
           node-version: 'v12'
 
-    - run: yarn install --frozen-lockfile
-
     - name: Restore ARM GCC Cache
       id: arm-gcc-cache
       uses: actions/cache@v2
@@ -40,7 +38,7 @@ jobs:
       run: echo "${{ github.workspace }}/arm-gcc/bin" >> $GITHUB_PATH
 
     - name: make
-      run: make drop
+      run: make check-release
 
     - name: Upload drop.uf2
       uses: actions/upload-artifact@v1
@@ -52,9 +50,3 @@ jobs:
       with:
         name: bootloader-update.uf2
         path: built/bootloader-update.uf2
-    - name: Copy dist
-      run: cp built/drop.uf2 dist/firmware.uf2
-    - name: Semantic release
-      run: npx semantic-release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
