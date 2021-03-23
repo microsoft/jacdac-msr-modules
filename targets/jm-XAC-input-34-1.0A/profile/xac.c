@@ -7,7 +7,7 @@
 #define JACK_R2         PA_7
 #define JACK_SLEEVE     PA_6
 
-#define INPUT_TYPE_UNKOWN           -1
+#define INPUT_TYPE_UNKNOWN          -1
 #define INPUT_TYPE_DIGITAL_BUTTON   1
 #define INPUT_TYPE_ANALOG_TRIGGER   2
 #define INPUT_TYPE_ANALOG_JOYSTICK  3
@@ -56,7 +56,7 @@ int detect_input (void) {
     if (pin_get(JACK_TIP))
         return INPUT_TYPE_ANALOG_TRIGGER;
 
-    return INPUT_TYPE_UNKOWN;
+    return INPUT_TYPE_UNKNOWN;
 }
 
 void app_process(void) {
