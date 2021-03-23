@@ -15,7 +15,7 @@
 FIRMWARE_IDENTIFIER(0x362fe800, "JM XAC Input 34-1.0A");
 
 static uint32_t led_ctr = 0;
-// static uint32_t app_time = 0;
+static uint32_t app_time = 0;
 static int current_input = 0;
 
 int detect_input (void) {
