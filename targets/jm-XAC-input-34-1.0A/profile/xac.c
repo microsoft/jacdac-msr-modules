@@ -11,9 +11,7 @@ FIRMWARE_IDENTIFIER(0x362fe800, "JM XAC Input 34-1.0A");
 
 static uint32_t led_ctr = 0;
 
-void app_init_services() {
-    DMESG("APP INIT");
-
+int detect_input (void) {
     pin_setup_input(JACK_TIP, 0);
     pin_setup_input(JACK_R1, 0);
     pin_setup_input(JACK_R2, 0);
@@ -27,17 +25,8 @@ void app_init_services() {
     (void)jr2;
 
     DMESG("Jr1 %d Jr2 %d JS %d", jr1, jr2, js);
-
-    // if r1, r2, sleeve are the same, then we have a digital button
-    if (pin_get(JACK_SLEEVE) && pin_get(JACK_R2) && pin_get(JACK_R1)) {
-        DMESG("DIGITAL BUTTON");
-        jd_status(JD_STATUS_OFF);
-        pin_setup_input(JACK_R1, -1);
-        pin_setup_input(JACK_R2, -1);
-        pin_setup_input(JACK_SLEEVE, -1);
-        btn_init(JACK_TIP, 0, -1);
-        return;
-    }
+    if (pin_get(JACK_SLEEVE) && pin_get(JACK_R2) && pin_get(JACK_R1))
+        return 1;
 
     pin_setup_input(JACK_R2, -1);
     pin_setup_input(JACK_TIP, -1);
@@ -51,7 +40,27 @@ void app_init_services() {
     DMESG("JT %d JS %d", jt, js);
 
 
-    if (pin_get(JACK_SLEEVE) && pin_get(JACK_TIP)) {
+    if (pin_get(JACK_SLEEVE) && pin_get(JACK_TIP))
+        return 2;
+
+    return -1;
+}
+
+void app_init_services() {
+    int input_detected = detect_input();
+
+    // if r1, r2, sleeve are the same, then we have a digital button
+    if (input_detected == 1) {
+        DMESG("DIGITAL BUTTON");
+        jd_status(JD_STATUS_OFF);
+        pin_setup_input(JACK_R1, -1);
+        pin_setup_input(JACK_R2, -1);
+        pin_setup_input(JACK_SLEEVE, -1);
+        btn_init(JACK_TIP, 0, -1);
+        return;
+    }
+
+    if (input_detected == 2) {
 
         DMESG("potentiometer");
         jd_status(JD_STATUS_OFF);
@@ -69,7 +78,14 @@ void app_init_services() {
     led_ctr = tim_get_micros()+2000000;
 
     jd_status_init();
-    jd_status(JD_STATUS_CONNECTED);
+
+check_input:
+
+    input_detected = detect_input();
+
+    if (input_detected != -1)
+        target_reset();
+
     jd_status(JD_STATUS_UNKNOWN_STATE);
 
     while (1) {
@@ -79,6 +95,6 @@ void app_init_services() {
             jd_status_process();
             continue;
         }
-        target_reset();
+        goto check_input;
     }
 }
