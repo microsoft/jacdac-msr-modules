@@ -8,15 +8,6 @@ https://github.com/microsoft/jacdac-stm32x0/blob/master/README.md
 
 This is also where you learn more about this repo.
 
-## Release process
-
-This repository uses [semantic release](https://github.com/semantic-release/semantic-release) to automatically create releases upon analyzing commits.
-
-The commits can be formatted using https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines.
-
-* ``fix: some fix``, create a patch release
-* ``feat: some feature``, create a minor release
-
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
