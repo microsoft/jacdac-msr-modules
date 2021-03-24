@@ -1,5 +1,6 @@
 #include "jdprofile.h"
 #include "services/interfaces/jd_hw_pwr.h"
+#include "jacdac/dist/c/joystick.h"
 #include "lib.h"
 
 #define JACK_TIP        PA_5
@@ -19,20 +20,19 @@ static uint32_t app_time = 0;
 static int current_input = 0;
 
 int detect_input (void) {
-    pin_setup_input(JACK_TIP, 0);
+    pin_setup_input(JACK_TIP, -1);
     pin_setup_input(JACK_R1, 1);
     pin_setup_input(JACK_R2, 1);
     pin_setup_output(JACK_SLEEVE);
     pin_set(JACK_SLEEVE, 0);
 
-    uint8_t jr1 = pin_get(JACK_R1);
-    uint8_t jr2 = pin_get(JACK_R2);
+    // uint8_t jr1 = pin_get(JACK_R1);
+    // uint8_t jr2 = pin_get(JACK_R2);
 
-    (void)jr1;
-    (void)jr2;
+    // (void)jr1;
 
-    DMESG("Jr1 %d Jr2 %d", jr1, jr2);
-    if (pin_get(JACK_R2) == 0 && pin_get(JACK_R1) == 0)
+    // DMESG("BUTT_DET JR1 %d JR2 %d", jr1, jr2);
+    if (adc_read_pin(JACK_R2) < 10 && adc_read_pin(JACK_R1) < 10)
         return INPUT_TYPE_DIGITAL_BUTTON;
 
     pin_setup_input(JACK_R1, -1);
@@ -42,13 +42,13 @@ int detect_input (void) {
     pin_set(JACK_SLEEVE, 1);
     // pin_setup_input(JACK_SLEEVE, 1);
 
-    uint8_t jt = pin_get(JACK_TIP);
-    jr1 = pin_get(JACK_R1);
-    jr2 = pin_get(JACK_R2);
+    // uint8_t jt = pin_get(JACK_TIP);
+    // jr1 = pin_get(JACK_R1);
+    // jr2 = pin_get(JACK_R2);
 
-    (void)jt;
-    (void)jr2;
-    DMESG("JT %d JR1 %d JR2 %d", jt, jr1, jr2);
+    // (void)jt;
+    // (void)jr2;
+    // DMESG("JT %d JR1 %d JR2 %d", jt, jr1, jr2);
 
     if (pin_get(JACK_R1))
         return INPUT_TYPE_ANALOG_JOYSTICK;
@@ -97,7 +97,7 @@ void app_init_services() {
     
     if (current_input >= INPUT_TYPE_ANALOG_TRIGGER) {
 
-        DMESG("potentiometer");
+        DMESG("analog trigger");
         jd_status(JD_STATUS_OFF);
 
         pin_setup_input(JACK_R2, -1);
@@ -105,12 +105,10 @@ void app_init_services() {
         pin_setup_input(JACK_SLEEVE, 1);
 
         // potentiometer
-        potentiometer_init(JACK_R2, JACK_TIP, JACK_SLEEVE);
-
-        if (current_input == INPUT_TYPE_ANALOG_JOYSTICK)
-            // second potentiometer
-            potentiometer_init(JACK_R2, JACK_R1, JACK_SLEEVE);
-
+        if (current_input == INPUT_TYPE_ANALOG_TRIGGER)
+            potentiometer_init(JACK_R2, JACK_TIP, JACK_SLEEVE);
+        else if (current_input == INPUT_TYPE_ANALOG_JOYSTICK)
+            analog_joystick_init(JACK_R2, JACK_SLEEVE, JACK_TIP, JACK_R1, JD_JOYSTICK_VARIANT_THUMB);
         return;
     }
 
