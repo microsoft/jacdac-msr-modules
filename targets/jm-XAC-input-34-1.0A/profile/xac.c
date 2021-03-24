@@ -40,7 +40,7 @@ int detect_input (void) {
 
     uint16_t adc_r1 = adc_read_pin(JACK_R1);
     uint16_t adc_r2 = adc_read_pin(JACK_R2);
-    DMESG("BUTT_DET JR1 %d JR2 %d", adc_r1, adc_r2);
+    // DMESG("BUTT_DET JR1 %d JR2 %d", adc_r1, adc_r2);
     if (adc_r1 < 10 && adc_r2 < 10)
         return INPUT_TYPE_DIGITAL_BUTTON;
 
@@ -51,14 +51,14 @@ int detect_input (void) {
     pin_set(JACK_SLEEVE, 1);
     // pin_setup_input(JACK_SLEEVE, 1);
 
-    uint8_t jt = pin_get(JACK_TIP);
-    uint8_t jr1 = pin_get(JACK_R1);
-    uint8_t jr2 = pin_get(JACK_R2);
+    // uint8_t jt = pin_get(JACK_TIP);
+    // uint8_t jr1 = pin_get(JACK_R1);
+    // uint8_t jr2 = pin_get(JACK_R2);
 
-    (void)jt;
-    (void)jr1;
-    (void)jr2;
-    DMESG("JT %d JR1 %d JR2 %d", jt, jr1, jr2);
+    // (void)jt;
+    // (void)jr1;
+    // (void)jr2;
+    // DMESG("JT %d JR1 %d JR2 %d", jt, jr1, jr2);
 
     if (pin_get(JACK_R1))
         return INPUT_TYPE_ANALOG_JOYSTICK;
@@ -73,7 +73,7 @@ void app_process(void) {
     if (jd_should_sample(&app_time, 500000)) {
         int input_detected = detect_input();
 
-        DMESG("DET %d CURR %d", input_detected, current_input);
+        // DMESG("DET %d CURR %d", input_detected, current_input);
 
         // unplugged!
         if (input_detected == INPUT_TYPE_NONE)
