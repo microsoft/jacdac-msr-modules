@@ -1,3 +1,15 @@
+## Version 0.12.4
+
+### microsoft/jacdac-msr-modules
+
+* [2cfa062](https://github.com/microsoft/jacdac-msr-modules/commit/2cfa062) Update submodule
+* [2b1d571](https://github.com/microsoft/jacdac-msr-modules/commit/2b1d571) Fix file name
+* [1fe1fe2](https://github.com/microsoft/jacdac-msr-modules/commit/1fe1fe2) [skip ci] firmware v0.12.3 built
+
+### microsoft/jacdac-stm32x0
+
+* [21d02d9](https://github.com/microsoft/jacdac-stm32x0/commit/21d02d9) Save a few us in reception
+
 ## Version 0.12.3
 
 ### microsoft/jacdac-msr-modules
