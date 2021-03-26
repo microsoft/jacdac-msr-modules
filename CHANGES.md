@@ -1,3 +1,14 @@
+## Version 0.12.5
+
+### microsoft/jacdac-msr-modules
+
+* [8c136a3](https://github.com/microsoft/jacdac-msr-modules/commit/8c136a3) update submod
+* [b9cabea](https://github.com/microsoft/jacdac-msr-modules/commit/b9cabea) [skip ci] firmware v0.12.4 built
+
+### microsoft/jacdac-stm32x0
+
+* [e36a3c7](https://github.com/microsoft/jacdac-stm32x0/commit/e36a3c7) Indicate bootloader update files in UF2
+
 ## Version 0.12.4
 
 ### microsoft/jacdac-msr-modules
