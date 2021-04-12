@@ -1,3 +1,95 @@
+## Version 0.13.0
+
+### microsoft/jacdac-msr-modules
+
+* [ead1369](https://github.com/microsoft/jacdac-msr-modules/commit/ead1369) Incorporate new announce flags
+* [0b671b2](https://github.com/microsoft/jacdac-msr-modules/commit/0b671b2) update pointer
+* [011ebf8](https://github.com/microsoft/jacdac-msr-modules/commit/011ebf8) Use variant support in led pixels
+* [062fb71](https://github.com/microsoft/jacdac-msr-modules/commit/062fb71) Build fix
+* [6b7c83e](https://github.com/microsoft/jacdac-msr-modules/commit/6b7c83e) update pointers
+* [7d0b851](https://github.com/microsoft/jacdac-msr-modules/commit/7d0b851) [skip ci] firmware v0.12.5 built
+
+### microsoft/jacdac-c
+
+* [05803ac](https://github.com/microsoft/jacdac-c/commit/05803ac) Add various device flags to announce packet ([#20](https://github.com/microsoft/jacdac-c/pull/20))
+* [191e54f](https://github.com/microsoft/jacdac-c/commit/191e54f) update button implementation ([#19](https://github.com/microsoft/jacdac-c/pull/19))
+* [aedda1a](https://github.com/microsoft/jacdac-c/commit/aedda1a) Add variant support to ledpixels
+* [72f2b9e](https://github.com/microsoft/jacdac-c/commit/72f2b9e) update pointer
+
+### microsoft/jacdac-msr-modules
+
+* [7266270](https://github.com/microsoft/jacdac-msr-modules/commit/7266270) use 100% default for / units
+* [171dc6d](https://github.com/microsoft/jacdac-msr-modules/commit/171dc6d) linting
+* [fb4ae7a](https://github.com/microsoft/jacdac-msr-modules/commit/fb4ae7a) emit 1s in generated makecode services
+* [3bd1e91](https://github.com/microsoft/jacdac-msr-modules/commit/3bd1e91) Apply automatic changes
+* [3f376a4](https://github.com/microsoft/jacdac-msr-modules/commit/3f376a4) added files ([#341](https://github.com/microsoft/jacdac-msr-modules/pull/341))
+* [46d153d](https://github.com/microsoft/jacdac-msr-modules/commit/46d153d) updated bitradio spec
+* [22e5385](https://github.com/microsoft/jacdac-msr-modules/commit/22e5385) updated sound player spec
+* [d6ed83c](https://github.com/microsoft/jacdac-msr-modules/commit/d6ed83c) Apply automatic changes
+* [45eeee0](https://github.com/microsoft/jacdac-msr-modules/commit/45eeee0) host renaming
+* [76a0418](https://github.com/microsoft/jacdac-msr-modules/commit/76a0418) wording
+* [fed83a6](https://github.com/microsoft/jacdac-msr-modules/commit/fed83a6) Apply automatic changes
+* [cf0f7f0](https://github.com/microsoft/jacdac-msr-modules/commit/cf0f7f0) support for specifiying a custom specification url ([#274](https://github.com/microsoft/jacdac-msr-modules/pull/274))
+* [d8cfc00](https://github.com/microsoft/jacdac-msr-modules/commit/d8cfc00) added makecode logo
+* [98e1b9c](https://github.com/microsoft/jacdac-msr-modules/commit/98e1b9c) updated logo
+* [8cf6e25](https://github.com/microsoft/jacdac-msr-modules/commit/8cf6e25) adding workspace options for new lines
+* [f97bfdb](https://github.com/microsoft/jacdac-msr-modules/commit/f97bfdb) adding bare logo
+* [a050bdc](https://github.com/microsoft/jacdac-msr-modules/commit/a050bdc) scale / values to 0..100
+* [a896358](https://github.com/microsoft/jacdac-msr-modules/commit/a896358) fix bad handling of exception
+* [34b792a](https://github.com/microsoft/jacdac-msr-modules/commit/34b792a) More checks on test ([#334](https://github.com/microsoft/jacdac-msr-modules/pull/334))
+* [6e03780](https://github.com/microsoft/jacdac-msr-modules/commit/6e03780) Service test: Servo ([#314](https://github.com/microsoft/jacdac-msr-modules/pull/314))
+* [79386a2](https://github.com/microsoft/jacdac-msr-modules/commit/79386a2) Update README.md
+* [71ebf18](https://github.com/microsoft/jacdac-msr-modules/commit/71ebf18) proper handling of enum ([#331](https://github.com/microsoft/jacdac-msr-modules/pull/331))
+* [95564cf](https://github.com/microsoft/jacdac-msr-modules/commit/95564cf) Apply automatic changes
+* [ae82bb1](https://github.com/microsoft/jacdac-msr-modules/commit/ae82bb1) Service test: Compass ([#313](https://github.com/microsoft/jacdac-msr-modules/pull/313))
+* [5d5504f](https://github.com/microsoft/jacdac-msr-modules/commit/5d5504f) updated node version
+* [f4d86ee](https://github.com/microsoft/jacdac-msr-modules/commit/f4d86ee) Apply automatic changes
+* [86dea53](https://github.com/microsoft/jacdac-msr-modules/commit/86dea53) added files ([#326](https://github.com/microsoft/jacdac-msr-modules/pull/326))
+* [aba4e37](https://github.com/microsoft/jacdac-msr-modules/commit/aba4e37) get register.field working
+* [8b0ab31](https://github.com/microsoft/jacdac-msr-modules/commit/8b0ab31) Apply automatic changes
+* [a70a39d](https://github.com/microsoft/jacdac-msr-modules/commit/a70a39d) added files ([#325](https://github.com/microsoft/jacdac-msr-modules/pull/325))
+* [7bb323c](https://github.com/microsoft/jacdac-msr-modules/commit/7bb323c) Apply automatic changes
+* [de4b2e1](https://github.com/microsoft/jacdac-msr-modules/commit/de4b2e1) thresholds around wrong way in sound sensor
+* [0ed978a](https://github.com/microsoft/jacdac-msr-modules/commit/0ed978a) fix problem with tavs
+* [756e4d1](https://github.com/microsoft/jacdac-msr-modules/commit/756e4d1) Apply automatic changes
+* [b63318f](https://github.com/microsoft/jacdac-msr-modules/commit/b63318f) added files ([#322](https://github.com/microsoft/jacdac-msr-modules/pull/322))
+* [a0d08e1](https://github.com/microsoft/jacdac-msr-modules/commit/a0d08e1) more work on tests
+* [4e4bef0](https://github.com/microsoft/jacdac-msr-modules/commit/4e4bef0) implementation of closeTo ([#319](https://github.com/microsoft/jacdac-msr-modules/pull/319))
+* [27efd95](https://github.com/microsoft/jacdac-msr-modules/commit/27efd95) update button test
+* [1467d77](https://github.com/microsoft/jacdac-msr-modules/commit/1467d77) update button spec ([#315](https://github.com/microsoft/jacdac-msr-modules/pull/315))
+* [f14bda2](https://github.com/microsoft/jacdac-msr-modules/commit/f14bda2) Apply automatic changes
+* [40bb75b](https://github.com/microsoft/jacdac-msr-modules/commit/40bb75b) added files ([#311](https://github.com/microsoft/jacdac-msr-modules/pull/311))
+* [ddbc4d2](https://github.com/microsoft/jacdac-msr-modules/commit/ddbc4d2) added files ([#312](https://github.com/microsoft/jacdac-msr-modules/pull/312))
+* [2c85b32](https://github.com/microsoft/jacdac-msr-modules/commit/2c85b32) Apply automatic changes
+* [3371b90](https://github.com/microsoft/jacdac-msr-modules/commit/3371b90) added files ([#309](https://github.com/microsoft/jacdac-msr-modules/pull/309))
+* [c94e6ea](https://github.com/microsoft/jacdac-msr-modules/commit/c94e6ea) Apply automatic changes
+* [5c9b0ac](https://github.com/microsoft/jacdac-msr-modules/commit/5c9b0ac) added files ([#308](https://github.com/microsoft/jacdac-msr-modules/pull/308))
+* [bfd0e9d](https://github.com/microsoft/jacdac-msr-modules/commit/bfd0e9d) formatting and repharsing some test ui
+* [c8c5b72](https://github.com/microsoft/jacdac-msr-modules/commit/c8c5b72) Apply automatic changes
+* [8ac3b10](https://github.com/microsoft/jacdac-msr-modules/commit/8ac3b10) Device: Thermometer Humidity ([#307](https://github.com/microsoft/jacdac-msr-modules/pull/307))
+* [4d1518a](https://github.com/microsoft/jacdac-msr-modules/commit/4d1518a) check that reading registers have consistent units
+* [dd7152b](https://github.com/microsoft/jacdac-msr-modules/commit/dd7152b) Add fixed point number examples
+* [606ee97](https://github.com/microsoft/jacdac-msr-modules/commit/606ee97) updated docs on firmware
+* [503f727](https://github.com/microsoft/jacdac-msr-modules/commit/503f727) Merge branch 'main' of https://github.com/microsoft/jacdac
+* [5c189b1](https://github.com/microsoft/jacdac-msr-modules/commit/5c189b1) refresh specs
+* [c219c49](https://github.com/microsoft/jacdac-msr-modules/commit/c219c49) Apply automatic changes
+* [41c0d2f](https://github.com/microsoft/jacdac-msr-modules/commit/41c0d2f) migrate firmware repositories to jacdac-msr-modules
+* [8690bfb](https://github.com/microsoft/jacdac-msr-modules/commit/8690bfb) update doc
+* [c8070d1](https://github.com/microsoft/jacdac-msr-modules/commit/c8070d1) fixing formatting of rover
+* [56cb2b2](https://github.com/microsoft/jacdac-msr-modules/commit/56cb2b2) update test doc
+
+### microsoft/jacdac-stm32x0
+
+* [fe65825](https://github.com/microsoft/jacdac-stm32x0/commit/fe65825) Use new flags in bootloader
+* [26e3aa9](https://github.com/microsoft/jacdac-stm32x0/commit/26e3aa9) Fix target_wait_us() in BL mode
+* [3ee6993](https://github.com/microsoft/jacdac-stm32x0/commit/3ee6993) Improve build instructions
+* [4ebf314](https://github.com/microsoft/jacdac-stm32x0/commit/4ebf314) Don't build bootloadedr update in no-bootloader builds
+* [5ac94cc](https://github.com/microsoft/jacdac-stm32x0/commit/5ac94cc) Don't print bt when flashing (trips gdb sometimes)
+* [0382803](https://github.com/microsoft/jacdac-stm32x0/commit/0382803) Fix standby on G0
+* [12c5068](https://github.com/microsoft/jacdac-stm32x0/commit/12c5068) Calibrate bitbang spi timings on G0
+* [cce619a](https://github.com/microsoft/jacdac-stm32x0/commit/cce619a) Don't divide in target_wait_us()
+* [3c31f2a](https://github.com/microsoft/jacdac-stm32x0/commit/3c31f2a) G0 has separate rising and falling EXTI
+
 ## Version 0.12.5
 
 ### microsoft/jacdac-msr-modules
