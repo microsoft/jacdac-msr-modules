@@ -103,7 +103,7 @@ void app_init_services() {
         pin_setup_input(JACK_R2, -1);
         pin_setup_output(JACK_SLEEVE);
         pin_set(JACK_SLEEVE, 0);
-        btn_init(JACK_TIP, 0, -1);
+        button_init(JACK_TIP, 0, -1);
         return;
     }
 
