@@ -13,5 +13,5 @@ const servo_params_t servo_params = {
 };
 
 void app_init_services() {
-    servo_init(&servo_params);
+    servo_init(&servo_params, 0xff);
 }

@@ -19,7 +19,7 @@ const servo_params_t servo_params = {
 void app_init_services() {
     // see jacdac-c/services/jd_services.h for the services that can be
     // enabled here you can enable zero or more services
-    servo_init(&servo_params);
+    servo_init(&servo_params, 0xff);
 
     example_custom_function(); // call our custom function
 }

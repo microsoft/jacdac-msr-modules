@@ -17,7 +17,7 @@ void app_init_services() {
     pin_set(PF_1, 0); // enable JD power
 #endif
 
-    servo_init(&servo_params);
+    servo_init(&servo_params, 0xff);
 
     // The sense lines are not connected on this hw revision, so we just skip the actual power
     // service.
