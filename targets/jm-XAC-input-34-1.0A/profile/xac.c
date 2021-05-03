@@ -21,9 +21,9 @@ static int current_input = 0;
 
 int detect_input(void) {
 
-    pin_setup_input(JACK_TIP, -1);
-    pin_setup_input(JACK_R1, -1);
-    pin_setup_input(JACK_R2, -1);
+    pin_setup_input(JACK_TIP, PIN_PULL_DOWN);
+    pin_setup_input(JACK_R1, PIN_PULL_DOWN);
+    pin_setup_input(JACK_R2, PIN_PULL_DOWN);
     pin_setup_output(JACK_SLEEVE);
     pin_set(JACK_SLEEVE, 1);
 
@@ -32,9 +32,9 @@ int detect_input(void) {
 
     // DMESG("JS %d R2 %d R1 %d JT %d", );
 
-    pin_setup_input(JACK_TIP, -1);
-    pin_setup_input(JACK_R1, 1);
-    pin_setup_input(JACK_R2, 1);
+    pin_setup_input(JACK_TIP, PIN_PULL_DOWN);
+    pin_setup_input(JACK_R1, PIN_PULL_UP);
+    pin_setup_input(JACK_R2, PIN_PULL_UP);
     pin_setup_output(JACK_SLEEVE);
     pin_set(JACK_SLEEVE, 0);
 
@@ -44,12 +44,12 @@ int detect_input(void) {
     if (adc_r1 < 10 && adc_r2 < 10)
         return INPUT_TYPE_DIGITAL_BUTTON;
 
-    pin_setup_input(JACK_R1, -1);
-    pin_setup_input(JACK_R2, -1);
-    pin_setup_input(JACK_TIP, -1);
+    pin_setup_input(JACK_R1, PIN_PULL_DOWN);
+    pin_setup_input(JACK_R2, PIN_PULL_DOWN);
+    pin_setup_input(JACK_TIP, PIN_PULL_DOWN);
 
     pin_set(JACK_SLEEVE, 1);
-    // pin_setup_input(JACK_SLEEVE, 1);
+    // pin_setup_input(JACK_SLEEVE, PIN_PULL_UP);
 
     // uint8_t jt = pin_get(JACK_TIP);
     // uint8_t jr1 = pin_get(JACK_R1);
@@ -81,11 +81,11 @@ void app_process(void) {
         else {
             // reset cfg for button service.
             if (current_input == INPUT_TYPE_DIGITAL_BUTTON) {
-                pin_setup_input(JACK_R1, -1);
-                pin_setup_input(JACK_R2, -1);
+                pin_setup_input(JACK_R1, PIN_PULL_DOWN);
+                pin_setup_input(JACK_R2, PIN_PULL_DOWN);
                 pin_setup_output(JACK_SLEEVE);
                 pin_set(JACK_SLEEVE, 0);
-                pin_setup_input(JACK_TIP, 1);
+                pin_setup_input(JACK_TIP, PIN_PULL_UP);
             }
             // re-configuration not required for potentiometer.
             // potentiometer service configures pins on each read
@@ -108,11 +108,11 @@ void app_init_services() {
     if (current_input == INPUT_TYPE_DIGITAL_BUTTON) {
         DMESG("DIGITAL BUTTON");
         jd_status(JD_STATUS_OFF);
-        pin_setup_input(JACK_R1, -1);
-        pin_setup_input(JACK_R2, -1);
+        pin_setup_input(JACK_R1, PIN_PULL_DOWN);
+        pin_setup_input(JACK_R2, PIN_PULL_DOWN);
         pin_setup_output(JACK_SLEEVE);
         pin_set(JACK_SLEEVE, 0);
-        button_init(JACK_TIP, 0, -1);
+        button_init(JACK_TIP, 0, PIN_PULL_DOWN);
         return;
     }
 
@@ -121,9 +121,9 @@ void app_init_services() {
         DMESG("analog trigger");
         jd_status(JD_STATUS_OFF);
 
-        pin_setup_input(JACK_R2, -1);
-        pin_setup_input(JACK_TIP, -1);
-        pin_setup_input(JACK_SLEEVE, 1);
+        pin_setup_input(JACK_R2, PIN_PULL_DOWN);
+        pin_setup_input(JACK_TIP, PIN_PULL_DOWN);
+        pin_setup_input(JACK_SLEEVE, PIN_PULL_UP);
 
         // potentiometer
         if (current_input == INPUT_TYPE_ANALOG_TRIGGER)
