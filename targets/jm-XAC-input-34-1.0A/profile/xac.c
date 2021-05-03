@@ -3,15 +3,15 @@
 #include "jacdac/dist/c/joystick.h"
 #include "lib.h"
 
-#define JACK_TIP        PA_5
-#define JACK_R1         PA_3
-#define JACK_R2         PA_7
-#define JACK_SLEEVE     PA_6
+#define JACK_TIP PA_5
+#define JACK_R1 PA_3
+#define JACK_R2 PA_7
+#define JACK_SLEEVE PA_6
 
-#define INPUT_TYPE_NONE             -1
-#define INPUT_TYPE_DIGITAL_BUTTON   1
-#define INPUT_TYPE_ANALOG_TRIGGER   2
-#define INPUT_TYPE_ANALOG_JOYSTICK  3
+#define INPUT_TYPE_NONE -1
+#define INPUT_TYPE_DIGITAL_BUTTON 1
+#define INPUT_TYPE_ANALOG_TRIGGER 2
+#define INPUT_TYPE_ANALOG_JOYSTICK 3
 
 FIRMWARE_IDENTIFIER(0x362fe800, "JM XAC Input 34-1.0A");
 
@@ -19,7 +19,7 @@ static uint32_t led_ctr = 0;
 static uint32_t app_time = 0;
 static int current_input = 0;
 
-int detect_input (void) {
+int detect_input(void) {
 
     pin_setup_input(JACK_TIP, -1);
     pin_setup_input(JACK_R1, -1);
@@ -93,6 +93,15 @@ void app_process(void) {
     }
 }
 
+static const joystick_params_t thumb_params = {
+    .buttons_available = 0, // none
+    .variant = JD_JOYSTICK_VARIANT_THUMB,
+    .pinL = JACK_R2,
+    .pinH = JACK_SLEEVE,
+    .pinX = JACK_TIP,
+    .pinY = JACK_R1,
+};
+
 void app_init_services() {
     current_input = detect_input();
 
@@ -107,7 +116,6 @@ void app_init_services() {
         return;
     }
 
-    
     if (current_input >= INPUT_TYPE_ANALOG_TRIGGER) {
 
         DMESG("analog trigger");
@@ -121,11 +129,11 @@ void app_init_services() {
         if (current_input == INPUT_TYPE_ANALOG_TRIGGER)
             potentiometer_init(JACK_R2, JACK_TIP, JACK_SLEEVE);
         else if (current_input == INPUT_TYPE_ANALOG_JOYSTICK)
-            analog_joystick_init(JACK_R2, JACK_SLEEVE, JACK_TIP, JACK_R1, JD_JOYSTICK_VARIANT_THUMB);
+            joystick_init(&thumb_params);
         return;
     }
 
-    led_ctr = tim_get_micros()+2000000;
+    led_ctr = tim_get_micros() + 2000000;
 
     jd_status_init();
 
