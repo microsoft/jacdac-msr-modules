@@ -1,3 +1,22 @@
+## Version 0.14.1
+
+### microsoft/jacdac-msr-modules
+
+* [f54f69e](https://github.com/microsoft/jacdac-msr-modules/commit/f54f69e) add example of LED service using H-bridge driver
+* [550c27b](https://github.com/microsoft/jacdac-msr-modules/commit/550c27b) ADC read now 16-bit
+* [4d25d27](https://github.com/microsoft/jacdac-msr-modules/commit/4d25d27) [skip ci] firmware v0.14.0 built
+
+### microsoft/jacdac-c
+
+* [a182afc](https://github.com/microsoft/jacdac-c/commit/a182afc) add LED service
+* [9f1b250](https://github.com/microsoft/jacdac-c/commit/9f1b250) status light frame size is 65.536ms
+* [37606e7](https://github.com/microsoft/jacdac-c/commit/37606e7) Add support for optional registers
+* [39c563e](https://github.com/microsoft/jacdac-c/commit/39c563e) ADC read now 16-bit
+
+### microsoft/jacdac-stm32x0
+
+* [445682d](https://github.com/microsoft/jacdac-stm32x0/commit/445682d) ADC read now 16-bit
+
 ## Version 0.14.0
 
 ### microsoft/jacdac-msr-modules
