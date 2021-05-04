@@ -41,7 +41,7 @@ int detect_input(void) {
     uint16_t adc_r1 = adc_read_pin(JACK_R1);
     uint16_t adc_r2 = adc_read_pin(JACK_R2);
     // DMESG("BUTT_DET JR1 %d JR2 %d", adc_r1, adc_r2);
-    if (adc_r1 < 10 && adc_r2 < 10)
+    if (adc_r1 < 160 && adc_r2 < 160)
         return INPUT_TYPE_DIGITAL_BUTTON;
 
     pin_setup_input(JACK_R1, PIN_PULL_DOWN);
