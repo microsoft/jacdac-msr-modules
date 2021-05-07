@@ -10,6 +10,7 @@ const servo_params_t servo_params0 = {
     .min_pulse = 600,
     .max_angle = 90 << 16,
     .max_pulse = 2500,
+    .power_pin = PF_0
 };
 
 const servo_params_t servo_params1 = {
@@ -19,12 +20,14 @@ const servo_params_t servo_params1 = {
     .min_pulse = 600,
     .max_angle = 90 << 16,
     .max_pulse = 2500,
+    .power_pin = PF_1
 };
 
 void app_init_services() {
-    pin_setup_output(PA_0);
-    pin_set(PA_0, 0);
+    // high power mode when we get there
+    // pin_setup_output(PA_0);
+    // pin_set(PA_0, 0);
     pin_setup_input(PA_3, 1);
-    servo_init(&servo_params0, PF_0);
-    servo_init(&servo_params1, PF_1);
+    servo_init(&servo_params0);
+    servo_init(&servo_params1);
 }
