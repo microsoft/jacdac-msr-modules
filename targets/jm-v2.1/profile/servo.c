@@ -9,15 +9,11 @@ const servo_params_t servo_params = {
     .min_pulse = 500,
     .max_angle = 90 << 16,
     .max_pulse = 2500,
+    .power_pin = PF_1
 };
 
 void app_init_services() {
-#if 1
-    pin_setup_output(PF_1);
-    pin_set(PF_1, 0); // enable JD power
-#endif
-
-    servo_init(&servo_params, 0xff);
+    servo_init(&servo_params);
 
     // The sense lines are not connected on this hw revision, so we just skip the actual power
     // service.
