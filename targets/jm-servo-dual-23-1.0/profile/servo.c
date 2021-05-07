@@ -27,7 +27,7 @@ void app_init_services() {
     // high power mode when we get there
     // pin_setup_output(PA_0);
     // pin_set(PA_0, 0);
-    pin_setup_input(PA_3, 1);
+    // pin_setup_input(PA_3, 1);
     servo_init(&servo_params0);
     servo_init(&servo_params1);
 }
