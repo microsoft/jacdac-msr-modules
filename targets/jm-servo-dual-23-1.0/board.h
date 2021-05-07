@@ -15,9 +15,9 @@
 #define PIN_BL_LED PIN_LED_B
 #define PIN_BL_PERIOD 300
 
-#define PIN_PWR -1
-#define PIN_P0 -1
-#define PIN_P1 -1
+#define PIN_PWR NO_PIN
+#define PIN_P0 NO_PIN
+#define PIN_P1 NO_PIN
 
 // #define PIN_SDA PA_10
 // #define PIN_SCL PA_9

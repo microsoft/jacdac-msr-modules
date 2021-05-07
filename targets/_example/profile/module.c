@@ -14,12 +14,13 @@ const servo_params_t servo_params = {
     .min_pulse = 500,       // 500us
     .max_angle = 90 << 16,  // +90.000deg
     .max_pulse = 2500,      // 2500us
+    .power_pin = NO_PIN
 };
 
 void app_init_services() {
     // see jacdac-c/services/jd_services.h for the services that can be
     // enabled here you can enable zero or more services
-    servo_init(&servo_params, 0xff);
+    servo_init(&servo_params);
 
     example_custom_function(); // call our custom function
 }
