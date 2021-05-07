@@ -10,6 +10,7 @@ const servo_params_t servo_params = {
     .min_pulse = 500,
     .max_angle = 90 << 16,
     .max_pulse = 2500,
+    .power_pin = NO_PIN
 };
 
 void app_init_services() {
