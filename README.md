@@ -6,7 +6,11 @@ produced by Microsoft Research.
 If you're building your own modules, please follow instructions at
 https://github.com/microsoft/jacdac-stm32x0/blob/master/README.md
 
-This is also where you learn more about this repo.
+This is also where you learn more about this repo. To pull the submodule sources, run
+
+```
+git submodule update --init --recursive && git pull
+```
 
 ## Contributing
 

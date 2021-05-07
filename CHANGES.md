@@ -1,3 +1,76 @@
+## Version 0.14.1
+
+### microsoft/jacdac-msr-modules
+
+* [f54f69e](https://github.com/microsoft/jacdac-msr-modules/commit/f54f69e) add example of LED service using H-bridge driver
+* [550c27b](https://github.com/microsoft/jacdac-msr-modules/commit/550c27b) ADC read now 16-bit
+* [4d25d27](https://github.com/microsoft/jacdac-msr-modules/commit/4d25d27) [skip ci] firmware v0.14.0 built
+
+### microsoft/jacdac-c
+
+* [a182afc](https://github.com/microsoft/jacdac-c/commit/a182afc) add LED service
+* [9f1b250](https://github.com/microsoft/jacdac-c/commit/9f1b250) status light frame size is 65.536ms
+* [37606e7](https://github.com/microsoft/jacdac-c/commit/37606e7) Add support for optional registers
+* [39c563e](https://github.com/microsoft/jacdac-c/commit/39c563e) ADC read now 16-bit
+
+### microsoft/jacdac-stm32x0
+
+* [445682d](https://github.com/microsoft/jacdac-stm32x0/commit/445682d) ADC read now 16-bit
+
+## Version 0.14.0
+
+### microsoft/jacdac-msr-modules
+
+* [c16894b](https://github.com/microsoft/jacdac-msr-modules/commit/c16894b) Use new PIN_PULL_* constants
+* [1cf37e7](https://github.com/microsoft/jacdac-msr-modules/commit/1cf37e7) Adapt to new joystick APIs
+* [3281c53](https://github.com/microsoft/jacdac-msr-modules/commit/3281c53) init functions were renamed to match service names
+* [176271b](https://github.com/microsoft/jacdac-msr-modules/commit/176271b) [skip ci] firmware v0.13.0 built
+
+### microsoft/jacdac-c
+
+* [0f8048f](https://github.com/microsoft/jacdac-c/commit/0f8048f) Use new PIN_PULL_* constants
+* [c159f1b](https://github.com/microsoft/jacdac-c/commit/c159f1b) Connected-blink on client announce
+* [ddba7c7](https://github.com/microsoft/jacdac-c/commit/ddba7c7) Bring joystick to feature parity with arcadegamepad (now removed)
+* [36f22d9](https://github.com/microsoft/jacdac-c/commit/36f22d9) Rename analog_joystick to joystick
+* [02c2a26](https://github.com/microsoft/jacdac-c/commit/02c2a26) Use the new format description for announce flags
+* [7b8c8b7](https://github.com/microsoft/jacdac-c/commit/7b8c8b7) Implement the new joystick service (w/ buttons)
+* [7c045a6](https://github.com/microsoft/jacdac-c/commit/7c045a6) Add NO_PIN and PIN_PULL_* constants
+* [bd09847](https://github.com/microsoft/jacdac-c/commit/bd09847) Make identify command optional
+* [83899ba](https://github.com/microsoft/jacdac-c/commit/83899ba) rename function prefixes to match service name
+* [2628d6b](https://github.com/microsoft/jacdac-c/commit/2628d6b) Add support for JD_CONFIG_DEV_SPEC_URL/app_spec_url
+* [00912d4](https://github.com/microsoft/jacdac-c/commit/00912d4) Use generated constants
+
+### microsoft/jacdac-msr-modules
+
+* [5dc23ec](https://github.com/microsoft/jacdac-msr-modules/commit/5dc23ec) add makecode power extenions
+* [e01f39e](https://github.com/microsoft/jacdac-msr-modules/commit/e01f39e) identify implementation ([#363](https://github.com/microsoft/jacdac-msr-modules/pull/363))
+* [672eb1f](https://github.com/microsoft/jacdac-msr-modules/commit/672eb1f) patch: use # unit for counters
+* [69f915e](https://github.com/microsoft/jacdac-msr-modules/commit/69f915e) re-work joystick to also support gamepad ([#360](https://github.com/microsoft/jacdac-msr-modules/pull/360))
+* [6e30903](https://github.com/microsoft/jacdac-msr-modules/commit/6e30903) Propose new LED blinking patterns ([#358](https://github.com/microsoft/jacdac-msr-modules/pull/358))
+* [8ef389d](https://github.com/microsoft/jacdac-msr-modules/commit/8ef389d) patch: mention mixins
+* [4a62ad0](https://github.com/microsoft/jacdac-msr-modules/commit/4a62ad0) analog button service ([#357](https://github.com/microsoft/jacdac-msr-modules/pull/357))
+* [b21f112](https://github.com/microsoft/jacdac-msr-modules/commit/b21f112) Apply automatic changes
+* [d937ed7](https://github.com/microsoft/jacdac-msr-modules/commit/d937ed7) don't deprecate idenfity ([#338](https://github.com/microsoft/jacdac-msr-modules/pull/338))
+* [5ed8a04](https://github.com/microsoft/jacdac-msr-modules/commit/5ed8a04) threatmodel
+* [9543156](https://github.com/microsoft/jacdac-msr-modules/commit/9543156) don't codegen generinc
+* [4dac15a](https://github.com/microsoft/jacdac-msr-modules/commit/4dac15a) Add constants for word0 of ctrl announce
+* [0965638](https://github.com/microsoft/jacdac-msr-modules/commit/0965638) support for min_value, max_value registers
+* [fcecddd](https://github.com/microsoft/jacdac-msr-modules/commit/fcecddd) detect conflicts between const and ro regs fix led and realtimeclock conflicts
+
+### microsoft/jacdac-stm32x0
+
+* [d64c81d](https://github.com/microsoft/jacdac-stm32x0/commit/d64c81d) Use new PIN_PULL_* constants
+* [69469bb](https://github.com/microsoft/jacdac-stm32x0/commit/69469bb) Use the new NO_PIN constants
+* [827342b](https://github.com/microsoft/jacdac-stm32x0/commit/827342b) Merge pull request [#27](https://github.com/microsoft/jacdac-stm32x0/pull/27) from microsoft/rgb_ring
+* [1b72d78](https://github.com/microsoft/jacdac-stm32x0/commit/1b72d78) clarify "Adding new modules"
+* [fc2a7b6](https://github.com/microsoft/jacdac-stm32x0/commit/fc2a7b6) Messages on flash/build OK; fixes [#23](https://github.com/microsoft/jacdac-stm32x0/pull/23)
+* [36ced42](https://github.com/microsoft/jacdac-stm32x0/commit/36ced42) minor readme updates ([#22](https://github.com/microsoft/jacdac-stm32x0/pull/22))
+* [a047916](https://github.com/microsoft/jacdac-stm32x0/commit/a047916) Merge branch 'master' into rgb_ring
+* [7d88f70](https://github.com/microsoft/jacdac-stm32x0/commit/7d88f70) add board.h include to processor files
+* [7b7c3e5](https://github.com/microsoft/jacdac-stm32x0/commit/7b7c3e5) add stm32f030 def to dspi
+* [0adef8d](https://github.com/microsoft/jacdac-stm32x0/commit/0adef8d) support for including jacdac-c from "/services/"
+* [2651bfa](https://github.com/microsoft/jacdac-stm32x0/commit/2651bfa) Use generated constants
+
 ## Version 0.13.0
 
 ### microsoft/jacdac-msr-modules
