@@ -53,8 +53,8 @@ jobs:
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v1
+    # - name: Autobuild
+    #  uses: github/codeql-action/autobuild@v1
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -63,9 +63,23 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    #- run: |
-    #   make bootstrap
-    #   make release
+    - name: Restore ARM GCC Cache
+      id: arm-gcc-cache
+      uses: actions/cache@v2
+      with:
+        path: arm-gcc
+        key:  ${{ runner.os }}-arm-gcc-${{ env.GCC_VERSION }}
+    - name: Install ARM GCC
+      if: steps.arm-gcc-cache.outputs.cache-hit != 'true'
+      uses: fiam/arm-none-eabi-gcc@v1
+      with:
+        release: ${{ env.GCC_VERSION }}
+        directory: arm-gcc
+    - name: set PATH
+      run: echo "${{ github.workspace }}/arm-gcc/bin" >> $GITHUB_PATH
+
+    - name: make
+      run: make check-release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
