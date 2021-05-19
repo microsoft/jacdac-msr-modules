@@ -28,7 +28,8 @@ jobs:
       actions: read
       contents: read
       security-events: write
-
+    env:
+      GCC_VERSION: '9-2019-q4'
     strategy:
       fail-fast: false
       matrix:
