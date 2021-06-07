@@ -22,6 +22,8 @@
 #define PIN_SCL PA_9
 #define I2C_AF LL_GPIO_AF_4
 
+#define DEVICE_DMESG_BUFFER_SIZE 0
+
 #define UART_PIN PA_2
 #define UART_PIN_AF LL_GPIO_AF_1
 #define USART_IDX 1
