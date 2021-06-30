@@ -9,9 +9,9 @@
 #define UART_PIN_AF LL_GPIO_AF_0  // set alternate function AF0 for USART1_TX
 #define USART_IDX 1
 
-// #define PIN_LED_R PB_0
-// #define PIN_LED_G PA_6
-// #define PIN_LED_B PA_6
+#define PIN_LED_R PB_0
+#define PIN_LED_G PA_6
+#define PIN_LED_B PA_6
 
 // calibrated to ~50lux per channel
 // TODO needs calibration
