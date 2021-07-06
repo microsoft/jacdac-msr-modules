@@ -10,7 +10,7 @@
 #define USART_IDX 1
 
 #define PIN_LED_R PB_0
-#define PIN_LED_G PA_6
+#define PIN_LED_G PA_7
 #define PIN_LED_B PA_6
 
 // calibrated to ~50lux per channel
