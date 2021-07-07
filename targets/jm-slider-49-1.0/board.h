@@ -13,8 +13,9 @@
 #define PIN_LED_G PA_7
 #define PIN_LED_B PA_6
 
-// calibrated to ~50lux per channel
-// TODO needs calibration
+// these values calibrate to ~60lux for each of ff0000, 00ff00, 0000ff
+// taken from accelerometer module (34), which is designed for the HSMF-C114 RGB LED
+// with 150 ohm (red), 30 ohm (green), 30 ohm (blue) resistors.
 #define LED_R_MULT 250
 #define LED_G_MULT 150
 #define LED_B_MULT 42
@@ -22,6 +23,3 @@
 
 #define PIN_BL_LED PIN_LED_B
 #define PIN_BL_PERIOD 300
-
-// TODO WHAT IS THIS
-#define BOARD_STARTUP_CODE LL_SYSCFG_EnablePinRemap(LL_SYSCFG_PIN_RMP_PA12);
