@@ -7,9 +7,9 @@ void accelerometer_data_transform(int32_t sample[3]) {
     int32_t v0 = sample[0]; // x
     int32_t v1 = sample[1]; // y
     int32_t v2 = sample[2]; // z
-    sample[0] = -v0;
-    sample[1] = v1;
-    sample[2] = v2;
+    sample[0] = v1;
+    sample[1] = v0;
+    sample[2] = -v2;
 }
 
 void app_init_services() {
