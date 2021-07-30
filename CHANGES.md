@@ -1,3 +1,135 @@
+## Version 0.15.0
+
+### microsoft/jacdac-msr-modules
+
+* [43ec43e](https://github.com/microsoft/jacdac-msr-modules/commit/43ec43e) Update submodules to latest
+* [e0cd4ac](https://github.com/microsoft/jacdac-msr-modules/commit/e0cd4ac) Merge pull request [#23](https://github.com/microsoft/jacdac-msr-modules/pull/23) from microsoft/slider-1.1
+* [e4ad243](https://github.com/microsoft/jacdac-msr-modules/commit/e4ad243) Add slider 1.1 target files
+* [817baa1](https://github.com/microsoft/jacdac-msr-modules/commit/817baa1) Merge pull request [#16](https://github.com/microsoft/jacdac-msr-modules/pull/16) from microsoft/g0-button
+* [dfdde36](https://github.com/microsoft/jacdac-msr-modules/commit/dfdde36) sync submodule
+* [c990cea](https://github.com/microsoft/jacdac-msr-modules/commit/c990cea) add new button version
+* [e29080f](https://github.com/microsoft/jacdac-msr-modules/commit/e29080f) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into g0-button
+* [154ba03](https://github.com/microsoft/jacdac-msr-modules/commit/154ba03) fix accelerometer xes
+* [839f3e4](https://github.com/microsoft/jacdac-msr-modules/commit/839f3e4) Merge pull request [#22](https://github.com/microsoft/jacdac-msr-modules/pull/22) from microsoft/jm-access-switch-1.3
+* [35ab805](https://github.com/microsoft/jacdac-msr-modules/commit/35ab805) add files for access switch input 1.3
+* [4098c1e](https://github.com/microsoft/jacdac-msr-modules/commit/4098c1e) Merge pull request [#21](https://github.com/microsoft/jacdac-msr-modules/pull/21) from microsoft/jm-rgb-led-ring
+* [6acd670](https://github.com/microsoft/jacdac-msr-modules/commit/6acd670) update submodule to include blpwm pinmap
+* [558d1af](https://github.com/microsoft/jacdac-msr-modules/commit/558d1af) Merge branch 'main' into jm-rgb-led-ring
+* [ac662f9](https://github.com/microsoft/jacdac-msr-modules/commit/ac662f9) Merge pull request [#19](https://github.com/microsoft/jacdac-msr-modules/pull/19) from microsoft/temp-humidity-1.1
+* [9f6807a](https://github.com/microsoft/jacdac-msr-modules/commit/9f6807a) Merge pull request [#18](https://github.com/microsoft/jacdac-msr-modules/pull/18) from microsoft/accelerometer-1.0
+* [8cd3fef](https://github.com/microsoft/jacdac-msr-modules/commit/8cd3fef) Merge pull request [#20](https://github.com/microsoft/jacdac-msr-modules/pull/20) from microsoft/rotary-1.1
+* [84c4b2f](https://github.com/microsoft/jacdac-msr-modules/commit/84c4b2f) Merge pull request [#17](https://github.com/microsoft/jacdac-msr-modules/pull/17) from microsoft/g0-slider-49-1.0
+* [7eac70b](https://github.com/microsoft/jacdac-msr-modules/commit/7eac70b) more comments on calibration
+* [91d2342](https://github.com/microsoft/jacdac-msr-modules/commit/91d2342) add files for rotary controll 1.1
+* [aff2655](https://github.com/microsoft/jacdac-msr-modules/commit/aff2655) add files for new revision of temp + humidity
+* [873c055](https://github.com/microsoft/jacdac-msr-modules/commit/873c055) add files for accelerometer revision 1.0
+* [31949ce](https://github.com/microsoft/jacdac-msr-modules/commit/31949ce) WIP: new version of rgb led ring
+* [f47160c](https://github.com/microsoft/jacdac-msr-modules/commit/f47160c) Fix green LED pinning
+* [32864f9](https://github.com/microsoft/jacdac-msr-modules/commit/32864f9) uncomment the LED pindef
+* [521a088](https://github.com/microsoft/jacdac-msr-modules/commit/521a088) apparently things work now
+* [bc1bf53](https://github.com/microsoft/jacdac-msr-modules/commit/bc1bf53) skeleton but not working
+* [842ca43](https://github.com/microsoft/jacdac-msr-modules/commit/842ca43) update submodule!
+* [dc4a657](https://github.com/microsoft/jacdac-msr-modules/commit/dc4a657) update button pin map
+* [0ed57da](https://github.com/microsoft/jacdac-msr-modules/commit/0ed57da) WIP: add G0 button module
+* [0762999](https://github.com/microsoft/jacdac-msr-modules/commit/0762999) Merge pull request [#15](https://github.com/microsoft/jacdac-msr-modules/pull/15) from microsoft/accelerometer
+* [e0cbdc4](https://github.com/microsoft/jacdac-msr-modules/commit/e0cbdc4) transform accelerometer data
+* [e183828](https://github.com/microsoft/jacdac-msr-modules/commit/e183828) disable dmesg
+* [7002be8](https://github.com/microsoft/jacdac-msr-modules/commit/7002be8) add new accelerometer module to drop targets
+* [2cf5069](https://github.com/microsoft/jacdac-msr-modules/commit/2cf5069) add accelerometer files
+* [23d395f](https://github.com/microsoft/jacdac-msr-modules/commit/23d395f) Merge pull request [#14](https://github.com/microsoft/jacdac-msr-modules/pull/14) from microsoft/RGB_LED_RING
+* [32d639b](https://github.com/microsoft/jacdac-msr-modules/commit/32d639b) remove pwr from npx.c
+* [1a4e1dd](https://github.com/microsoft/jacdac-msr-modules/commit/1a4e1dd) update submodule
+* [481340b](https://github.com/microsoft/jacdac-msr-modules/commit/481340b) update submodule
+* [9ac1796](https://github.com/microsoft/jacdac-msr-modules/commit/9ac1796) add G0-based RGB LED ring
+* [c903261](https://github.com/microsoft/jacdac-msr-modules/commit/c903261) Update codeql-analysis.yml
+* [6b6aca4](https://github.com/microsoft/jacdac-msr-modules/commit/6b6aca4) Update codeql-analysis.yml
+* [8e13c55](https://github.com/microsoft/jacdac-msr-modules/commit/8e13c55) Update codeql-analysis.yml
+* [b9e6ee3](https://github.com/microsoft/jacdac-msr-modules/commit/b9e6ee3) Create codeql-analysis.yml
+* [e8d5166](https://github.com/microsoft/jacdac-msr-modules/commit/e8d5166) Merge pull request [#12](https://github.com/microsoft/jacdac-msr-modules/pull/12) from microsoft/rotary_control
+* [fdd3bf8](https://github.com/microsoft/jacdac-msr-modules/commit/fdd3bf8) Merge pull request [#13](https://github.com/microsoft/jacdac-msr-modules/pull/13) from microsoft/xac_release
+* [c93c7b0](https://github.com/microsoft/jacdac-msr-modules/commit/c93c7b0) add xac input [release]
+* [cdcfb7a](https://github.com/microsoft/jacdac-msr-modules/commit/cdcfb7a) add rotary control boards
+* [85536a1](https://github.com/microsoft/jacdac-msr-modules/commit/85536a1) Merge pull request [#11](https://github.com/microsoft/jacdac-msr-modules/pull/11) from microsoft/servo_dual
+* [2bc580a](https://github.com/microsoft/jacdac-msr-modules/commit/2bc580a) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into servo_dual
+* [6d4e345](https://github.com/microsoft/jacdac-msr-modules/commit/6d4e345) update jacdac-c
+* [e414329](https://github.com/microsoft/jacdac-msr-modules/commit/e414329) PR feedback
+* [5138bfa](https://github.com/microsoft/jacdac-msr-modules/commit/5138bfa) servo updates
+* [4f5ced8](https://github.com/microsoft/jacdac-msr-modules/commit/4f5ced8) update other servo_init calls
+* [e9ef592](https://github.com/microsoft/jacdac-msr-modules/commit/e9ef592) update servo init code and submodules
+* [78d3f9f](https://github.com/microsoft/jacdac-msr-modules/commit/78d3f9f) sync submodules
+* [8ecc6cb](https://github.com/microsoft/jacdac-msr-modules/commit/8ecc6cb) added submodule note
+* [9c9c458](https://github.com/microsoft/jacdac-msr-modules/commit/9c9c458) [skip ci] firmware v0.14.1 built
+
+### microsoft/jacdac-c
+
+* [23f448a](https://github.com/microsoft/jacdac-c/commit/23f448a) Protect against possible race
+* [51051da](https://github.com/microsoft/jacdac-c/commit/51051da) remove codeql
+* [b3d2809](https://github.com/microsoft/jacdac-c/commit/b3d2809) Update codeql-analysis.yml
+* [e3d343a](https://github.com/microsoft/jacdac-c/commit/e3d343a) Update codeql-analysis.yml
+* [6de80ab](https://github.com/microsoft/jacdac-c/commit/6de80ab) remove autobuild
+* [2e0fe2d](https://github.com/microsoft/jacdac-c/commit/2e0fe2d) Create codeql-analysis.yml
+* [6adc595](https://github.com/microsoft/jacdac-c/commit/6adc595) Merge pull request [#22](https://github.com/microsoft/jacdac-c/pull/22) from microsoft/servo_dual
+* [1d22031](https://github.com/microsoft/jacdac-c/commit/1d22031) PR feedback
+* [f952675](https://github.com/microsoft/jacdac-c/commit/f952675) reorder state struct and correct padding
+* [47112b9](https://github.com/microsoft/jacdac-c/commit/47112b9) More PR feedback
+* [af359fc](https://github.com/microsoft/jacdac-c/commit/af359fc) PR feedback
+* [76649a2](https://github.com/microsoft/jacdac-c/commit/76649a2) Merge branch 'main' of https://github.com/microsoft/jacdac-c into servo_dual
+* [2340d53](https://github.com/microsoft/jacdac-c/commit/2340d53) Adjust timing
+* [f1cc36d](https://github.com/microsoft/jacdac-c/commit/f1cc36d) Increase max start timeout to 200us (see https://github.com/microsoft/jacdac/issues/304)
+* [a182afc](https://github.com/microsoft/jacdac-c/commit/a182afc) add LED service
+* [9f1b250](https://github.com/microsoft/jacdac-c/commit/9f1b250) status light frame size is 65.536ms
+* [37606e7](https://github.com/microsoft/jacdac-c/commit/37606e7) Add support for optional registers
+* [39c563e](https://github.com/microsoft/jacdac-c/commit/39c563e) ADC read now 16-bit
+* [0f8048f](https://github.com/microsoft/jacdac-c/commit/0f8048f) Use new PIN_PULL_* constants
+* [c159f1b](https://github.com/microsoft/jacdac-c/commit/c159f1b) Connected-blink on client announce
+* [ddba7c7](https://github.com/microsoft/jacdac-c/commit/ddba7c7) Bring joystick to feature parity with arcadegamepad (now removed)
+* [36f22d9](https://github.com/microsoft/jacdac-c/commit/36f22d9) Rename analog_joystick to joystick
+* [02c2a26](https://github.com/microsoft/jacdac-c/commit/02c2a26) Use the new format description for announce flags
+* [7b8c8b7](https://github.com/microsoft/jacdac-c/commit/7b8c8b7) Implement the new joystick service (w/ buttons)
+* [7c045a6](https://github.com/microsoft/jacdac-c/commit/7c045a6) Add NO_PIN and PIN_PULL_* constants
+* [bd09847](https://github.com/microsoft/jacdac-c/commit/bd09847) Make identify command optional
+* [83899ba](https://github.com/microsoft/jacdac-c/commit/83899ba) rename function prefixes to match service name
+
+### microsoft/jacdac-msr-modules
+
+* [5dc23ec](https://github.com/microsoft/jacdac-msr-modules/commit/5dc23ec) (HEAD) add makecode power extenions
+* [e01f39e](https://github.com/microsoft/jacdac-msr-modules/commit/e01f39e) identify implementation ([#363](https://github.com/microsoft/jacdac-msr-modules/pull/363))
+* [672eb1f](https://github.com/microsoft/jacdac-msr-modules/commit/672eb1f) patch: use # unit for counters
+* [69f915e](https://github.com/microsoft/jacdac-msr-modules/commit/69f915e) re-work joystick to also support gamepad ([#360](https://github.com/microsoft/jacdac-msr-modules/pull/360))
+* [6e30903](https://github.com/microsoft/jacdac-msr-modules/commit/6e30903) Propose new LED blinking patterns ([#358](https://github.com/microsoft/jacdac-msr-modules/pull/358))
+* [8ef389d](https://github.com/microsoft/jacdac-msr-modules/commit/8ef389d) patch: mention mixins
+* [4a62ad0](https://github.com/microsoft/jacdac-msr-modules/commit/4a62ad0) analog button service ([#357](https://github.com/microsoft/jacdac-msr-modules/pull/357))
+* [b21f112](https://github.com/microsoft/jacdac-msr-modules/commit/b21f112) Apply automatic changes
+* [d937ed7](https://github.com/microsoft/jacdac-msr-modules/commit/d937ed7) don't deprecate idenfity ([#338](https://github.com/microsoft/jacdac-msr-modules/pull/338))
+* [5ed8a04](https://github.com/microsoft/jacdac-msr-modules/commit/5ed8a04) threatmodel
+* [9543156](https://github.com/microsoft/jacdac-msr-modules/commit/9543156) don't codegen generinc
+
+### microsoft/jacdac-stm32x0
+
+* [47462a0](https://github.com/microsoft/jacdac-stm32x0/commit/47462a0) improve stats extraction from map file
+* [242d240](https://github.com/microsoft/jacdac-stm32x0/commit/242d240) add new blpwm pin and timer mappings
+* [d6da5a1](https://github.com/microsoft/jacdac-stm32x0/commit/d6da5a1) Support for STM32G030
+* [885c578](https://github.com/microsoft/jacdac-stm32x0/commit/885c578) Merge pull request [#32](https://github.com/microsoft/jacdac-stm32x0/pull/32) from microsoft/pa1-g0-blpwm
+* [b8e2d5a](https://github.com/microsoft/jacdac-stm32x0/commit/b8e2d5a) add pa1 to bl pin map
+* [2981351](https://github.com/microsoft/jacdac-stm32x0/commit/2981351) Merge pull request [#30](https://github.com/microsoft/jacdac-stm32x0/pull/30) from microsoft/RGB_LED_RING
+* [562abe6](https://github.com/microsoft/jacdac-stm32x0/commit/562abe6) PR feedback: add comments for 48 MHz
+* [84cbc39](https://github.com/microsoft/jacdac-stm32x0/commit/84cbc39) remove PLL_MHZ==64
+* [eabba7b](https://github.com/microsoft/jacdac-stm32x0/commit/eabba7b) Support x6 G0 variant, and add PWM/Timer/Clock support
+* [af8f394](https://github.com/microsoft/jacdac-stm32x0/commit/af8f394) Delete codeql-analysis.yml
+* [d7b4625](https://github.com/microsoft/jacdac-stm32x0/commit/d7b4625) Update codeql-analysis.yml
+* [168bf50](https://github.com/microsoft/jacdac-stm32x0/commit/168bf50) Update codeql-analysis.yml
+* [0e96d62](https://github.com/microsoft/jacdac-stm32x0/commit/0e96d62) Create codeql-analysis.yml
+* [445682d](https://github.com/microsoft/jacdac-stm32x0/commit/445682d) ADC read now 16-bit
+* [d64c81d](https://github.com/microsoft/jacdac-stm32x0/commit/d64c81d) Use new PIN_PULL_* constants
+* [69469bb](https://github.com/microsoft/jacdac-stm32x0/commit/69469bb) Use the new NO_PIN constants
+* [827342b](https://github.com/microsoft/jacdac-stm32x0/commit/827342b) Merge pull request [#27](https://github.com/microsoft/jacdac-stm32x0/pull/27) from microsoft/rgb_ring
+* [1b72d78](https://github.com/microsoft/jacdac-stm32x0/commit/1b72d78) clarify "Adding new modules"
+* [fc2a7b6](https://github.com/microsoft/jacdac-stm32x0/commit/fc2a7b6) Messages on flash/build OK; fixes [#23](https://github.com/microsoft/jacdac-stm32x0/pull/23)
+* [36ced42](https://github.com/microsoft/jacdac-stm32x0/commit/36ced42) minor readme updates ([#22](https://github.com/microsoft/jacdac-stm32x0/pull/22))
+* [a047916](https://github.com/microsoft/jacdac-stm32x0/commit/a047916) Merge branch 'master' into rgb_ring
+* [7d88f70](https://github.com/microsoft/jacdac-stm32x0/commit/7d88f70) add board.h include to processor files
+* [7b7c3e5](https://github.com/microsoft/jacdac-stm32x0/commit/7b7c3e5) add stm32f030 def to dspi
+
 ## Version 0.14.1
 
 ### microsoft/jacdac-msr-modules
