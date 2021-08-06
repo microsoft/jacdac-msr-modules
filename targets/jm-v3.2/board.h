@@ -5,6 +5,8 @@
 #define PIN_P0 -1
 #define PIN_P1 -1
 
+#define MIKROBUS_AVAILABLE 1
+
 // Left header
 #define PIN_AN PA_5
 #define PIN_RST PA_0
