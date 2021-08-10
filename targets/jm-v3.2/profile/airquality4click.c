@@ -1,7 +1,7 @@
 #include "jdprofile.h"
 
 // define to enable humidity compensation for eco2/tvoc readings
-#define SHTC3 1
+// #define SHTC3 1
 
 FIRMWARE_IDENTIFIER(0x3456d740, "JM-Click Airquality4 v3.2");
 
