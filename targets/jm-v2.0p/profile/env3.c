@@ -3,6 +3,6 @@
 FIRMWARE_IDENTIFIER(0x377764af, "JM Env SHTC3 v2.0");
 
 void app_init_services() {
-    thermometer_init(shtc3_temperature);
-    humidity_init(shtc3_humidity);
+    thermometer_init(&temperature_shtc3);
+    humidity_init(&humidity_shtc3);
 }
