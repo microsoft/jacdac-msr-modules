@@ -1,15 +1,17 @@
 #include "jdprofile.h"
 #include "jacdac/dist/c/relay.h"
 
-FIRMWARE_IDENTIFIER(0x35a6ed1c, "JM Relay MACH-0.1");
+FIRMWARE_IDENTIFIER(0x3d45c6a7, "JM Access Switch Output-1.0");
 
-#define RELAY_LED PA_13
-#define RELAY_DRIVE PA_8
-#define RELAY_FEEDBACK PA_10
+#define RELAY_LED NO_PIN
+#define RELAY_DRIVE PA_12
+#define RELAY_FEEDBACK NO_PIN
+#define PLUG_SLEEVE PA_8
+
 // solid state relay
 static const relay_params_t params = {
-    .relay_variant = JD_RELAY_VARIANT_ELECTROMECHANICAL,
-    .max_switching_current = 2000,
+    .relay_variant = JD_RELAY_VARIANT_SOLID_STATE,
+    .max_switching_current = 20,
     .pin_relay_drive = RELAY_DRIVE,
     .pin_relay_feedback = RELAY_FEEDBACK,
     .pin_relay_led = RELAY_LED,
@@ -18,5 +20,6 @@ static const relay_params_t params = {
 };
 
 void app_init_services() {
+    pin_set_opendrain(PLUG_SLEEVE);
     relay_service_init(&params);
 }
