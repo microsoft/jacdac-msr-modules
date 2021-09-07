@@ -1,3 +1,11 @@
+## Version 0.16.2
+
+### microsoft/jacdac-msr-modules
+
+* [2183172](https://github.com/microsoft/jacdac-msr-modules/commit/2183172) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into main
+* [ff03cd0](https://github.com/microsoft/jacdac-msr-modules/commit/ff03cd0) add mikrobus to drop targets
+* [f1b47d8](https://github.com/microsoft/jacdac-msr-modules/commit/f1b47d8) [skip ci] firmware v0.16.1 built
+
 ## Version 0.16.1
 
 ### microsoft/jacdac-msr-modules
