@@ -1,3 +1,11 @@
+## Version 0.16.1
+
+### microsoft/jacdac-msr-modules
+
+* [af68fb8](https://github.com/microsoft/jacdac-msr-modules/commit/af68fb8) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into main
+* [d074f21](https://github.com/microsoft/jacdac-msr-modules/commit/d074f21) NO_PIN on PB3
+* [0391a11](https://github.com/microsoft/jacdac-msr-modules/commit/0391a11) [skip ci] firmware v0.16.0 built
+
 ## Version 0.16.0
 
 ### microsoft/jacdac-msr-modules
