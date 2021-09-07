@@ -1,3 +1,148 @@
+## Version 0.16.0
+
+### microsoft/jacdac-msr-modules
+
+* [45b3f70](https://github.com/microsoft/jacdac-msr-modules/commit/45b3f70) x6 not x8x6 not x8x6 not x8x6 not x8x6 not x8x6 not x8
+* [44561b7](https://github.com/microsoft/jacdac-msr-modules/commit/44561b7) Merge pull request [#27](https://github.com/microsoft/jacdac-msr-modules/pull/27) from microsoft/mikrobus-3.4
+* [747b56e](https://github.com/microsoft/jacdac-msr-modules/commit/747b56e) add mikrobus v3.4
+* [60029a6](https://github.com/microsoft/jacdac-msr-modules/commit/60029a6) Merge pull request [#26](https://github.com/microsoft/jacdac-msr-modules/pull/26) from microsoft/new-led-modules
+* [100d893](https://github.com/microsoft/jacdac-msr-modules/commit/100d893) working generic rgb target
+* [5715d87](https://github.com/microsoft/jacdac-msr-modules/commit/5715d87) add generic and bar led targets
+* [62a72c7](https://github.com/microsoft/jacdac-msr-modules/commit/62a72c7) Merge pull request [#25](https://github.com/microsoft/jacdac-msr-modules/pull/25) from microsoft/click
+* [264031a](https://github.com/microsoft/jacdac-msr-modules/commit/264031a) remove old npx modules (out of flash)
+* [483a9eb](https://github.com/microsoft/jacdac-msr-modules/commit/483a9eb) Update jacdac-c
+* [944d9d2](https://github.com/microsoft/jacdac-msr-modules/commit/944d9d2) disable shtc3 compensation
+* [58097ca](https://github.com/microsoft/jacdac-msr-modules/commit/58097ca) remove outdated #define
+* [b0450ba](https://github.com/microsoft/jacdac-msr-modules/commit/b0450ba) Add airquality click module
+* [7751a71](https://github.com/microsoft/jacdac-msr-modules/commit/7751a71) change config.mk to stm32g031 (button)
+* [abae118](https://github.com/microsoft/jacdac-msr-modules/commit/abae118) add colorclick
+* [c7d31ef](https://github.com/microsoft/jacdac-msr-modules/commit/c7d31ef) adapt to sensor API changes
+* [ad7afc3](https://github.com/microsoft/jacdac-msr-modules/commit/ad7afc3) [skip ci] firmware v0.15.0 built
+
+### microsoft/jacdac-c
+
+* [d1dd687](https://github.com/microsoft/jacdac-c/commit/d1dd687) (HEAD) Fix aq4 config
+* [f8a47ad](https://github.com/microsoft/jacdac-c/commit/f8a47ad) Remove unused file
+* [8c648f8](https://github.com/microsoft/jacdac-c/commit/8c648f8) Fix todo
+* [8b02aae](https://github.com/microsoft/jacdac-c/commit/8b02aae) move ENV_INIT_* to a header file
+* [fdf6faa](https://github.com/microsoft/jacdac-c/commit/fdf6faa) bugfix
+* [8885c3a](https://github.com/microsoft/jacdac-c/commit/8885c3a) compute absolute humidity with table lookup+interpolation
+* [3126400](https://github.com/microsoft/jacdac-c/commit/3126400) Add absolute humidty calculation
+* [cbabd8d](https://github.com/microsoft/jacdac-c/commit/cbabd8d) Add humidity compensation
+* [0fd71a0](https://github.com/microsoft/jacdac-c/commit/0fd71a0) no nested sleep
+* [3359147](https://github.com/microsoft/jacdac-c/commit/3359147) Add default weak app_process()
+* [b77c784](https://github.com/microsoft/jacdac-c/commit/b77c784) Add tvoc and eco2 services
+* [603ea64](https://github.com/microsoft/jacdac-c/commit/603ea64) Add glue for airqualit4 click
+* [18979e1](https://github.com/microsoft/jacdac-c/commit/18979e1) update jacdac-spec
+* [bde53a4](https://github.com/microsoft/jacdac-c/commit/bde53a4) use similar framework for all sensor apis
+* [6d45266](https://github.com/microsoft/jacdac-c/commit/6d45266) one sensor header to rule them all
+* [541d7bf](https://github.com/microsoft/jacdac-c/commit/541d7bf) add sleep framework
+* [55c9a5e](https://github.com/microsoft/jacdac-c/commit/55c9a5e) build fix
+* [4a47966](https://github.com/microsoft/jacdac-c/commit/4a47966) unmodified airquality4 click lib
+* [701f9cb](https://github.com/microsoft/jacdac-c/commit/701f9cb) Add color service
+* [8c528c8](https://github.com/microsoft/jacdac-c/commit/8c528c8) mikroe compat fixes
+* [deee9d8](https://github.com/microsoft/jacdac-c/commit/deee9d8) disable outdater power service
+* [301a15a](https://github.com/microsoft/jacdac-c/commit/301a15a) rename color_init function
+* [a65062b](https://github.com/microsoft/jacdac-c/commit/a65062b) Fix warning
+* [6a24270](https://github.com/microsoft/jacdac-c/commit/6a24270) Import color click
+* [6e788cf](https://github.com/microsoft/jacdac-c/commit/6e788cf) First draft of MikroE click compat layer
+* [bf0ec6a](https://github.com/microsoft/jacdac-c/commit/bf0ec6a) Update README.md
+
+### microsoft/jacdac-msr-modules
+
+* [5c11b83](https://github.com/microsoft/jacdac-msr-modules/commit/5c11b83) (HEAD) C# constant generation ([#543](https://github.com/microsoft/jacdac-msr-modules/pull/543))
+* [d547890](https://github.com/microsoft/jacdac-msr-modules/commit/d547890) Update qr-url-device-map.csv
+* [6e22dd5](https://github.com/microsoft/jacdac-msr-modules/commit/6e22dd5) Update qr-url-device-map.csv
+* [2a254b9](https://github.com/microsoft/jacdac-msr-modules/commit/2a254b9) Update qr-url-device-map.csv
+* [05ad769](https://github.com/microsoft/jacdac-msr-modules/commit/05ad769) Update qr-url-device-map.csv
+* [5d866af](https://github.com/microsoft/jacdac-msr-modules/commit/5d866af) Add slider v1.1 to qr table ([#522](https://github.com/microsoft/jacdac-msr-modules/pull/522))
+* [33b747a](https://github.com/microsoft/jacdac-msr-modules/commit/33b747a) Update qr-url-device-map.csv
+* [c610279](https://github.com/microsoft/jacdac-msr-modules/commit/c610279) Update qr-url-device-map.csv
+* [80899c5](https://github.com/microsoft/jacdac-msr-modules/commit/80899c5) Update qr-url-device-map.csv
+* [74e9f7c](https://github.com/microsoft/jacdac-msr-modules/commit/74e9f7c) update resolution ([#497](https://github.com/microsoft/jacdac-msr-modules/pull/497))
+* [a0e2e10](https://github.com/microsoft/jacdac-msr-modules/commit/a0e2e10) add JDIoT and Power
+* [22c9c19](https://github.com/microsoft/jacdac-msr-modules/commit/22c9c19) Apply automatic changes
+* [c22ba99](https://github.com/microsoft/jacdac-msr-modules/commit/c22ba99) Service: HID Configurator ([#408](https://github.com/microsoft/jacdac-msr-modules/pull/408))
+* [9595486](https://github.com/microsoft/jacdac-msr-modules/commit/9595486) add servo dual
+* [5fffaef](https://github.com/microsoft/jacdac-msr-modules/commit/5fffaef) Add rotary control
+* [0e9c446](https://github.com/microsoft/jacdac-msr-modules/commit/0e9c446) Power spec: updates, make stuff optional
+* [5f57b0a](https://github.com/microsoft/jacdac-msr-modules/commit/5f57b0a) Update qr-url-device-map.csv
+* [22bd192](https://github.com/microsoft/jacdac-msr-modules/commit/22bd192) Add slider to device map ([#490](https://github.com/microsoft/jacdac-msr-modules/pull/490))
+* [aa33ed7](https://github.com/microsoft/jacdac-msr-modules/commit/aa33ed7) Update qr-url-device-map.csv
+* [94f0c3a](https://github.com/microsoft/jacdac-msr-modules/commit/94f0c3a) udpated csv format
+* [0563771](https://github.com/microsoft/jacdac-msr-modules/commit/0563771) Create qr-url-device-map.csv ([#479](https://github.com/microsoft/jacdac-msr-modules/pull/479))
+* [740ce7d](https://github.com/microsoft/jacdac-msr-modules/commit/740ce7d) use number for confidence
+* [84d0eb8](https://github.com/microsoft/jacdac-msr-modules/commit/84d0eb8) updated event value name
+* [1374d58](https://github.com/microsoft/jacdac-msr-modules/commit/1374d58) updated dependable iot
+* [4aa7d64](https://github.com/microsoft/jacdac-msr-modules/commit/4aa7d64) Apply automatic changes
+* [3be3ccc](https://github.com/microsoft/jacdac-msr-modules/commit/3be3ccc) udpate bytes for template
+* [cc9a63c](https://github.com/microsoft/jacdac-msr-modules/commit/cc9a63c) Apply automatic changes
+* [e35f46f](https://github.com/microsoft/jacdac-msr-modules/commit/e35f46f) updated service
+* [e19761c](https://github.com/microsoft/jacdac-msr-modules/commit/e19761c) hackery
+* [db9df35](https://github.com/microsoft/jacdac-msr-modules/commit/db9df35) remove checking for $.global ([#463](https://github.com/microsoft/jacdac-msr-modules/pull/463))
+* [956ac9f](https://github.com/microsoft/jacdac-msr-modules/commit/956ac9f) adding (future client) convinience apis on character screen
+* [29c251b](https://github.com/microsoft/jacdac-msr-modules/commit/29c251b) patch: build fix
+* [970045d](https://github.com/microsoft/jacdac-msr-modules/commit/970045d) add encoding info for string/bytes ([#458](https://github.com/microsoft/jacdac-msr-modules/pull/458))
+* [2fd0f99](https://github.com/microsoft/jacdac-msr-modules/commit/2fd0f99) patch: updated service name
+* [b3ab568](https://github.com/microsoft/jacdac-msr-modules/commit/b3ab568) Apply automatic changes
+* [42ce65c](https://github.com/microsoft/jacdac-msr-modules/commit/42ce65c) added verified telemetry interface ([#410](https://github.com/microsoft/jacdac-msr-modules/pull/410))
+* [e8ae74d](https://github.com/microsoft/jacdac-msr-modules/commit/e8ae74d) simplify azure iot service ([#457](https://github.com/microsoft/jacdac-msr-modules/pull/457))
+* [2e5ad6e](https://github.com/microsoft/jacdac-msr-modules/commit/2e5ad6e) Apply automatic changes
+* [389206e](https://github.com/microsoft/jacdac-msr-modules/commit/389206e) Add orientation information to accelerometer spec ([#448](https://github.com/microsoft/jacdac-msr-modules/pull/448))
+* [16f75b4](https://github.com/microsoft/jacdac-msr-modules/commit/16f75b4) mark hid keys as low level
+* [ebdf3d4](https://github.com/microsoft/jacdac-msr-modules/commit/ebdf3d4) let -> const
+* [2e1b974](https://github.com/microsoft/jacdac-msr-modules/commit/2e1b974) Apply automatic changes
+* [1fc0e75](https://github.com/microsoft/jacdac-msr-modules/commit/1fc0e75) fix typo
+* [c7700f8](https://github.com/microsoft/jacdac-msr-modules/commit/c7700f8) Apply automatic changes
+* [e5a345b](https://github.com/microsoft/jacdac-msr-modules/commit/e5a345b) collect up roles
+* [7084430](https://github.com/microsoft/jacdac-msr-modules/commit/7084430) New draft of power service ([#402](https://github.com/microsoft/jacdac-msr-modules/pull/402))
+* [3f33123](https://github.com/microsoft/jacdac-msr-modules/commit/3f33123) updated docs on lowlevel, client
+* [caa73b4](https://github.com/microsoft/jacdac-msr-modules/commit/caa73b4) client/server flags ([#401](https://github.com/microsoft/jacdac-msr-modules/pull/401))
+* [ff536f1](https://github.com/microsoft/jacdac-msr-modules/commit/ff536f1) renamine IT4 -> VM ([#419](https://github.com/microsoft/jacdac-msr-modules/pull/419))
+* [79a1677](https://github.com/microsoft/jacdac-msr-modules/commit/79a1677) stronger error checking
+* [c17c7e9](https://github.com/microsoft/jacdac-msr-modules/commit/c17c7e9) Event param ([#417](https://github.com/microsoft/jacdac-msr-modules/pull/417))
+* [bbeab46](https://github.com/microsoft/jacdac-msr-modules/commit/bbeab46) minor updates ([#411](https://github.com/microsoft/jacdac-msr-modules/pull/411))
+* [43b0bcc](https://github.com/microsoft/jacdac-msr-modules/commit/43b0bcc) fix links
+* [86b4fa1](https://github.com/microsoft/jacdac-msr-modules/commit/86b4fa1) update jsep
+* [2396b79](https://github.com/microsoft/jacdac-msr-modules/commit/2396b79) refactoring to permit expression checking online ([#403](https://github.com/microsoft/jacdac-msr-modules/pull/403))
+* [5a9bd06](https://github.com/microsoft/jacdac-msr-modules/commit/5a9bd06) Command support ([#396](https://github.com/microsoft/jacdac-msr-modules/pull/396))
+* [cef7318](https://github.com/microsoft/jacdac-msr-modules/commit/cef7318) Merge branch 'main' of https://github.com/microsoft/jacdac
+* [0d37424](https://github.com/microsoft/jacdac-msr-modules/commit/0d37424) patch: updated services
+* [01978f1](https://github.com/microsoft/jacdac-msr-modules/commit/01978f1) Apply automatic changes
+* [1508688](https://github.com/microsoft/jacdac-msr-modules/commit/1508688) added files ([#390](https://github.com/microsoft/jacdac-msr-modules/pull/390))
+* [510b0b1](https://github.com/microsoft/jacdac-msr-modules/commit/510b0b1) fix degrees
+* [2d38918](https://github.com/microsoft/jacdac-msr-modules/commit/2d38918) Apply automatic changes
+* [acd7f49](https://github.com/microsoft/jacdac-msr-modules/commit/acd7f49) refactoring for vm roles ([#385](https://github.com/microsoft/jacdac-msr-modules/pull/385))
+* [8bece00](https://github.com/microsoft/jacdac-msr-modules/commit/8bece00) Create codeql-analysis.yml
+* [fcb6f86](https://github.com/microsoft/jacdac-msr-modules/commit/fcb6f86) Generate .gts not .g.ts to avoid confusing intellisense ([#384](https://github.com/microsoft/jacdac-msr-modules/pull/384))
+* [996bd12](https://github.com/microsoft/jacdac-msr-modules/commit/996bd12) Add some wording on mixins
+* [1d649a1](https://github.com/microsoft/jacdac-msr-modules/commit/1d649a1) updated hid keyboard modifier values
+* [01866a2](https://github.com/microsoft/jacdac-msr-modules/commit/01866a2) udpated hid mouse constants
+* [9dbc569](https://github.com/microsoft/jacdac-msr-modules/commit/9dbc569) Apply automatic changes
+* [e635532](https://github.com/microsoft/jacdac-msr-modules/commit/e635532) updated description
+* [c7ea868](https://github.com/microsoft/jacdac-msr-modules/commit/c7ea868) updated hid keyboard spec
+* [970e7b2](https://github.com/microsoft/jacdac-msr-modules/commit/970e7b2) Add table with service_index values
+* [2c416af](https://github.com/microsoft/jacdac-msr-modules/commit/2c416af) Add "padauk" tag to services implemented in jacdac-padauk
+* [542c700](https://github.com/microsoft/jacdac-msr-modules/commit/542c700) PR feedback
+* [7d3cd51](https://github.com/microsoft/jacdac-msr-modules/commit/7d3cd51) patch: use define syntax
+* [06921fc](https://github.com/microsoft/jacdac-msr-modules/commit/06921fc) updated specs
+* [5c72d33](https://github.com/microsoft/jacdac-msr-modules/commit/5c72d33) support for consts in spec ([#369](https://github.com/microsoft/jacdac-msr-modules/pull/369))
+* [d037c57](https://github.com/microsoft/jacdac-msr-modules/commit/d037c57) tag simple SI-unit services with 8bit ([#370](https://github.com/microsoft/jacdac-msr-modules/pull/370))
+* [9296d15](https://github.com/microsoft/jacdac-msr-modules/commit/9296d15) Update SWS delays, fixes [#304](https://github.com/microsoft/jacdac-msr-modules/pull/304)
+* [af365ed](https://github.com/microsoft/jacdac-msr-modules/commit/af365ed) early support for generation mpy constants
+* [8d1d850](https://github.com/microsoft/jacdac-msr-modules/commit/8d1d850) better bounds on u8 input
+* [811d851](https://github.com/microsoft/jacdac-msr-modules/commit/811d851) updated status info
+* [70af592](https://github.com/microsoft/jacdac-msr-modules/commit/70af592) keep variants optional
+
+### microsoft/jacdac-stm32x0
+
+* [c7cd9dd](https://github.com/microsoft/jacdac-stm32x0/commit/c7cd9dd) add pwm pin mappings and SPI2 for G03x
+* [b0a57e5](https://github.com/microsoft/jacdac-stm32x0/commit/b0a57e5) more explicit OPTR_MODE check
+* [e66f911](https://github.com/microsoft/jacdac-stm32x0/commit/e66f911) WIP dspi and init config
+* [6b307c8](https://github.com/microsoft/jacdac-stm32x0/commit/6b307c8) initial implementation of RESET_AS_GPIO CFG
+* [be2749e](https://github.com/microsoft/jacdac-stm32x0/commit/be2749e) use new jd_process_everything()
+* [62412f0](https://github.com/microsoft/jacdac-stm32x0/commit/62412f0) Build click libs
+
 ## Version 0.15.0
 
 ### microsoft/jacdac-msr-modules
