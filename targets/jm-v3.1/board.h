@@ -11,7 +11,6 @@
 #define PIN_AN PA_5
 #define PIN_RST PA_3
 #define PIN_CS PA_1
-#define PIN_RX_CS PIN_CS
 #define PIN_SCK PA_0
 #define PIN_TX_MISO PB_6 // USART1 SPI2
 #define PIN_RX_MOSI PB_7 // USART1 SPI2
