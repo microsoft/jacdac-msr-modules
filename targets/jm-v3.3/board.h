@@ -14,6 +14,11 @@
 #define PIN_SCK PA_1 // SPI1
 #define PIN_MISO PA_6
 #define PIN_TX_MOSI PA_2
+
+#define PIN_SSCK PIN_SCK
+#define PIN_SMOSI PIN_TX_MOSI
+#define PIN_SMISO PIN_MISO
+#define PIN_SCS PIN_RX_CS
 // VCC
 // GND
 
