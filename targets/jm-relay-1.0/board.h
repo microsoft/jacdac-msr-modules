@@ -1,4 +1,5 @@
 #define PIN_LED PB_8
+#define PIN_LED_ACTIVE_LO
 #define PIN_LED_GND NO_PIN
 
 #define PIN_PWR NO_PIN
