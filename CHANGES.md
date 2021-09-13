@@ -1,3 +1,15 @@
+## Version 0.16.4
+
+### microsoft/jacdac-msr-modules
+
+* [452e90a](https://github.com/microsoft/jacdac-msr-modules/commit/452e90a) update click tts volume
+* [181f398](https://github.com/microsoft/jacdac-msr-modules/commit/181f398) [skip ci] firmware v0.16.3 built
+
+### microsoft/jacdac-c
+
+* [b0a71ed](https://github.com/microsoft/jacdac-c/commit/b0a71ed) increase volume
+* [a90b7cb](https://github.com/microsoft/jacdac-c/commit/a90b7cb) Merge pull request [#26](https://github.com/microsoft/jacdac-c/pull/26) from microsoft/tt-click
+
 ## Version 0.16.3
 
 ### microsoft/jacdac-msr-modules
