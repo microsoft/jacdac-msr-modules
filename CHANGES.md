@@ -1,3 +1,14 @@
+## Version 0.16.5
+
+### microsoft/jacdac-msr-modules
+
+* [289d22b](https://github.com/microsoft/jacdac-msr-modules/commit/289d22b) update click voice
+* [6758c50](https://github.com/microsoft/jacdac-msr-modules/commit/6758c50) [skip ci] firmware v0.16.4 built
+
+### microsoft/jacdac-c
+
+* [afb6f7c](https://github.com/microsoft/jacdac-c/commit/afb6f7c) use default voice
+
 ## Version 0.16.4
 
 ### microsoft/jacdac-msr-modules
