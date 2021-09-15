@@ -1,3 +1,11 @@
+## Version 0.16.7
+
+### microsoft/jacdac-msr-modules
+
+* [4dc49fc](https://github.com/microsoft/jacdac-msr-modules/commit/4dc49fc) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into main
+* [b18aa9c](https://github.com/microsoft/jacdac-msr-modules/commit/b18aa9c) add targets to DROP
+* [98c7fe3](https://github.com/microsoft/jacdac-msr-modules/commit/98c7fe3) [skip ci] firmware v0.16.6 built
+
 ## Version 0.16.6
 
 ### microsoft/jacdac-msr-modules
