@@ -1,3 +1,28 @@
+## Version 0.16.6
+
+### microsoft/jacdac-msr-modules
+
+* [9c5dfe7](https://github.com/microsoft/jacdac-msr-modules/commit/9c5dfe7) Merge pull request [#30](https://github.com/microsoft/jacdac-msr-modules/pull/30) from microsoft/swclk_ain
+* [b96976f](https://github.com/microsoft/jacdac-msr-modules/commit/b96976f) disable SWCLK for 8 pin packages.
+* [39d3869](https://github.com/microsoft/jacdac-msr-modules/commit/39d3869) update board defs and relay polarity
+* [09355b3](https://github.com/microsoft/jacdac-msr-modules/commit/09355b3) add option to disable SWCLK/SWD in app mode
+* [12fbdb7](https://github.com/microsoft/jacdac-msr-modules/commit/12fbdb7) Merge pull request [#24](https://github.com/microsoft/jacdac-msr-modules/pull/24) from microsoft/relay-1.0
+* [a4590c5](https://github.com/microsoft/jacdac-msr-modules/commit/a4590c5) Merge branch 'main' into relay-1.0
+* [62c50cf](https://github.com/microsoft/jacdac-msr-modules/commit/62c50cf) submodule update
+* [37e6f14](https://github.com/microsoft/jacdac-msr-modules/commit/37e6f14) access switch output 1.1
+* [8254b56](https://github.com/microsoft/jacdac-msr-modules/commit/8254b56) [skip ci] firmware v0.16.5 built
+
+### microsoft/jacdac-c
+
+* [3daaccf](https://github.com/microsoft/jacdac-c/commit/3daaccf) Merge pull request [#27](https://github.com/microsoft/jacdac-c/pull/27) from microsoft/active_lo
+* [c61cd5f](https://github.com/microsoft/jacdac-c/commit/c61cd5f) Add PIN_LED_ACTIVE_LO define
+
+### microsoft/jacdac-stm32x0
+
+* [e20bcc6](https://github.com/microsoft/jacdac-stm32x0/commit/e20bcc6) Merge pull request [#36](https://github.com/microsoft/jacdac-stm32x0/pull/36) from microsoft/swclk_swd_dis
+* [fa57bbc](https://github.com/microsoft/jacdac-stm32x0/commit/fa57bbc) add option to disable SWCLK/SWDIO
+* [4f88436](https://github.com/microsoft/jacdac-stm32x0/commit/4f88436) Merge pull request [#35](https://github.com/microsoft/jacdac-stm32x0/pull/35) from microsoft/tts-click
+
 ## Version 0.16.5
 
 ### microsoft/jacdac-msr-modules
