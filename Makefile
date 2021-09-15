@@ -9,6 +9,6 @@ _IGNORE1 := $(shell test -f $(JD_STM)/stm32/cmsis_device_g0/README.md || git sub
 
 include Makefile.user
 
-DROP_TARGETS ?= jm-v2.0 jm-v2.0i jm-v2.0p jm-v2.1 jm-temp-humidity-18-1.0A jm-rotary-control-26-1.0A jm-XAC-input-34-1.0A jm-v3.1 jm-accelerometer-30-0.2 jm-mikrobus-61-3.4 jm-v3.3
+DROP_TARGETS ?= jm-v2.0 jm-v2.0i jm-v2.0p jm-v2.1 jm-temp-humidity-18-1.0A jm-rotary-control-26-1.0A jm-XAC-input-34-1.0A jm-v3.1 jm-accelerometer-30-0.2 jm-mikrobus-61-3.4 jm-v3.3 jm-rgb-led-bar-58-0.1 jm-rgb-led-generic-60-0.1 jm-access-switch-output-1.0 jm-access-switch-output-1.1 jm-button-40-0.2
 
 include $(JD_STM)/build.mk
