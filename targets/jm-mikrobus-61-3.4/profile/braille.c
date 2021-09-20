@@ -6,6 +6,103 @@
 FIRMWARE_IDENTIFIER(0x3997beeb, "JM Braille v3.4");
 uint8_t rxdata[255];
 
+#define HS_ON   1
+#define LS_ON   0
+
+#define ROW0    9
+#define COL0    1
+
+// TL->TR->BL->BR
+// const uint8_t col_map[] = {1, 5, 2, 6, 3, 7, 4 ,8};
+// TL->TR top-bottom-top
+// const uint8_t col_map[] = {1, 2, 3, 4, 8, 7, 6, 5};
+// TL->BL->TR->BR
+const uint8_t col_map[] = {1, 2, 3, 4, 5, 6, 7, 8};
+const uint8_t row_map[] = {9, 11, 12, 10};
+
+void set_row(int r, int val) {
+    for (uint8_t i = 0; i < sizeof(row_map); i++)
+        if (i == r)
+            ncv7726b.channel_set(row_map[r], val);
+        else 
+            ncv7726b.channel_set(row_map[r], (val == HS_ON) ? LS_ON : HS_ON);
+}
+
+void all_up (void) {
+    for (uint8_t c = 0; c < sizeof(col_map); c++) {
+        ncv7726b.channel_set(row_map[0], HS_ON);
+        ncv7726b.channel_set(col_map[c], LS_ON);
+        ncv7726b.write();
+        target_wait_us(4000);
+        ncv7726b.clear_all();
+        ncv7726b.write();
+        target_wait_us(100000);
+    }
+}
+
+void all_down (void) {
+    for (uint8_t c = 0; c < sizeof(col_map); c++) {
+        ncv7726b.channel_set(row_map[0], LS_ON);
+        ncv7726b.channel_set(col_map[c], HS_ON);
+        ncv7726b.write();
+        target_wait_us(4000);
+        ncv7726b.clear_all();
+        ncv7726b.write();
+        target_wait_us(100000);
+    }
+}
+
+void app_init_services() {
+    ncv7726b.init();
+
+    // all_up();
+    // while(1);
+#if 0 
+    while (1) {
+        for (int r = 0; r < 4; r++) {
+            for (uint8_t c = 0; c < sizeof(col_map); c++) {
+                ncv7726b.channel_set(row_map[0], HS_ON);
+                ncv7726b.channel_set(col_map[c], LS_ON);
+                ncv7726b.write();
+                target_wait_us(4000);
+                ncv7726b.clear_all();
+                ncv7726b.write();
+                target_wait_us(100000);
+            }
+
+            for (uint8_t c = 0; c < sizeof(col_map); c++) {
+                ncv7726b.channel_set(row_map[0], LS_ON);
+                ncv7726b.channel_set(col_map[c], HS_ON);
+                ncv7726b.write();
+                ncv7726b.clear_all();
+                ncv7726b.write();
+                target_wait_us(100000);
+            }
+        }
+        
+    }
+#endif
+#if 1
+    while(1) {
+        ncv7726b.channel_set(12, HS_ON);
+        ncv7726b.channel_set(3, LS_ON);
+        ncv7726b.write();
+        DMESG("CLR");
+        ncv7726b.clear_all();
+        ncv7726b.write();
+        target_wait_us(500000);
+        ncv7726b.channel_set(12, LS_ON);
+        ncv7726b.channel_set(3, HS_ON);
+        ncv7726b.write();
+        DMESG("CLR");
+        ncv7726b.clear_all();
+        ncv7726b.write();
+        target_wait_us(500000);
+    }
+#endif
+}
+
+#if 0
 #define HIGH_REG    0x4000
 
 #define ROW0    9
@@ -215,3 +312,5 @@ void app_init_services() {
         target_wait_us(500000);
     }
 }
+
+#endif
