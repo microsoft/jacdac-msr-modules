@@ -57,12 +57,16 @@ void app_init_services() {
 
     // all_up();
     // while(1);
-#if 0 
+#if 1
     while (1) {
         for (int r = 0; r < 4; r++) {
             for (uint8_t c = 0; c < sizeof(col_map); c++) {
                 ncv7726b.channel_set(row_map[0], HS_ON);
                 ncv7726b.channel_set(col_map[c], LS_ON);
+
+                if (c < 6)
+                    ncv7726b.channel_set(col_map[c+1], HS_ON);
+
                 ncv7726b.write();
                 target_wait_us(4000);
                 ncv7726b.clear_all();
@@ -73,6 +77,10 @@ void app_init_services() {
             for (uint8_t c = 0; c < sizeof(col_map); c++) {
                 ncv7726b.channel_set(row_map[0], LS_ON);
                 ncv7726b.channel_set(col_map[c], HS_ON);
+
+                if (c < 6)
+                    ncv7726b.channel_set(col_map[c+1], HS_ON);
+
                 ncv7726b.write();
                 ncv7726b.clear_all();
                 ncv7726b.write();
@@ -82,17 +90,19 @@ void app_init_services() {
         
     }
 #endif
-#if 1
+#if 0
     while(1) {
         ncv7726b.channel_set(12, HS_ON);
-        ncv7726b.channel_set(3, LS_ON);
+        ncv7726b.channel_set(1, LS_ON);
+        ncv7726b.channel_set(2, HS_ON);
         ncv7726b.write();
         DMESG("CLR");
         ncv7726b.clear_all();
         ncv7726b.write();
         target_wait_us(500000);
         ncv7726b.channel_set(12, LS_ON);
-        ncv7726b.channel_set(3, HS_ON);
+        ncv7726b.channel_set(1, HS_ON);
+        ncv7726b.channel_set(2, HS_ON);
         ncv7726b.write();
         DMESG("CLR");
         ncv7726b.clear_all();
