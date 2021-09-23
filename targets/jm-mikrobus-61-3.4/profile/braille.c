@@ -48,16 +48,241 @@ void all_down (void) {
         target_wait_us(4000);
         ncv7726b.clear_all();
         ncv7726b.write();
-        target_wait_us(100000);
+        // target_wait_us(100000);
+    }
+}
+
+void done_handler(void) {
+    pin_set(PIN_RX_CS,1);
+    DMESG("DONE %d",*(uint16_t*)rxdata);
+}
+
+static inline uint16_t flip (uint16_t v) {
+    return ((v & 0xff00) >> 8) | ((v & 0x00ff) << 8);
+}
+
+void braille_send(void* data) {
+    pin_set(PIN_RX_CS, 0);
+    dspi_xfer(data, rxdata, 2, done_handler);
+}
+
+void braille_u8(const uint8_t* data) {
+    pin_set(PIN_RX_CS, 0);
+    dspi_xfer(data, rxdata, 2, done_handler);
+}
+
+uint16_t tx_buf;
+bool breakout = false;
+#define CELL_SHIFT  8
+void braille_write(uint32_t state) {
+    DMESG("STATE: %x",state);
+    for (int row = 0; row < 4; row++) {
+        for (int col = 0; col < 8; col++) {
+            // get dot state for each cell
+            uint32_t dot_map[4]= { 
+                state & (1 << col), 
+                state & (1 << (col + CELL_SHIFT)), 
+                state & (1 << (col + (2 * CELL_SHIFT))), 
+                state & (1 << (col + (3 * CELL_SHIFT)))
+            };
+            DMESG("CELL state %d %x %x %x %x", state, dot_map[0], dot_map[1], dot_map[2], dot_map[3]);
+            // if the current dot in "row" needs to be up
+            if (dot_map[row]) {
+                breakout = true;
+                ncv7726b.channel_set(row_map[row], HS_ON);
+                ncv7726b.channel_set(col_map[col], LS_ON);
+
+                // set state of other rows to ensure no unintentional actuation
+                for (int i = 0; i < 4; i++) {
+                    if (i == row)
+                        continue;
+
+                    // if (dot_map[i])
+                        // ncv7726b.channel_set(row_map[i], LS_ON);
+                    // else
+                    //     ncv7726b.channel_set(row_map[i], LS_ON);
+                    // if (!dot_map[i])
+                        ncv7726b.channel_set(row_map[i], LS_ON);
+                }
+            // otherwise current dot in "row" needs to be down.
+            } else {
+                ncv7726b.channel_set(row_map[row], LS_ON);
+                ncv7726b.channel_set(col_map[col], HS_ON);
+
+                // set state of other rows to ensure no unintentional actuation
+                for (int i = 0; i < 4; i++) {
+                    if (i == row)
+                        continue;
+
+                    // if (dot_map[i])
+                        ncv7726b.channel_set(row_map[i], HS_ON);
+                    // else
+                        // ncv7726b.channel_set(row_map[i], HS_ON);
+                }
+            }
+
+            ncv7726b.write();
+
+            // if (breakout)
+            //     while(1);
+
+            ncv7726b.clear_all();
+            // ncv7726b.write();
+        }
+
+        // ncv7726b.write();
     }
 }
 
 void app_init_services() {
     ncv7726b.init();
 
+    all_down();
+
+    target_wait_us(500000);
+#if 1 
+    #define ACTIVE_ROW  2
+    #define ACTIVE_COL  5
+
+    while (1) {
+        // down
+        ncv7726b.channel_set(row_map[ACTIVE_ROW], LS_ON);
+        ncv7726b.channel_set(row_map[0], HS_ON);
+        // ncv7726b.channel_set(row_map[1], HS_ON);
+        // ncv7726b.channel_set(row_map[2], HS_ON);
+        // ncv7726b.channel_set(row_map[3], HS_ON);
+        ncv7726b.channel_set(col_map[ACTIVE_COL], HS_ON);
+
+        ncv7726b.write();
+        ncv7726b.clear_all();
+
+        target_wait_us(500000);
+
+        // up
+        ncv7726b.channel_set(row_map[ACTIVE_ROW], HS_ON);
+        ncv7726b.channel_set(row_map[0], LS_ON);
+        // ncv7726b.channel_set(row_map[1], LS_ON);
+        // ncv7726b.channel_set(row_map[2], LS_ON);
+        // ncv7726b.channel_set(row_map[3], LS_ON);
+        ncv7726b.channel_set(col_map[ACTIVE_COL], LS_ON);
+
+        ncv7726b.write();
+        ncv7726b.clear_all();
+
+        target_wait_us(500000);
+    }
+    
+
+#endif
+
+#if 0
+    while (1) {
+        for (int i = 0; i < 8; i++) {
+            if (i > 3) {
+                ncv7726b.channel_set(row_map[0], HS_ON);
+                ncv7726b.channel_set(row_map[1], LS_ON);
+                ncv7726b.channel_set(row_map[2], LS_ON);
+                ncv7726b.channel_set(row_map[3], LS_ON);
+                ncv7726b.channel_set(col_map[i], LS_ON);
+
+                ncv7726b.write();
+                ncv7726b.clear_all();
+
+                target_wait_us(250000);
+
+                ncv7726b.channel_set(row_map[0], LS_ON);
+                ncv7726b.channel_set(row_map[1], HS_ON);
+                ncv7726b.channel_set(row_map[2], HS_ON);
+                ncv7726b.channel_set(row_map[3], HS_ON);
+                ncv7726b.channel_set(col_map[i], HS_ON);
+
+                ncv7726b.write();
+                ncv7726b.clear_all();
+
+                target_wait_us(250000);
+            } else {
+                // down
+                ncv7726b.channel_set(row_map[0], LS_ON);
+                ncv7726b.channel_set(row_map[1], HS_ON);
+                ncv7726b.channel_set(row_map[2], HS_ON);
+                ncv7726b.channel_set(row_map[3], HS_ON);
+                ncv7726b.channel_set(col_map[i], HS_ON);
+
+                ncv7726b.write();
+                ncv7726b.clear_all();
+
+                target_wait_us(250000);
+
+                // up
+                ncv7726b.channel_set(row_map[0], HS_ON);
+                ncv7726b.channel_set(row_map[1], LS_ON);
+                ncv7726b.channel_set(row_map[2], LS_ON);
+                ncv7726b.channel_set(row_map[3], LS_ON);
+                ncv7726b.channel_set(col_map[i], LS_ON);
+
+                ncv7726b.write();
+                ncv7726b.clear_all();
+
+                target_wait_us(250000);
+            }
+            
+        }
+    }
+    
+#endif
+
+#if 0 
+    braille_write(0);
+    target_wait_us(500000);
+    
+    // while(1);
+    uint32_t count = 0;
+    while(1) {
+        if (count >= 8)
+            count = 0;
+
+        braille_write(1 << count); 
+        target_wait_us(500000);
+        all_down();
+        target_wait_us(500000);
+        count++;
+    }
+
+#endif
+
+#if 0
+    const uint8_t cmds[] = { 0x42,0x09, 0x02,0x01, 0xc0,0x01, 0x42,0x01, 0x02,0x09, 0x80,0x01};
+
+    while(1) {
+        for (uint32_t i = 0; i < sizeof(cmds); i+=2) {
+            braille_u8(&cmds[i]);
+            target_wait_us(250000);
+        }
+    }
+
+#endif
+
+#if 0
+
+    // const uint16_t  cmds[] = {0x4821, 0x0181, 0xc001, 0x4821, 0x0201, 0xc001,0x4821,0x0401,0xc001,0x4821,0x0801,0xc001, 0x4821,0x1001,0xc001,0x48a1, 0xc001, 0x4921,0xc001};
+    const uint16_t  cmds[] = {0x4209, 0x0201, 0xc001, 0x4201, 0x0209, 0x8001};
+
+    while(1) {
+        for (uint32_t i =0; i < (sizeof(cmds)/sizeof(uint16_t)); i++) {
+            tx_buf = flip(cmds[i]);
+            braille_send(&tx_buf);
+
+            target_wait_us(250000);
+        }
+    }
+    
+
+    while(1);
+#endif
+
     // all_up();
     // while(1);
-#if 1
+#if 0
     while (1) {
         for (int r = 0; r < 4; r++) {
             for (uint8_t c = 0; c < sizeof(col_map); c++) {
@@ -92,21 +317,27 @@ void app_init_services() {
 #endif
 #if 0
     while(1) {
-        ncv7726b.channel_set(12, HS_ON);
-        ncv7726b.channel_set(1, LS_ON);
-        ncv7726b.channel_set(2, HS_ON);
-        ncv7726b.write();
-        DMESG("CLR");
-        ncv7726b.clear_all();
-        ncv7726b.write();
-        target_wait_us(500000);
+        DMESG("ROW0 HS, COL3 LS");
+        ncv7726b.channel_set(10, HS_ON);
+        ncv7726b.channel_set(9, LS_ON);
+        ncv7726b.channel_set(11, LS_ON);
         ncv7726b.channel_set(12, LS_ON);
-        ncv7726b.channel_set(1, HS_ON);
-        ncv7726b.channel_set(2, HS_ON);
+        ncv7726b.channel_set(3, LS_ON);
         ncv7726b.write();
-        DMESG("CLR");
+        target_wait_us(4000);
         ncv7726b.clear_all();
+        // ncv7726b.write();
+        target_wait_us(500000);
+        DMESG("ROW0 LS, COL3 HS");
+        ncv7726b.channel_set(10, LS_ON);
+        ncv7726b.channel_set(9, LS_ON);
+        ncv7726b.channel_set(11, LS_ON);
+        ncv7726b.channel_set(12, LS_ON);
+        ncv7726b.channel_set(3, HS_ON);
         ncv7726b.write();
+        target_wait_us(4000);
+        ncv7726b.clear_all();
+        // ncv7726b.write();
         target_wait_us(500000);
     }
 #endif
