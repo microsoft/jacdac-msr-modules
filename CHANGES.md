@@ -1,3 +1,9 @@
+## Version 0.17.1
+
+### microsoft/jacdac-msr-modules
+
+* [9176fc0](https://github.com/microsoft/jacdac-msr-modules/commit/9176fc0) Disable DMESG on overflowing module
+
 ## Version 0.17.0
 
 ### microsoft/jacdac-msr-modules
