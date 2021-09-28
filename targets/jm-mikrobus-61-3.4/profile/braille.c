@@ -134,6 +134,43 @@ void braille_write(uint32_t state) {
     }
 }
 
+void all_hi_side(void) {
+    for (int i = 1; i < 13; i++) {
+        ncv7726b.channel_set(i, 1);
+    }
+
+    ncv7726b.write();
+}
+
+void all_low_side(void) {
+    for (int i = 1; i < 13; i++) {
+        ncv7726b.channel_set(i, 0);
+    }
+
+    ncv7726b.write();
+}
+
+void all_rows_hs(void) {
+    for (int i = 0; i < 4; i++) {
+        ncv7726b.channel_set(row_map[i], 1);
+    }
+
+    ncv7726b.write();
+}
+
+void all_rows_ls(void) {
+    for (int i = 0; i < 4; i++) {
+        ncv7726b.channel_set(row_map[i], 0);
+    }
+
+    ncv7726b.write();
+}
+
+void all_hi_z(void){
+    ncv7726b.clear_all();
+    ncv7726b.write();
+}
+
 void app_init_services() {
     ncv7726b.init();
 
@@ -141,6 +178,60 @@ void app_init_services() {
 
     target_wait_us(500000);
 #if 1 
+    while(1) {
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 8; col++) {
+                all_rows_hs();
+                target_wait_us(7000);
+                ncv7726b.channel_set(row_map[row], LS_ON);
+                ncv7726b.channel_set(col_map[col], HS_ON);
+                ncv7726b.write();
+                all_hi_z();
+                target_wait_us(1000000);
+
+                all_rows_ls();
+                target_wait_us(7000);
+                ncv7726b.channel_set(row_map[row], HS_ON);
+                ncv7726b.channel_set(col_map[col], LS_ON);
+                ncv7726b.write();
+                all_hi_z();
+                target_wait_us(1000000);
+            }
+        }
+    }
+
+#endif
+
+
+#if 0
+
+    // isolates a cell...
+    while(1) {
+        for (int row = 0; row < 4; row++) {
+            for (int col = 0; col < 8; col++) {
+                all_hi_side();
+                target_wait_us(7000);
+                ncv7726b.channel_set(row_map[row], LS_ON);
+                ncv7726b.channel_set(col_map[col], HS_ON);
+                ncv7726b.write();
+                all_hi_z();
+                target_wait_us(1000000);
+
+                all_low_side();
+                target_wait_us(7000);
+                ncv7726b.channel_set(row_map[row], HS_ON);
+                ncv7726b.channel_set(col_map[col], LS_ON);
+                ncv7726b.write();
+                all_hi_z();
+                target_wait_us(1000000);
+            }
+        }
+    }
+
+#endif 
+
+
+#if 0 
     #define ACTIVE_ROW  2
     #define ACTIVE_COL  5
 
