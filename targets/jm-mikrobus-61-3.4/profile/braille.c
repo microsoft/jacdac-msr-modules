@@ -51,14 +51,22 @@ void all_down (void) {
         // target_wait_us(100000);
     }
 }
-
+int done = 0;
 void done_handler(void) {
     pin_set(PIN_RX_CS,1);
     DMESG("DONE %d",*(uint16_t*)rxdata);
+    done = 1;
 }
 
 static inline uint16_t flip (uint16_t v) {
     return ((v & 0xff00) >> 8) | ((v & 0x00ff) << 8);
+}
+
+void braille_send_sync(void* data) {
+    done = 0;
+    pin_set(PIN_RX_CS, 0);
+    dspi_xfer(data, rxdata, 2, done_handler);
+    while(!done);
 }
 
 void braille_send(void* data) {
@@ -236,7 +244,34 @@ void app_init_services() {
     all_up();
 
     target_wait_us(500000);
-#if 1 
+#if 1
+    while(1) {
+        uint16_t r3c7_dwn[] = {0x0551, 0x0100, 0x0140, 0x0100};
+        uint16_t r3c7_up[] = {0x4151, 0x0100, 0x0140, 0x0100};
+
+        for (uint8_t i = 0; i < (sizeof(r3c7_dwn) / 2); i++) {
+            braille_send(&r3c7_dwn[i]);
+            if (i < 2)
+                target_wait_us(10);
+            else
+                target_wait_us(3000);
+        }
+
+        target_wait_us(1000000);
+
+        for (uint8_t i = 0; i < (sizeof(r3c7_up) / 2); i++) {
+            braille_send(&r3c7_up[i]);
+            if (i < 2)
+                target_wait_us(10);
+            else
+                target_wait_us(3000);
+        }
+
+        target_wait_us(1000000);
+    }
+#endif
+
+#if 0
     while(1) {
         for (int row = 0; row < 4; row++) {
             for (int col = 0; col < 8; col++) {
