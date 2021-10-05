@@ -1,3 +1,162 @@
+## Version 0.17.1
+
+### microsoft/jacdac-msr-modules
+
+* [9176fc0](https://github.com/microsoft/jacdac-msr-modules/commit/9176fc0) Disable DMESG on overflowing module
+
+## Version 0.17.0
+
+### microsoft/jacdac-msr-modules
+
+* [6eb536c](https://github.com/microsoft/jacdac-msr-modules/commit/6eb536c) Update jd-c
+* [7be0cbe](https://github.com/microsoft/jacdac-msr-modules/commit/7be0cbe) Try to update drop list
+* [5fd62d3](https://github.com/microsoft/jacdac-msr-modules/commit/5fd62d3) Merge pull request [#33](https://github.com/microsoft/jacdac-msr-modules/pull/33) from microsoft/flex-sensor-updates
+* [9873241](https://github.com/microsoft/jacdac-msr-modules/commit/9873241) use new flex sensor service
+* [4030bcc](https://github.com/microsoft/jacdac-msr-modules/commit/4030bcc) Merge pull request [#32](https://github.com/microsoft/jacdac-msr-modules/pull/32) from microsoft/bump-sub
+* [836c6e8](https://github.com/microsoft/jacdac-msr-modules/commit/836c6e8) bump submodules
+* [6ec1e27](https://github.com/microsoft/jacdac-msr-modules/commit/6ec1e27) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into bump-sub
+* [a2537b0](https://github.com/microsoft/jacdac-msr-modules/commit/a2537b0) sync submodules to latest
+* [28f14df](https://github.com/microsoft/jacdac-msr-modules/commit/28f14df) Merge pull request [#31](https://github.com/microsoft/jacdac-msr-modules/pull/31) from microsoft/flex-sensor
+* [dfe5fe2](https://github.com/microsoft/jacdac-msr-modules/commit/dfe5fe2) submodule sync
+* [ad40c78](https://github.com/microsoft/jacdac-msr-modules/commit/ad40c78) fixup config.mk [access-output]
+* [30c033d](https://github.com/microsoft/jacdac-msr-modules/commit/30c033d) change access-switch to g031
+* [fc2bbc6](https://github.com/microsoft/jacdac-msr-modules/commit/fc2bbc6) update jacdac-stm32x0 for new adc code
+* [8e62eff](https://github.com/microsoft/jacdac-msr-modules/commit/8e62eff) swap from g030 to g031
+* [6a46c0d](https://github.com/microsoft/jacdac-msr-modules/commit/6a46c0d) add WIP draft of flex sensor files
+* [7e40713](https://github.com/microsoft/jacdac-msr-modules/commit/7e40713) [skip ci] firmware v0.16.7 built
+
+### microsoft/jacdac-c
+
+* [574634b](https://github.com/microsoft/jacdac-c/commit/574634b) Minor fixes for color sensor
+* [64a7632](https://github.com/microsoft/jacdac-c/commit/64a7632) Merge pull request [#30](https://github.com/microsoft/jacdac-c/pull/30) from microsoft/flex-sensor-service
+* [6f0798b](https://github.com/microsoft/jacdac-c/commit/6f0798b) define flex sensor service
+* [7f022f1](https://github.com/microsoft/jacdac-c/commit/7f022f1) depracate FIRMWARE IDENTIFIER
+* [b2f37f6](https://github.com/microsoft/jacdac-c/commit/b2f37f6) Merge pull request [#29](https://github.com/microsoft/jacdac-c/pull/29) from microsoft/bump-jacdac
+* [f12add5](https://github.com/microsoft/jacdac-c/commit/f12add5) bump jacdac definitions
+* [ed3a186](https://github.com/microsoft/jacdac-c/commit/ed3a186) Merge pull request [#28](https://github.com/microsoft/jacdac-c/pull/28) from microsoft/button-update
+* [7959fb9](https://github.com/microsoft/jacdac-c/commit/7959fb9) fixup button pressed range
+
+### microsoft/jacdac-msr-modules
+
+* [6db534e](https://github.com/microsoft/jacdac-msr-modules/commit/6db534e) (HEAD) feat: adding flex sensor
+* [11c63e7](https://github.com/microsoft/jacdac-msr-modules/commit/11c63e7) adding flex sensor
+* [3f50350](https://github.com/microsoft/jacdac-msr-modules/commit/3f50350) updated makecode extension list
+* [16bddfa](https://github.com/microsoft/jacdac-msr-modules/commit/16bddfa) Fix for https://github.com/microsoft/jacdac/issues/641
+* [2290840](https://github.com/microsoft/jacdac-msr-modules/commit/2290840) fix generated code for descaling / units in makecode
+* [31790d5](https://github.com/microsoft/jacdac-msr-modules/commit/31790d5) makecode gen: infer range on u16
+* [a47091e](https://github.com/microsoft/jacdac-msr-modules/commit/a47091e) updated package list
+* [3f8652d](https://github.com/microsoft/jacdac-msr-modules/commit/3f8652d) Apply automatic changes
+* [714878e](https://github.com/microsoft/jacdac-msr-modules/commit/714878e) typo
+* [24504a2](https://github.com/microsoft/jacdac-msr-modules/commit/24504a2) renaming led matrix to dot matrix
+* [2aa86ac](https://github.com/microsoft/jacdac-msr-modules/commit/2aa86ac) updated specs
+* [d6b3786](https://github.com/microsoft/jacdac-msr-modules/commit/d6b3786) Apply automatic changes
+* [9bf37ac](https://github.com/microsoft/jacdac-msr-modules/commit/9bf37ac) updated change description
+* [4cccbd6](https://github.com/microsoft/jacdac-msr-modules/commit/4cccbd6) added micro:bit v2 picture
+* [28a0002](https://github.com/microsoft/jacdac-msr-modules/commit/28a0002) updated makecode extensions
+* [6f0539a](https://github.com/microsoft/jacdac-msr-modules/commit/6f0539a) updated sound player play name
+* [82b0e7c](https://github.com/microsoft/jacdac-msr-modules/commit/82b0e7c) fix hidAdapter, don't generate restricted commands in makecode
+* [d9878a0](https://github.com/microsoft/jacdac-msr-modules/commit/d9878a0) restrict settings
+* [6831f65](https://github.com/microsoft/jacdac-msr-modules/commit/6831f65) restrict settings set
+* [9115be1](https://github.com/microsoft/jacdac-msr-modules/commit/9115be1) autoamtically generate packinfo correctly
+* [5d98e8f](https://github.com/microsoft/jacdac-msr-modules/commit/5d98e8f) adding code generation of typescript snippets
+* [b9ed7a0](https://github.com/microsoft/jacdac-msr-modules/commit/b9ed7a0) updated connection constants
+* [40efc6b](https://github.com/microsoft/jacdac-msr-modules/commit/40efc6b) removing statistics from hub interface
+* [ed5ef6c](https://github.com/microsoft/jacdac-msr-modules/commit/ed5ef6c) removed azure iot hub ping
+* [e664c3d](https://github.com/microsoft/jacdac-msr-modules/commit/e664c3d) restore ping comand
+* [6735e49](https://github.com/microsoft/jacdac-msr-modules/commit/6735e49) updated specs
+* [249d2d9](https://github.com/microsoft/jacdac-msr-modules/commit/249d2d9) comment out azure iot hub service
+* [0fd19c8](https://github.com/microsoft/jacdac-msr-modules/commit/0fd19c8) Update protocol.mdx ([#596](https://github.com/microsoft/jacdac-msr-modules/pull/596))
+* [1fc0e5a](https://github.com/microsoft/jacdac-msr-modules/commit/1fc0e5a) Remove old testing ([#583](https://github.com/microsoft/jacdac-msr-modules/pull/583))
+* [7255ee4](https://github.com/microsoft/jacdac-msr-modules/commit/7255ee4) update qr-url-device-map.csv
+* [8d14eea](https://github.com/microsoft/jacdac-msr-modules/commit/8d14eea) cleanup todo
+* [30cdb64](https://github.com/microsoft/jacdac-msr-modules/commit/30cdb64) remove outdated hardware file
+* [cdd81b4](https://github.com/microsoft/jacdac-msr-modules/commit/cdd81b4) updated set_connection_string to use string
+* [5ce466f](https://github.com/microsoft/jacdac-msr-modules/commit/5ce466f) Apply automatic changes
+* [db0c0da](https://github.com/microsoft/jacdac-msr-modules/commit/db0c0da) updated health service events
+* [478284f](https://github.com/microsoft/jacdac-msr-modules/commit/478284f) Update qr-url-device-map.csv
+* [d89aeb3](https://github.com/microsoft/jacdac-msr-modules/commit/d89aeb3) Update qr-url-device-map.csv
+* [32e18cc](https://github.com/microsoft/jacdac-msr-modules/commit/32e18cc) use mdx
+* [4280798](https://github.com/microsoft/jacdac-msr-modules/commit/4280798) removed identify/reset from hub health
+* [717e281](https://github.com/microsoft/jacdac-msr-modules/commit/717e281) updated hub name register
+* [4dc6355](https://github.com/microsoft/jacdac-msr-modules/commit/4dc6355) renaming file
+* [2dd39b8](https://github.com/microsoft/jacdac-msr-modules/commit/2dd39b8) updated control spec, removed unused registers
+* [7147264](https://github.com/microsoft/jacdac-msr-modules/commit/7147264) Service: Azure IoT Heath ([#577](https://github.com/microsoft/jacdac-msr-modules/pull/577))
+* [1e3f5f8](https://github.com/microsoft/jacdac-msr-modules/commit/1e3f5f8) adding a few volatiles
+* [6e37a0d](https://github.com/microsoft/jacdac-msr-modules/commit/6e37a0d) Apply automatic changes
+* [ed863b9](https://github.com/microsoft/jacdac-msr-modules/commit/ed863b9) New picture for gamepad module
+* [6ec7e87](https://github.com/microsoft/jacdac-msr-modules/commit/6ec7e87) Add two click board adapters
+* [483d23e](https://github.com/microsoft/jacdac-msr-modules/commit/483d23e) Apply automatic changes
+* [bc00611](https://github.com/microsoft/jacdac-msr-modules/commit/bc00611) Remove repo and set link on Padauk modules
+* [d0a2ad2](https://github.com/microsoft/jacdac-msr-modules/commit/d0a2ad2) split device spec
+* [090e8f2](https://github.com/microsoft/jacdac-msr-modules/commit/090e8f2) use stability status for device
+* [17a4bc3](https://github.com/microsoft/jacdac-msr-modules/commit/17a4bc3) Apply automatic changes
+* [5a88df0](https://github.com/microsoft/jacdac-msr-modules/commit/5a88df0) removing . from path to please github pages
+* [407d759](https://github.com/microsoft/jacdac-msr-modules/commit/407d759) deprecated one more
+* [58a7d8a](https://github.com/microsoft/jacdac-msr-modules/commit/58a7d8a) fix jdspec tool
+* [0e84e54](https://github.com/microsoft/jacdac-msr-modules/commit/0e84e54) support deprecation of devices
+* [475ca65](https://github.com/microsoft/jacdac-msr-modules/commit/475ca65) updated device paths
+* [5531bcf](https://github.com/microsoft/jacdac-msr-modules/commit/5531bcf) Apply automatic changes
+* [f77739d](https://github.com/microsoft/jacdac-msr-modules/commit/f77739d) Add more modules to catalog
+* [92a6122](https://github.com/microsoft/jacdac-msr-modules/commit/92a6122) add volatile as modifier on register ([#570](https://github.com/microsoft/jacdac-msr-modules/pull/570))
+* [794589f](https://github.com/microsoft/jacdac-msr-modules/commit/794589f) Update qr-url-device-map.csv
+* [1ac3d5e](https://github.com/microsoft/jacdac-msr-modules/commit/1ac3d5e) add mikroBUS v3.4
+* [2254bb4](https://github.com/microsoft/jacdac-msr-modules/commit/2254bb4) Update qr-url-device-map.csv
+* [7780b67](https://github.com/microsoft/jacdac-msr-modules/commit/7780b67) Product Identifiers ([#566](https://github.com/microsoft/jacdac-msr-modules/pull/566))
+* [a438aba](https://github.com/microsoft/jacdac-msr-modules/commit/a438aba) add productids to csv (from github dev) :)
+* [30979ca](https://github.com/microsoft/jacdac-msr-modules/commit/30979ca) edited from github.dev
+* [a0b6e38](https://github.com/microsoft/jacdac-msr-modules/commit/a0b6e38) Merge branch 'main' of https://github.com/microsoft/jacdac
+* [709de6f](https://github.com/microsoft/jacdac-msr-modules/commit/709de6f) refresh dist
+* [5d961eb](https://github.com/microsoft/jacdac-msr-modules/commit/5d961eb) Apply automatic changes
+* [45bb184](https://github.com/microsoft/jacdac-msr-modules/commit/45bb184) added files ([#563](https://github.com/microsoft/jacdac-msr-modules/pull/563))
+* [e26a369](https://github.com/microsoft/jacdac-msr-modules/commit/e26a369) typo fixed
+* [5253240](https://github.com/microsoft/jacdac-msr-modules/commit/5253240) Update qr-ur-device-map.csv
+* [f240cc8](https://github.com/microsoft/jacdac-msr-modules/commit/f240cc8) updated dashify
+* [fee0d25](https://github.com/microsoft/jacdac-msr-modules/commit/fee0d25) formatting
+* [221099a](https://github.com/microsoft/jacdac-msr-modules/commit/221099a) adding partner previews
+
+### microsoft/jacdac-stm32x0
+
+* [bde901e](https://github.com/microsoft/jacdac-stm32x0/commit/bde901e) depracate firmware identifier
+* [59a7304](https://github.com/microsoft/jacdac-stm32x0/commit/59a7304) Merge pull request [#38](https://github.com/microsoft/jacdac-stm32x0/pull/38) from microsoft/OPTR_LEGACY
+* [58e37ac](https://github.com/microsoft/jacdac-stm32x0/commit/58e37ac) Merge pull request [#37](https://github.com/microsoft/jacdac-stm32x0/pull/37) from microsoft/flex-sensor
+* [9044f93](https://github.com/microsoft/jacdac-stm32x0/commit/9044f93) add check for OPTR_LEGACY_MODE
+* [28a2b09](https://github.com/microsoft/jacdac-stm32x0/commit/28a2b09) ifdef guard configured_fixed
+* [a3653f4](https://github.com/microsoft/jacdac-stm32x0/commit/a3653f4) update adc code to handle channels 15-17
+* [caa56e7](https://github.com/microsoft/jacdac-stm32x0/commit/caa56e7) add adc channel for PA_12
+
+## Version 0.16.7
+
+### microsoft/jacdac-msr-modules
+
+* [4dc49fc](https://github.com/microsoft/jacdac-msr-modules/commit/4dc49fc) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules into main
+* [b18aa9c](https://github.com/microsoft/jacdac-msr-modules/commit/b18aa9c) add targets to DROP
+* [98c7fe3](https://github.com/microsoft/jacdac-msr-modules/commit/98c7fe3) [skip ci] firmware v0.16.6 built
+
+## Version 0.16.6
+
+### microsoft/jacdac-msr-modules
+
+* [9c5dfe7](https://github.com/microsoft/jacdac-msr-modules/commit/9c5dfe7) Merge pull request [#30](https://github.com/microsoft/jacdac-msr-modules/pull/30) from microsoft/swclk_ain
+* [b96976f](https://github.com/microsoft/jacdac-msr-modules/commit/b96976f) disable SWCLK for 8 pin packages.
+* [39d3869](https://github.com/microsoft/jacdac-msr-modules/commit/39d3869) update board defs and relay polarity
+* [09355b3](https://github.com/microsoft/jacdac-msr-modules/commit/09355b3) add option to disable SWCLK/SWD in app mode
+* [12fbdb7](https://github.com/microsoft/jacdac-msr-modules/commit/12fbdb7) Merge pull request [#24](https://github.com/microsoft/jacdac-msr-modules/pull/24) from microsoft/relay-1.0
+* [a4590c5](https://github.com/microsoft/jacdac-msr-modules/commit/a4590c5) Merge branch 'main' into relay-1.0
+* [62c50cf](https://github.com/microsoft/jacdac-msr-modules/commit/62c50cf) submodule update
+* [37e6f14](https://github.com/microsoft/jacdac-msr-modules/commit/37e6f14) access switch output 1.1
+* [8254b56](https://github.com/microsoft/jacdac-msr-modules/commit/8254b56) [skip ci] firmware v0.16.5 built
+
+### microsoft/jacdac-c
+
+* [3daaccf](https://github.com/microsoft/jacdac-c/commit/3daaccf) Merge pull request [#27](https://github.com/microsoft/jacdac-c/pull/27) from microsoft/active_lo
+* [c61cd5f](https://github.com/microsoft/jacdac-c/commit/c61cd5f) Add PIN_LED_ACTIVE_LO define
+
+### microsoft/jacdac-stm32x0
+
+* [e20bcc6](https://github.com/microsoft/jacdac-stm32x0/commit/e20bcc6) Merge pull request [#36](https://github.com/microsoft/jacdac-stm32x0/pull/36) from microsoft/swclk_swd_dis
+* [fa57bbc](https://github.com/microsoft/jacdac-stm32x0/commit/fa57bbc) add option to disable SWCLK/SWDIO
+* [4f88436](https://github.com/microsoft/jacdac-stm32x0/commit/4f88436) Merge pull request [#35](https://github.com/microsoft/jacdac-stm32x0/pull/35) from microsoft/tts-click
+
 ## Version 0.16.5
 
 ### microsoft/jacdac-msr-modules

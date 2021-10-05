@@ -12,3 +12,5 @@
 
 #define PIN_BL_LED PIN_LED
 #define PIN_BL_PERIOD 300
+
+#define DISABLE_SWCLK_FUNC
