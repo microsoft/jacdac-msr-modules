@@ -28,13 +28,7 @@ FIRMWARE_IDENTIFIER(0x3cf463ad, "JM Haptic MACH-1.0");
 
 #define AW8624_RTPDATA_REG             0x06
 
-#define LRA_EN      PA_13
 void app_init_services() {
-
-    pin_setup_input(PA_2, 1);
-    pin_setup_output(LRA_EN);
-    pin_set(LRA_EN, 1);
-    // pin_set(PA_2, 1);
 
     i2c_init();
 
@@ -48,8 +42,6 @@ void app_init_services() {
         if (id == AW8624_CHIP_ID_RESP)
             break;
     }
-
-    pin_setup_input(LRA_EN, 0);
 
     while(1);
 

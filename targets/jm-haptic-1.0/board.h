@@ -6,8 +6,8 @@
 #define PIN_P1 -1
 
 // TX/MOSI
-#define PIN_SCL PA_9  // I2C2
-#define PIN_SDA PA_10 // I2C2
+#define PIN_SCL PA_9  // I2C1
+#define PIN_SDA PA_10 // I2C1
 
 #define BOARD_STARTUP_CODE LL_SYSCFG_EnablePinRemap(LL_SYSCFG_PIN_RMP_PA12 | LL_SYSCFG_PIN_RMP_PA11)
 
