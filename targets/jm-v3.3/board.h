@@ -19,6 +19,8 @@
 #define PIN_SMOSI PIN_TX_MOSI
 #define PIN_SMISO PIN_MISO
 #define PIN_SCS PIN_RX_CS
+
+#define PIN_CS PIN_RX_CS
 // VCC
 // GND
 

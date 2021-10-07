@@ -10,7 +10,7 @@
 // Left header
 #define PIN_AN PA_5
 #define PIN_RST PA_0
-#define PIN_RX_CS PA_3
+#define PIN_CS PA_3
 #define PIN_SCK PA_1 // SPI1
 #define PIN_MISO PA_6
 #define PIN_TX_MOSI PA_2
