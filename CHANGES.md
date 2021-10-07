@@ -1,3 +1,51 @@
+## Version 0.17.2
+
+### microsoft/jacdac-msr-modules
+
+* [9b2d3ce](https://github.com/microsoft/jacdac-msr-modules/commit/9b2d3ce) Merge pull request [#35](https://github.com/microsoft/jacdac-msr-modules/pull/35) from microsoft/braille2
+* [129f897](https://github.com/microsoft/jacdac-msr-modules/commit/129f897) ncv driver cleanup
+* [de4638e](https://github.com/microsoft/jacdac-msr-modules/commit/de4638e) jd-c sync
+* [731145f](https://github.com/microsoft/jacdac-msr-modules/commit/731145f) def PIN_CS for jm-v3.3
+* [d366806](https://github.com/microsoft/jacdac-msr-modules/commit/d366806) jd-c sync
+* [4b7c01b](https://github.com/microsoft/jacdac-msr-modules/commit/4b7c01b) use PIN_CS
+* [0dee22a](https://github.com/microsoft/jacdac-msr-modules/commit/0dee22a) update braille timings
+* [71d546a](https://github.com/microsoft/jacdac-msr-modules/commit/71d546a) sync jd-c jd-stm
+* [afeb271](https://github.com/microsoft/jacdac-msr-modules/commit/afeb271) sync jd-c
+* [d8e4e80](https://github.com/microsoft/jacdac-msr-modules/commit/d8e4e80) remove debug scripts from target
+* [0bcf771](https://github.com/microsoft/jacdac-msr-modules/commit/0bcf771) Merge remote-tracking branch 'origin' into braille2
+* [154ab17](https://github.com/microsoft/jacdac-msr-modules/commit/154ab17) sync jacdac-c
+* [0a886db](https://github.com/microsoft/jacdac-msr-modules/commit/0a886db) begin braille service imp
+* [0b6a886](https://github.com/microsoft/jacdac-msr-modules/commit/0b6a886) further WIP
+* [c3bc372](https://github.com/microsoft/jacdac-msr-modules/commit/c3bc372) more braille tests
+* [8641c34](https://github.com/microsoft/jacdac-msr-modules/commit/8641c34) update app, isolate cell
+* [e33301d](https://github.com/microsoft/jacdac-msr-modules/commit/e33301d) Merge pull request [#34](https://github.com/microsoft/jacdac-msr-modules/pull/34) from microsoft/drop-targets
+* [c3913a6](https://github.com/microsoft/jacdac-msr-modules/commit/c3913a6) add mikrobus to drop targets
+* [b0ddc06](https://github.com/microsoft/jacdac-msr-modules/commit/b0ddc06) [skip ci] firmware v0.17.1 built
+
+### microsoft/jacdac-c
+
+* [da4d35a](https://github.com/microsoft/jacdac-c/commit/da4d35a) driver clean up
+* [7587f44](https://github.com/microsoft/jacdac-c/commit/7587f44) ifdef guard spi driver
+* [08eac36](https://github.com/microsoft/jacdac-c/commit/08eac36) ifdef guard for double def of MIKROBUS_CS
+* [ce21922](https://github.com/microsoft/jacdac-c/commit/ce21922) define PIN_CS if not defined
+* [f62b2c1](https://github.com/microsoft/jacdac-c/commit/f62b2c1) use PIN_CS instead of MIKROBUS_CS
+* [b372c20](https://github.com/microsoft/jacdac-c/commit/b372c20) modify braille up time
+* [95045ba](https://github.com/microsoft/jacdac-c/commit/95045ba) make delay static
+* [4bb0fec](https://github.com/microsoft/jacdac-c/commit/4bb0fec) update dspi init signature
+* [57905aa](https://github.com/microsoft/jacdac-c/commit/57905aa) use MIKROBUS_CS define
+* [4afadf2](https://github.com/microsoft/jacdac-c/commit/4afadf2) implemented braille service
+* [e017fd4](https://github.com/microsoft/jacdac-c/commit/e017fd4) begin braille service implementation
+* [de61ce9](https://github.com/microsoft/jacdac-c/commit/de61ce9) add raw api
+* [dd33128](https://github.com/microsoft/jacdac-c/commit/dd33128) Merge branch 'main' of https://github.com/microsoft/jacdac-c into braille2
+* [7eef3f9](https://github.com/microsoft/jacdac-c/commit/7eef3f9) decrease delay between writes
+* [379ef00](https://github.com/microsoft/jacdac-c/commit/379ef00) more verification of cmds
+* [74d8aab](https://github.com/microsoft/jacdac-c/commit/74d8aab) increase delay between writes
+* [574634b](https://github.com/microsoft/jacdac-c/commit/574634b) Minor fixes for color sensor
+
+### microsoft/jacdac-stm32x0
+
+* [c402381](https://github.com/microsoft/jacdac-stm32x0/commit/c402381) update dspi signature
+
 ## Version 0.17.1
 
 ### microsoft/jacdac-msr-modules
