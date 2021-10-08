@@ -1,3 +1,152 @@
+## Version 0.17.3
+
+### microsoft/jacdac-msr-modules
+
+* [5689829](https://github.com/microsoft/jacdac-msr-modules/commit/5689829) Merge pull request [#36](https://github.com/microsoft/jacdac-msr-modules/pull/36) from microsoft/new-cell-map
+* [cbf7945](https://github.com/microsoft/jacdac-msr-modules/commit/cbf7945) add two profile for braille proto variants
+* [43151f6](https://github.com/microsoft/jacdac-msr-modules/commit/43151f6) adopt new braille abstractions
+* [350e06b](https://github.com/microsoft/jacdac-msr-modules/commit/350e06b) update cell map for new hardware
+* [83840a5](https://github.com/microsoft/jacdac-msr-modules/commit/83840a5) [skip ci] firmware v0.17.2 built
+
+### microsoft/jacdac-c
+
+* [0c1d989](https://github.com/microsoft/jacdac-c/commit/0c1d989) refactor braille to share common driver
+* [2d25be9](https://github.com/microsoft/jacdac-c/commit/2d25be9) update relay events
+* [aecf372](https://github.com/microsoft/jacdac-c/commit/aecf372) update jacdac specs
+* [21a98d2](https://github.com/microsoft/jacdac-c/commit/21a98d2) adapt to new braille hardware
+
+### microsoft/jacdac-msr-modules
+
+* [990c2a8](https://github.com/microsoft/jacdac-msr-modules/commit/990c2a8) Apply automatic changes
+* [467eb7a](https://github.com/microsoft/jacdac-msr-modules/commit/467eb7a) use link instead of repo for padauk
+* [463b2e1](https://github.com/microsoft/jacdac-msr-modules/commit/463b2e1) updated character screen spec
+* [e249b63](https://github.com/microsoft/jacdac-msr-modules/commit/e249b63) remove hardware that never shipped from list
+* [5edaf45](https://github.com/microsoft/jacdac-msr-modules/commit/5edaf45) remove hardware that never shipped from list
+* [2f27ecb](https://github.com/microsoft/jacdac-msr-modules/commit/2f27ecb) MAC address as const register
+* [e69134b](https://github.com/microsoft/jacdac-msr-modules/commit/e69134b) Add Wifi.networks_changed event
+* [3c66cc6](https://github.com/microsoft/jacdac-msr-modules/commit/3c66cc6) Compress Images ([#766](https://github.com/microsoft/jacdac-msr-modules/pull/766))
+* [a04a2ad](https://github.com/microsoft/jacdac-msr-modules/commit/a04a2ad) Add more features to WiFi service ([#771](https://github.com/microsoft/jacdac-msr-modules/pull/771))
+* [3f68081](https://github.com/microsoft/jacdac-msr-modules/commit/3f68081) mark devices without picture as experimental
+* [3e74017](https://github.com/microsoft/jacdac-msr-modules/commit/3e74017) formatting json
+* [e670b23](https://github.com/microsoft/jacdac-msr-modules/commit/e670b23) extra space in device name
+* [a470f36](https://github.com/microsoft/jacdac-msr-modules/commit/a470f36) joystick picture in correct orientation; fixes https://github.com/microsoft/jacdac/issues/753
+* [79c6a85](https://github.com/microsoft/jacdac-msr-modules/commit/79c6a85) Apply automatic changes
+* [a1bd440](https://github.com/microsoft/jacdac-msr-modules/commit/a1bd440) hide experimental boards
+* [06fb905](https://github.com/microsoft/jacdac-msr-modules/commit/06fb905) Apply automatic changes
+* [bdfd418](https://github.com/microsoft/jacdac-msr-modules/commit/bdfd418) mark esp as experimental
+* [8edd963](https://github.com/microsoft/jacdac-msr-modules/commit/8edd963) Apply automatic changes
+* [62d9305](https://github.com/microsoft/jacdac-msr-modules/commit/62d9305) Device: JacdacTouchTest ([#759](https://github.com/microsoft/jacdac-msr-modules/pull/759))
+* [1c1b0ce](https://github.com/microsoft/jacdac-msr-modules/commit/1c1b0ce) Device: JacdacTouchTestElectrode ([#760](https://github.com/microsoft/jacdac-msr-modules/pull/760))
+* [bda3b25](https://github.com/microsoft/jacdac-msr-modules/commit/bda3b25) Device: JacdacJoystick 44-0.3 ([#761](https://github.com/microsoft/jacdac-msr-modules/pull/761))
+* [d72ce11](https://github.com/microsoft/jacdac-msr-modules/commit/d72ce11) Device: JacdacCableExtender  ([#758](https://github.com/microsoft/jacdac-msr-modules/pull/758))
+* [eea4795](https://github.com/microsoft/jacdac-msr-modules/commit/eea4795) Device: JacdacMotionDetection  ([#757](https://github.com/microsoft/jacdac-msr-modules/pull/757))
+* [f42bb8c](https://github.com/microsoft/jacdac-msr-modules/commit/f42bb8c) Device: JacDacMicroBitShieldLP ([#755](https://github.com/microsoft/jacdac-msr-modules/pull/755))
+* [315c44b](https://github.com/microsoft/jacdac-msr-modules/commit/315c44b) Device: JacdacPinHeaders  ([#740](https://github.com/microsoft/jacdac-msr-modules/pull/740))
+* [09bcb9b](https://github.com/microsoft/jacdac-msr-modules/commit/09bcb9b) Update modules list.
+* [56f2a7d](https://github.com/microsoft/jacdac-msr-modules/commit/56f2a7d) Update missing product id.
+* [0be5293](https://github.com/microsoft/jacdac-msr-modules/commit/0be5293) Update missing productid.
+* [b4cfb25](https://github.com/microsoft/jacdac-msr-modules/commit/b4cfb25) normalize module names
+* [a3b38e7](https://github.com/microsoft/jacdac-msr-modules/commit/a3b38e7) mark transport for esp brain
+* [8665c15](https://github.com/microsoft/jacdac-msr-modules/commit/8665c15) Apply automatic changes
+* [3887638](https://github.com/microsoft/jacdac-msr-modules/commit/3887638) Device: MikrobusCarrierBoard  ([#741](https://github.com/microsoft/jacdac-msr-modules/pull/741))
+* [adf080f](https://github.com/microsoft/jacdac-msr-modules/commit/adf080f) Apply automatic changes
+* [29603bf](https://github.com/microsoft/jacdac-msr-modules/commit/29603bf) Device: JacDacMicroBitShieldLP  ([#739](https://github.com/microsoft/jacdac-msr-modules/pull/739))
+* [b9a86a8](https://github.com/microsoft/jacdac-msr-modules/commit/b9a86a8) Device: JacdacHub ([#736](https://github.com/microsoft/jacdac-msr-modules/pull/736))
+* [274e4e6](https://github.com/microsoft/jacdac-msr-modules/commit/274e4e6) Apply automatic changes
+* [94fea8c](https://github.com/microsoft/jacdac-msr-modules/commit/94fea8c) deprecating older models
+* [71c447c](https://github.com/microsoft/jacdac-msr-modules/commit/71c447c) temp fixes on names
+* [f86d00c](https://github.com/microsoft/jacdac-msr-modules/commit/f86d00c) Compress Images ([#731](https://github.com/microsoft/jacdac-msr-modules/pull/731))
+* [47fadb0](https://github.com/microsoft/jacdac-msr-modules/commit/47fadb0) standardize picture of text-to-speech module
+* [ea14d04](https://github.com/microsoft/jacdac-msr-modules/commit/ea14d04) Apply automatic changes
+* [b69dbe4](https://github.com/microsoft/jacdac-msr-modules/commit/b69dbe4) adding comments ([#730](https://github.com/microsoft/jacdac-msr-modules/pull/730))
+* [e6a8ac5](https://github.com/microsoft/jacdac-msr-modules/commit/e6a8ac5) Merge branch 'main' of https://github.com/microsoft/jacdac
+* [935e4bf](https://github.com/microsoft/jacdac-msr-modules/commit/935e4bf) more compress images
+* [202b8f8](https://github.com/microsoft/jacdac-msr-modules/commit/202b8f8) Apply automatic changes
+* [ddd2b8c](https://github.com/microsoft/jacdac-msr-modules/commit/ddd2b8c) Add pin headers; update m:b image
+* [ec0b24e](https://github.com/microsoft/jacdac-msr-modules/commit/ec0b24e) renamed action
+* [4495053](https://github.com/microsoft/jacdac-msr-modules/commit/4495053) update workflow
+* [47ea2aa](https://github.com/microsoft/jacdac-msr-modules/commit/47ea2aa) compress on main
+* [03b2ee6](https://github.com/microsoft/jacdac-msr-modules/commit/03b2ee6) udpate action name
+* [ec9eddd](https://github.com/microsoft/jacdac-msr-modules/commit/ec9eddd) manual trigger
+* [ffe16e6](https://github.com/microsoft/jacdac-msr-modules/commit/ffe16e6) rename action
+* [93fd788](https://github.com/microsoft/jacdac-msr-modules/commit/93fd788) run image compression on main
+* [a4a5abe](https://github.com/microsoft/jacdac-msr-modules/commit/a4a5abe) high-res images of modules ([#728](https://github.com/microsoft/jacdac-msr-modules/pull/728))
+* [81eb21b](https://github.com/microsoft/jacdac-msr-modules/commit/81eb21b) Apply automatic changes
+* [6ad8204](https://github.com/microsoft/jacdac-msr-modules/commit/6ad8204) fix link to microbit-oob
+* [c1d467f](https://github.com/microsoft/jacdac-msr-modules/commit/c1d467f) add real picture for esp32 v0.2
+* [0b48500](https://github.com/microsoft/jacdac-msr-modules/commit/0b48500) Apply automatic changes
+* [e641db5](https://github.com/microsoft/jacdac-msr-modules/commit/e641db5) point to release files for firmware update
+* [b2b7103](https://github.com/microsoft/jacdac-msr-modules/commit/b2b7103) refactor device id generation
+* [8c76311](https://github.com/microsoft/jacdac-msr-modules/commit/8c76311) normalize pics
+* [6244592](https://github.com/microsoft/jacdac-msr-modules/commit/6244592) Apply automatic changes
+* [c9f8452](https://github.com/microsoft/jacdac-msr-modules/commit/c9f8452) Device: JacdacBrainESP32 ([#725](https://github.com/microsoft/jacdac-msr-modules/pull/725))
+* [aa442a6](https://github.com/microsoft/jacdac-msr-modules/commit/aa442a6) Apply automatic changes
+* [45fab25](https://github.com/microsoft/jacdac-msr-modules/commit/45fab25) Device: JacdacIoT ([#724](https://github.com/microsoft/jacdac-msr-modules/pull/724))
+* [648dc7b](https://github.com/microsoft/jacdac-msr-modules/commit/648dc7b) Apply automatic changes
+* [a1c725f](https://github.com/microsoft/jacdac-msr-modules/commit/a1c725f) Device: JacdacBrainRP2040 ([#723](https://github.com/microsoft/jacdac-msr-modules/pull/723))
+* [95de070](https://github.com/microsoft/jacdac-msr-modules/commit/95de070) Update missing product ID.
+* [b1c7f00](https://github.com/microsoft/jacdac-msr-modules/commit/b1c7f00) fixed files names
+* [fdd3084](https://github.com/microsoft/jacdac-msr-modules/commit/fdd3084) Apply automatic changes
+* [d284ec8](https://github.com/microsoft/jacdac-msr-modules/commit/d284ec8) use generic brain profiles for HID servers; add RP2040
+* [2b9884a](https://github.com/microsoft/jacdac-msr-modules/commit/2b9884a) Update modules list.
+* [057000a](https://github.com/microsoft/jacdac-msr-modules/commit/057000a) fixed image
+* [0ea0a89](https://github.com/microsoft/jacdac-msr-modules/commit/0ea0a89) add product identifier generator in file format
+* [4be9ea8](https://github.com/microsoft/jacdac-msr-modules/commit/4be9ea8) allow larger device images
+* [3b04f91](https://github.com/microsoft/jacdac-msr-modules/commit/3b04f91) allow larger pics
+* [e3c09fa](https://github.com/microsoft/jacdac-msr-modules/commit/e3c09fa) updated version
+* [78528e1](https://github.com/microsoft/jacdac-msr-modules/commit/78528e1) Apply automatic changes
+* [db22e18](https://github.com/microsoft/jacdac-msr-modules/commit/db22e18) Device: JM Speech Synthesis v3.3 ([#713](https://github.com/microsoft/jacdac-msr-modules/pull/713))
+* [8449ebe](https://github.com/microsoft/jacdac-msr-modules/commit/8449ebe) Update missing product ID.
+* [8a80326](https://github.com/microsoft/jacdac-msr-modules/commit/8a80326) missing qr code
+* [e6ec8bb](https://github.com/microsoft/jacdac-msr-modules/commit/e6ec8bb) normalize device naming schemes
+* [9ecb2e6](https://github.com/microsoft/jacdac-msr-modules/commit/9ecb2e6) compiler version in devices catalog
+* [029a7ef](https://github.com/microsoft/jacdac-msr-modules/commit/029a7ef) adding version/design ids to devices
+* [9ac501f](https://github.com/microsoft/jacdac-msr-modules/commit/9ac501f) assign a few product ids
+* [ed9aca8](https://github.com/microsoft/jacdac-msr-modules/commit/ed9aca8) add slider v1.1
+* [1e78f4a](https://github.com/microsoft/jacdac-msr-modules/commit/1e78f4a) Apply automatic changes
+* [42bfa08](https://github.com/microsoft/jacdac-msr-modules/commit/42bfa08) updated firmwares
+* [3030e60](https://github.com/microsoft/jacdac-msr-modules/commit/3030e60) udated images
+* [3d3c169](https://github.com/microsoft/jacdac-msr-modules/commit/3d3c169) Apply automatic changes
+* [6325254](https://github.com/microsoft/jacdac-msr-modules/commit/6325254) updated dowload location
+* [d3739bb](https://github.com/microsoft/jacdac-msr-modules/commit/d3739bb) renaming name packages
+* [d328db2](https://github.com/microsoft/jacdac-msr-modules/commit/d328db2) merged changes
+* [a9fc970](https://github.com/microsoft/jacdac-msr-modules/commit/a9fc970) patch modules
+* [f74f239](https://github.com/microsoft/jacdac-msr-modules/commit/f74f239) Apply automatic changes
+* [a621c37](https://github.com/microsoft/jacdac-msr-modules/commit/a621c37) Device: Keyboard Key ([#702](https://github.com/microsoft/jacdac-msr-modules/pull/702))
+* [4ef7971](https://github.com/microsoft/jacdac-msr-modules/commit/4ef7971) Device: Accelerometer ([#700](https://github.com/microsoft/jacdac-msr-modules/pull/700))
+* [e202241](https://github.com/microsoft/jacdac-msr-modules/commit/e202241) Device: Access Switch Input ([#699](https://github.com/microsoft/jacdac-msr-modules/pull/699))
+* [a88ea18](https://github.com/microsoft/jacdac-msr-modules/commit/a88ea18) Merge branch 'main' of https://github.com/microsoft/jacdac
+* [c8a4088](https://github.com/microsoft/jacdac-msr-modules/commit/c8a4088) fixing device template names
+* [635ce93](https://github.com/microsoft/jacdac-msr-modules/commit/635ce93) Apply automatic changes
+* [af8eb86](https://github.com/microsoft/jacdac-msr-modules/commit/af8eb86) Device: G0 Button ([#696](https://github.com/microsoft/jacdac-msr-modules/pull/696))
+* [955c404](https://github.com/microsoft/jacdac-msr-modules/commit/955c404) add flags to store hardware design info
+* [8823970](https://github.com/microsoft/jacdac-msr-modules/commit/8823970) Apply automatic changes
+* [feba117](https://github.com/microsoft/jacdac-msr-modules/commit/feba117) fixing devices
+* [195e2be](https://github.com/microsoft/jacdac-msr-modules/commit/195e2be) adding extra firmware info
+* [c558213](https://github.com/microsoft/jacdac-msr-modules/commit/c558213) adding tags notations to modules
+* [6fc97bb](https://github.com/microsoft/jacdac-msr-modules/commit/6fc97bb) Apply automatic changes
+* [ce5bc93](https://github.com/microsoft/jacdac-msr-modules/commit/ce5bc93) Add JM HID servers
+* [e4e4254](https://github.com/microsoft/jacdac-msr-modules/commit/e4e4254) udpated makecode generation
+* [919895c](https://github.com/microsoft/jacdac-msr-modules/commit/919895c) Apply automatic changes
+* [6f2cee4](https://github.com/microsoft/jacdac-msr-modules/commit/6f2cee4) Merge branch 'main' of https://github.com/microsoft/jacdac
+* [cdde9f9](https://github.com/microsoft/jacdac-msr-modules/commit/cdde9f9) add new keyboard key module
+* [2659420](https://github.com/microsoft/jacdac-msr-modules/commit/2659420) Apply automatic changes
+* [7a74e9e](https://github.com/microsoft/jacdac-msr-modules/commit/7a74e9e) add new modules
+* [9d52682](https://github.com/microsoft/jacdac-msr-modules/commit/9d52682) updated relay terminology
+* [f93d538](https://github.com/microsoft/jacdac-msr-modules/commit/f93d538) Apply automatic changes
+* [0269b19](https://github.com/microsoft/jacdac-msr-modules/commit/0269b19) added control command to force proxy mode
+* [ef80a15](https://github.com/microsoft/jacdac-msr-modules/commit/ef80a15) wording
+* [98e1e99](https://github.com/microsoft/jacdac-msr-modules/commit/98e1e99) fixing icons
+* [10511ef](https://github.com/microsoft/jacdac-msr-modules/commit/10511ef) add golden icon
+* [cdf0798](https://github.com/microsoft/jacdac-msr-modules/commit/cdf0798) removing infrastructure registers
+* [1153092](https://github.com/microsoft/jacdac-msr-modules/commit/1153092) deleted old icons
+* [b28ac2f](https://github.com/microsoft/jacdac-msr-modules/commit/b28ac2f) add infrastructure service
+* [f2194f4](https://github.com/microsoft/jacdac-msr-modules/commit/f2194f4) specify support transport for devices
+* [e6b6058](https://github.com/microsoft/jacdac-msr-modules/commit/e6b6058) move to node 14.x
+* [03c22d5](https://github.com/microsoft/jacdac-msr-modules/commit/03c22d5) Apply automatic changes
+* [7187181](https://github.com/microsoft/jacdac-msr-modules/commit/7187181) require node 16
+* [fdbc2ef](https://github.com/microsoft/jacdac-msr-modules/commit/fdbc2ef) handle client reg/commands in makecode generation
+
 ## Version 0.17.2
 
 ### microsoft/jacdac-msr-modules
