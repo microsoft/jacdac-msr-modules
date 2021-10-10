@@ -1,3 +1,10 @@
+## Version 0.17.5
+
+### microsoft/jacdac-msr-modules
+
+* [9be2191](https://github.com/microsoft/jacdac-msr-modules/commit/9be2191) add haptic to drop targets
+* [cc45fb2](https://github.com/microsoft/jacdac-msr-modules/commit/cc45fb2) [skip ci] firmware v0.17.4 built
+
 ## Version 0.17.4
 
 ### microsoft/jacdac-msr-modules
