@@ -27,6 +27,7 @@ DROP_TARGETS ?= \
 	jm-temp-humidity-18-1.0A \
 	jm-temp-humidity-18-1.1 \
 	jm-mikrobus-61-3.4 \
+	jm-haptic-1.0 \
 
 
 include $(JD_STM)/build.mk
