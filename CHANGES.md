@@ -1,3 +1,10 @@
+## Version 0.17.6
+
+### microsoft/jacdac-msr-modules
+
+* [7fd7177](https://github.com/microsoft/jacdac-msr-modules/commit/7fd7177) invert relay polarity
+* [12ee80e](https://github.com/microsoft/jacdac-msr-modules/commit/12ee80e) [skip ci] firmware v0.17.5 built
+
 ## Version 0.17.5
 
 ### microsoft/jacdac-msr-modules
