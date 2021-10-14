@@ -1,3 +1,10 @@
+## Version 0.17.7
+
+### microsoft/jacdac-msr-modules
+
+* [0a02209](https://github.com/microsoft/jacdac-msr-modules/commit/0a02209) invert logic of switch output to active lo for 1.0 too
+* [67b0e6f](https://github.com/microsoft/jacdac-msr-modules/commit/67b0e6f) [skip ci] firmware v0.17.6 built
+
 ## Version 0.17.6
 
 ### microsoft/jacdac-msr-modules
