@@ -1,3 +1,13 @@
+## Version 0.17.9
+
+### microsoft/jacdac-msr-modules
+
+* [8d6f2e2](https://github.com/microsoft/jacdac-msr-modules/commit/8d6f2e2) update jacdac-c to fix build
+
+### microsoft/jacdac-c
+
+* [49576cb](https://github.com/microsoft/jacdac-c/commit/49576cb) Haptic ([#33](https://github.com/microsoft/jacdac-c/pull/33))
+
 ## Version 0.17.8
 
 ### microsoft/jacdac-msr-modules
