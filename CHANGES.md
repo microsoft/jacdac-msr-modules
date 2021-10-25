@@ -1,3 +1,14 @@
+## Version 0.17.8
+
+### microsoft/jacdac-msr-modules
+
+* [65cada8](https://github.com/microsoft/jacdac-msr-modules/commit/65cada8) Update submodules
+* [9b15dff](https://github.com/microsoft/jacdac-msr-modules/commit/9b15dff) [skip ci] firmware v0.17.7 built
+
+### microsoft/jacdac-stm32x0
+
+* [6711de3](https://github.com/microsoft/jacdac-stm32x0/commit/6711de3) Add flash loops for bl/app
+
 ## Version 0.17.7
 
 ### microsoft/jacdac-msr-modules
