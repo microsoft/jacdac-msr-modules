@@ -1,3 +1,10 @@
+## Version 0.17.10
+
+### microsoft/jacdac-msr-modules
+
+* [13a80c7](https://github.com/microsoft/jacdac-msr-modules/commit/13a80c7) Fix the relay to be off by default
+* [37b3504](https://github.com/microsoft/jacdac-msr-modules/commit/37b3504) [skip ci] firmware v0.17.9 built
+
 ## Version 0.17.9
 
 ### microsoft/jacdac-msr-modules
