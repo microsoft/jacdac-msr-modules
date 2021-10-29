@@ -1,0 +1,27 @@
+#define PIN_LED PA_13
+#define PIN_LED_ACTIVE_LO
+#define PIN_LED_GND NO_PIN
+
+#define PIN_PWR NO_PIN
+#define PIN_P0 NO_PIN
+#define PIN_P1 NO_PIN
+
+#define UART_PIN PB_6
+#define UART_PIN_AF LL_GPIO_AF_0
+#define USART_IDX 1
+
+// Can't PWM PA_13
+// #define PIN_BL_LED PIN_LED
+// #define PIN_BL_PERIOD 300
+
+#define DISABLE_SWCLK_FUNC
+#define DISABLE_SWD_FUNC
+
+#define BOARD_STARTUP_CODE LL_SYSCFG_EnablePinRemap(LL_SYSCFG_PIN_RMP_PA12 | LL_SYSCFG_PIN_RMP_PA11)
+
+#define PIN_SCL PA_9  // I2C2
+#define PIN_SDA PA_10 // I2C2
+#define I2C_AF LL_GPIO_AF_6
+#define I2C_IDX 1
+
+#define PIN_ACC_INT PB_7
