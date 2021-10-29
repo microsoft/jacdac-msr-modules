@@ -1,3 +1,54 @@
+## Version 0.18.0
+
+### microsoft/jacdac-msr-modules
+
+* [5a9f63c](https://github.com/microsoft/jacdac-msr-modules/commit/5a9f63c) Add MACH IMU board Accel/gyro ranges now supported
+* [c0adbe8](https://github.com/microsoft/jacdac-msr-modules/commit/c0adbe8) Update jacdac-c; add gyro
+* [f453f31](https://github.com/microsoft/jacdac-msr-modules/commit/f453f31) [skip ci] firmware v0.17.10 built
+
+### microsoft/jacdac-c
+
+* [3058672](https://github.com/microsoft/jacdac-c/commit/3058672) update specs
+* [3644a14](https://github.com/microsoft/jacdac-c/commit/3644a14) Support ranges for LSM6DS and KXTJ3
+* [4193d6d](https://github.com/microsoft/jacdac-c/commit/4193d6d) generic support for sensor ranges
+* [d908951](https://github.com/microsoft/jacdac-c/commit/d908951) Add gyro service and lsm6ds support
+
+### microsoft/jacdac-msr-modules
+
+* [892654a](https://github.com/microsoft/jacdac-msr-modules/commit/892654a) updated brain, missing devices
+* [504fc46](https://github.com/microsoft/jacdac-msr-modules/commit/504fc46) Add generic reading_range register; use in accel/gyro
+* [ef4728a](https://github.com/microsoft/jacdac-msr-modules/commit/ef4728a) use 0.16 / for brightness
+* [7b5d657](https://github.com/microsoft/jacdac-msr-modules/commit/7b5d657) add lightbuld service
+* [6fa4dd6](https://github.com/microsoft/jacdac-msr-modules/commit/6fa4dd6) Correct picture for relay ([#828](https://github.com/microsoft/jacdac-msr-modules/pull/828))
+* [15fd2d3](https://github.com/microsoft/jacdac-msr-modules/commit/15fd2d3) Apply automatic changes
+* [afcf266](https://github.com/microsoft/jacdac-msr-modules/commit/afcf266) Device: JM Relay MACH-0.1 ([#827](https://github.com/microsoft/jacdac-msr-modules/pull/827))
+* [2c6548b](https://github.com/microsoft/jacdac-msr-modules/commit/2c6548b) re-generate files
+* [2868b70](https://github.com/microsoft/jacdac-msr-modules/commit/2868b70) Add unique brain service
+* [ce75d44](https://github.com/microsoft/jacdac-msr-modules/commit/ce75d44) Add message_sent event in iot hub
+* [e8df9d3](https://github.com/microsoft/jacdac-msr-modules/commit/e8df9d3) Add correct product id for esp32 brain
+* [3a2cf8d](https://github.com/microsoft/jacdac-msr-modules/commit/3a2cf8d) Remove wifi.connected, add wifi.connection_failed
+* [1ee95b3](https://github.com/microsoft/jacdac-msr-modules/commit/1ee95b3) support reading error on soil-moisture sensor
+* [0b1c759](https://github.com/microsoft/jacdac-msr-modules/commit/0b1c759) store vendor id, product id in device spec
+* [e5b6cf7](https://github.com/microsoft/jacdac-msr-modules/commit/e5b6cf7) updated espbrain
+* [de74d88](https://github.com/microsoft/jacdac-msr-modules/commit/de74d88) store target info in makecode export
+* [ef7bdd6](https://github.com/microsoft/jacdac-msr-modules/commit/ef7bdd6) Apply automatic changes
+* [907d01a](https://github.com/microsoft/jacdac-msr-modules/commit/907d01a) add proxy service
+* [a9f0f85](https://github.com/microsoft/jacdac-msr-modules/commit/a9f0f85) fix generation of makecode project names
+* [c11a8d9](https://github.com/microsoft/jacdac-msr-modules/commit/c11a8d9) add codal message bus service ([#793](https://github.com/microsoft/jacdac-msr-modules/pull/793))
+* [821c415](https://github.com/microsoft/jacdac-msr-modules/commit/821c415) Apply automatic changes
+* [6e026d5](https://github.com/microsoft/jacdac-msr-modules/commit/6e026d5) Device: JM Haptic MACH-1.0 ([#783](https://github.com/microsoft/jacdac-msr-modules/pull/783))
+* [c3e5ef2](https://github.com/microsoft/jacdac-msr-modules/commit/c3e5ef2) Revert "remove RP2040 & rotary."
+* [ed672b8](https://github.com/microsoft/jacdac-msr-modules/commit/ed672b8) remove RP2040 & rotary.
+* [b1938e6](https://github.com/microsoft/jacdac-msr-modules/commit/b1938e6) use # as unit for matrix dimensions
+* [84bc9ec](https://github.com/microsoft/jacdac-msr-modules/commit/84bc9ec) merge main
+* [56c1ba7](https://github.com/microsoft/jacdac-msr-modules/commit/56c1ba7) use count for character screen sizes
+* [6e0f0c0](https://github.com/microsoft/jacdac-msr-modules/commit/6e0f0c0) Add wifi.rssi
+
+### microsoft/jacdac-stm32x0
+
+* [7b6a002](https://github.com/microsoft/jacdac-stm32x0/commit/7b6a002) fix order of SWD remapping
+* [7d346d1](https://github.com/microsoft/jacdac-stm32x0/commit/7d346d1) disable LED on SWD pin in BL
+
 ## Version 0.17.10
 
 ### microsoft/jacdac-msr-modules
