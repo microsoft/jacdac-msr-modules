@@ -60,3 +60,5 @@
 
 #define PIN_BL_LED PIN_LED_B
 #define PIN_BL_PERIOD 300
+
+#define PIN_ACC_INT PIN_INT
