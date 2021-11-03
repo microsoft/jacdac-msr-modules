@@ -86,7 +86,7 @@ jobs:
       run: echo "${{ github.workspace }}/arm-gcc/bin" >> $GITHUB_PATH
 
     - name: make
-      run: make check-release
+      run: make drop
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
