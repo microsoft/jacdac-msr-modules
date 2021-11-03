@@ -17,3 +17,6 @@ TRG = jm-v2.1 servo
 
 # which folders to build on 'make drop'
 #DROP_TARGETS = jm-v2.1
+
+# If you have 'ccache' installed, uncomment this to speed up build
+#CCACHE = ccache
