@@ -1,3 +1,58 @@
+## Version 0.19.0
+
+### microsoft/jacdac-msr-modules
+
+* [662e8ef](https://github.com/microsoft/jacdac-msr-modules/commit/662e8ef) update submodules with command_not_impl report
+* [9a0a9f6](https://github.com/microsoft/jacdac-msr-modules/commit/9a0a9f6) Add soil temp module
+* [5652377](https://github.com/microsoft/jacdac-msr-modules/commit/5652377) Add soil moisture sensor
+* [a5d5413](https://github.com/microsoft/jacdac-msr-modules/commit/a5d5413) Hopefully fix build
+* [a8b8526](https://github.com/microsoft/jacdac-msr-modules/commit/a8b8526) don't try to upload release in CodeQL
+* [9adf02c](https://github.com/microsoft/jacdac-msr-modules/commit/9adf02c) Add SPI bridge target
+* [3cf8319](https://github.com/microsoft/jacdac-msr-modules/commit/3cf8319) [skip ci] firmware v0.18.0 built
+
+### microsoft/jacdac-c
+
+* [047f04a](https://github.com/microsoft/jacdac-c/commit/047f04a) Fix build
+* [5087a06](https://github.com/microsoft/jacdac-c/commit/5087a06) Ignore broadcast packets
+* [3b4b9a5](https://github.com/microsoft/jacdac-c/commit/3b4b9a5) Bump specs; use new constants
+* [a6b362b](https://github.com/microsoft/jacdac-c/commit/a6b362b) add support for command_not_implemented
+* [2dfc90e](https://github.com/microsoft/jacdac-c/commit/2dfc90e) adding nack in ctrl
+* [a90eacd](https://github.com/microsoft/jacdac-c/commit/a90eacd) fix the ROM ID read
+* [386f58c](https://github.com/microsoft/jacdac-c/commit/386f58c) add DS18B20 driver
+* [fbb8f79](https://github.com/microsoft/jacdac-c/commit/fbb8f79) Add set_pin_pull()
+* [a2c8aad](https://github.com/microsoft/jacdac-c/commit/a2c8aad) Add 1-Wire APIs
+* [9a381a4](https://github.com/microsoft/jacdac-c/commit/9a381a4) size-optimize
+* [099ca0d](https://github.com/microsoft/jacdac-c/commit/099ca0d) Add generic framework for analog sensors
+* [50fbe94](https://github.com/microsoft/jacdac-c/commit/50fbe94) optimize binary size
+
+### microsoft/jacdac-msr-modules
+
+* [61c5e52](https://github.com/microsoft/jacdac-msr-modules/commit/61c5e52) Add reliable actions and error responses ([#809](https://github.com/microsoft/jacdac-msr-modules/pull/809))
+* [a6fe1bd](https://github.com/microsoft/jacdac-msr-modules/commit/a6fe1bd) Apply automatic changes
+* [61525a5](https://github.com/microsoft/jacdac-msr-modules/commit/61525a5) Device: JM Capacitive Soil Moisture ([#835](https://github.com/microsoft/jacdac-msr-modules/pull/835))
+* [093b41e](https://github.com/microsoft/jacdac-msr-modules/commit/093b41e) Device: JM Soil Temperature DS18B20 ([#834](https://github.com/microsoft/jacdac-msr-modules/pull/834))
+* [579a729](https://github.com/microsoft/jacdac-msr-modules/commit/579a729) updatd drive name info
+* [38268f8](https://github.com/microsoft/jacdac-msr-modules/commit/38268f8) udpated esp brain firmware locations
+* [499dd46](https://github.com/microsoft/jacdac-msr-modules/commit/499dd46) fix esp repo
+* [1abe2e7](https://github.com/microsoft/jacdac-msr-modules/commit/1abe2e7) group encrionemtn sensors
+* [edad45c](https://github.com/microsoft/jacdac-msr-modules/commit/edad45c) braille display service spec ([#832](https://github.com/microsoft/jacdac-msr-modules/pull/832))
+
+### microsoft/jacdac-stm32x0
+
+* [6c82ca4](https://github.com/microsoft/jacdac-stm32x0/commit/6c82ca4) add support for command_not_implemented
+* [3f7a47f](https://github.com/microsoft/jacdac-stm32x0/commit/3f7a47f) 1-wire bugfix
+* [5625ca0](https://github.com/microsoft/jacdac-stm32x0/commit/5625ca0) implement 1-Wire APIs
+* [e37b0ae](https://github.com/microsoft/jacdac-stm32x0/commit/e37b0ae) implement pin_set_pull()
+* [47e8e07](https://github.com/microsoft/jacdac-stm32x0/commit/47e8e07) ccache support
+* [6d936ae](https://github.com/microsoft/jacdac-stm32x0/commit/6d936ae) Add RPi client for the bridge
+* [d7350f8](https://github.com/microsoft/jacdac-stm32x0/commit/d7350f8) Bugfixes
+* [4cd60d1](https://github.com/microsoft/jacdac-stm32x0/commit/4cd60d1) SPI bridge compiles
+* [f150dbb](https://github.com/microsoft/jacdac-stm32x0/commit/f150dbb) make SPIS compile
+* [318f6d8](https://github.com/microsoft/jacdac-stm32x0/commit/318f6d8) copy from arcade active shield
+* [14b93c3](https://github.com/microsoft/jacdac-stm32x0/commit/14b93c3) copy from m:b bridge
+* [9061bef](https://github.com/microsoft/jacdac-stm32x0/commit/9061bef) split out common SPI code
+* [539e775](https://github.com/microsoft/jacdac-stm32x0/commit/539e775) anti-optimization in memcpy/set
+
 ## Version 0.18.0
 
 ### microsoft/jacdac-msr-modules
