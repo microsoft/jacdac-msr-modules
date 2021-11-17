@@ -1,6 +1,6 @@
 #include "jdprofile.h"
 
-FIRMWARE_IDENTIFIER(0x36a8433b, "JM SPI bridge v3.3");
+FIRMWARE_IDENTIFIER(0x30bc03c7, "JM SPI bridge v3.5A");
 
 void bridge_init(void);
 

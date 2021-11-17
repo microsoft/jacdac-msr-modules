@@ -1,0 +1,4 @@
+MCU = STM32G030x6
+DEFINES += -DBRIDGESPI
+BRIDGEQ = 1
+include $(PLATFORM)/mk/stm32g0.mk
