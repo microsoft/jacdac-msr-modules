@@ -15,14 +15,14 @@
 #define PIN_MISO PA_6
 #define PIN_TX_MOSI PA_2
 
-#define PIN_SSCK PIN_SCK
-#define PIN_SMOSI PIN_TX_MOSI
-#define PIN_SMISO PIN_MISO
-#define PIN_SCS PIN_RX_CS
-
 #define PIN_CS PIN_RX_CS
 // VCC
 // GND
+
+#define PIN_ASCK PIN_SCK
+#define PIN_AMOSI PIN_TX_MOSI
+#define PIN_AMISO PIN_MISO
+
 
 // Right header
 #define PIN_PWM PA_4 // TIM14
