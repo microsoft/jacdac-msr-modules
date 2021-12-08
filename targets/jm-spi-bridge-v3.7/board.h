@@ -48,3 +48,4 @@ void bridge_forward_frame(struct _jd_frame_t *frame);
 #define JD_SERVICES_PROCESS_FRAME_PRE(fr) bridge_forward_frame(fr)
 
 #define JD_RAW_FRAME 1
+#define JD_CONFIG_IGNORE_STATUS 1
