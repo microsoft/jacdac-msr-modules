@@ -12,6 +12,7 @@ include Makefile.user
 DROP_TARGETS ?= \
 	jm-v3.3 \
 	jm-v3.6 \
+	jm-v3.8 \
 	jm-accelerometer-30-1.0 \
 	jm-access-switch-input-34-1.3 \
 	jm-access-switch-output-1.1 \
