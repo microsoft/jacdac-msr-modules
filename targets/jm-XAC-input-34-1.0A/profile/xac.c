@@ -1,6 +1,6 @@
 #include "jdprofile.h"
 #include "services/interfaces/jd_hw_pwr.h"
-#include "jacdac/dist/c/joystick.h"
+#include "jacdac/dist/c/gamepad.h"
 #include "lib.h"
 
 #define JACK_TIP PA_5
@@ -93,9 +93,9 @@ void app_process(void) {
     }
 }
 
-static const joystick_params_t thumb_params = {
+static const gamepad_params_t thumb_params = {
     .buttons_available = 0, // none
-    .variant = JD_JOYSTICK_VARIANT_THUMB,
+    .variant = JD_GAMEPAD_VARIANT_THUMB,
     .pinL = JACK_R2,
     .pinH = JACK_SLEEVE,
     .pinX = JACK_TIP,
@@ -129,7 +129,7 @@ void app_init_services() {
         if (current_input == INPUT_TYPE_ANALOG_TRIGGER)
             potentiometer_init(JACK_R2, JACK_TIP, JACK_SLEEVE);
         else if (current_input == INPUT_TYPE_ANALOG_JOYSTICK)
-            joystick_init(&thumb_params);
+            gamepad_init(&thumb_params);
         return;
     }
 

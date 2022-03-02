@@ -17,7 +17,7 @@ void app_process() {
 void app_init_services() {
     eco2_init(&ethanol_sgpc3);
     tvoc_init(&tvoc_sgpc3);
-    thermometer_init(&temperature_sht30);
+    temperature_init(&temperature_sht30);
     humidity_init(&humidity_sht30);
     humidity_sht30.init();
 }

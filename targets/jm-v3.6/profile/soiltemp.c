@@ -12,5 +12,5 @@ void app_init_services() {
     pin_setup_output(PIN1);
     pin_setup_output(PIN3);
 
-    thermometer_init(&temperature_ds18b20);
+    temperature_init(&temperature_ds18b20);
 }
