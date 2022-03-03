@@ -1,3 +1,20 @@
+## Version 0.19.2
+
+### microsoft/jacdac-msr-modules
+
+* [cce94f7](https://github.com/microsoft/jacdac-msr-modules/commit/cce94f7) update deps
+* [dabaa4e](https://github.com/microsoft/jacdac-msr-modules/commit/dabaa4e) [skip ci] firmware v0.19.1 built
+
+### microsoft/jacdac-c
+
+* [81bf1f5](https://github.com/microsoft/jacdac-c/commit/81bf1f5) allow for optional hw encoder iface
+
+### microsoft/jacdac-stm32x0
+
+* [7dc4f96](https://github.com/microsoft/jacdac-stm32x0/commit/7dc4f96) add encoder interface for TIMx
+* [d99c08e](https://github.com/microsoft/jacdac-stm32x0/commit/d99c08e) use constant names
+* [e72bb9d](https://github.com/microsoft/jacdac-stm32x0/commit/e72bb9d) Simplify PWM setup (saves 600b of flash)
+
 ## Version 0.19.1
 
 ### microsoft/jacdac-msr-modules
