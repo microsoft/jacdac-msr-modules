@@ -12,6 +12,7 @@ include Makefile.user
 DROP_TARGETS ?= \
 	jm-v3.3 \
 	jm-v3.6 \
+	jm-v3.6one \
 	jm-v3.8 \
 	jm-v4.0 \
 	jm-v4.0rot \
