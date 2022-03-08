@@ -1,3 +1,13 @@
+## Version 0.19.4
+
+### microsoft/jacdac-msr-modules
+
+* [cbb214d](https://github.com/microsoft/jacdac-msr-modules/commit/cbb214d) update deps
+
+### microsoft/jacdac-c
+
+* [b5d90e5](https://github.com/microsoft/jacdac-c/commit/b5d90e5) compile fix
+
 ## Version 0.19.3
 
 ### microsoft/jacdac-msr-modules
