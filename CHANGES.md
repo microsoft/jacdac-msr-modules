@@ -1,3 +1,43 @@
+## Version 0.19.4
+
+### microsoft/jacdac-msr-modules
+
+* [cbb214d](https://github.com/microsoft/jacdac-msr-modules/commit/cbb214d) update deps
+
+### microsoft/jacdac-c
+
+* [b5d90e5](https://github.com/microsoft/jacdac-c/commit/b5d90e5) compile fix
+
+## Version 0.19.3
+
+### microsoft/jacdac-msr-modules
+
+* [7b5aa4c](https://github.com/microsoft/jacdac-msr-modules/commit/7b5aa4c) update submodules
+* [e1d40dd](https://github.com/microsoft/jacdac-msr-modules/commit/e1d40dd) Add 87 matrix display
+* [68d85a8](https://github.com/microsoft/jacdac-msr-modules/commit/68d85a8) use leddisplay on 67; make sure PLL is enabled
+* [697eb08](https://github.com/microsoft/jacdac-msr-modules/commit/697eb08) use switch service for all sensor
+* [e9103fa](https://github.com/microsoft/jacdac-msr-modules/commit/e9103fa) update dep
+* [d4ff0f4](https://github.com/microsoft/jacdac-msr-modules/commit/d4ff0f4) use new leddisplay in rgb83
+* [ee631c1](https://github.com/microsoft/jacdac-msr-modules/commit/ee631c1) [skip ci] firmware v0.19.2 built
+
+### microsoft/jacdac-c
+
+* [cb095e7](https://github.com/microsoft/jacdac-c/commit/cb095e7) optimize rotary power consumption
+* [5c4a290](https://github.com/microsoft/jacdac-c/commit/5c4a290) fix status code events
+* [cb1c08d](https://github.com/microsoft/jacdac-c/commit/cb1c08d) fix clearning of leddisplay
+* [9ad9708](https://github.com/microsoft/jacdac-c/commit/9ad9708) add dotmatrix service
+* [b31cdaf](https://github.com/microsoft/jacdac-c/commit/b31cdaf) make the switch service more generic
+* [18d19bd](https://github.com/microsoft/jacdac-c/commit/18d19bd) add switch service
+* [910be29](https://github.com/microsoft/jacdac-c/commit/910be29) add new leddisplay service
+
+### microsoft/jacdac-stm32x0
+
+* [0f96480](https://github.com/microsoft/jacdac-stm32x0/commit/0f96480) fix disp_set_brigthness()
+* [3d69952](https://github.com/microsoft/jacdac-stm32x0/commit/3d69952) fixup matrix display driver
+* [59276a8](https://github.com/microsoft/jacdac-stm32x0/commit/59276a8) allow for system timer on TIM14
+* [c7818f5](https://github.com/microsoft/jacdac-stm32x0/commit/c7818f5) force PLL for neopixel
+* [3db8db1](https://github.com/microsoft/jacdac-stm32x0/commit/3db8db1) really, no need to sleep after flashing bl
+
 ## Version 0.19.2
 
 ### microsoft/jacdac-msr-modules
