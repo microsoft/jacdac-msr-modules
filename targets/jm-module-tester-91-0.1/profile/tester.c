@@ -18,23 +18,45 @@ extern int i2c_read_reg_buf(uint8_t addr, uint8_t reg, void *dst, unsigned len);
 // extern void dspi_init(bool slow, int cpol, int cpha);
 // extern void dspi_tx(const void *data, uint32_t numbytes, cb_t doneHandler)
 
+int32_t voltage_mapper(int32_t voltage) {
+    float v = ((float) voltage)/1000.0;
+    float refv = 1.1834;
+    float r12 = 1.3;
+    float r11 = 4.3;
+    float minr = 0.0;
+    float maxr = 10.0;
+    float max_wiper = 255.0;
+    float min_wiper = 0.0;
+
+    // should give a value between 0 and 10000
+    float wresist = (r11 / ((v / refv) - 1)) - r12;
+
+    // clip if not
+    if (wresist < minr)
+        wresist = minr;
+    if (wresist > maxr)
+        wresist = maxr;
+
+    float wiper_value = (wresist - minr) * (max_wiper - min_wiper) / (maxr - minr) + min_wiper;
+
+    return (int32_t)wiper_value;
+}
+
 const power_supply_params_t psu = {
     .potentiometer = &mcp41010,
+    .voltage_to_wiper = voltage_mapper,
     .min_voltage = (1600 << 10), // 1.6V min
     .max_voltage = (5200 << 10), // 5.2V max
     .initial_voltage = (2000 << 10), // by default, the wiper is set to 127, giving 2V
     // voltage values are mapped between min_voltage_wiper_value and max_voltage_wiper_value
-    .min_voltage_wiper_value = 0, 
-    .max_voltage_wiper_value = 255,
+    .min_voltage_wiper_value = 255, 
+    .max_voltage_wiper_value = 0,
     .enable_pin = LDO_EN,
     .enable_active_lo = true,
     .wiper_channel = 0
 };
 
 void app_init_services() {
-    DMESG("BOARD CHECK");
-    DMESG("CHECKING ADS1115[%d]", ADS1115_ADDR);
-
     powersupply_init(psu);
 
     // target_wait_us(10000);
