@@ -19,6 +19,9 @@
 #define PIN_P0 NO_PIN
 #define PIN_P1 NO_PIN
 
+// configure alert pin for ADS1115
+#define PIN_ACC_INT PC_15
+
 #define PIN_SSCK PA_1
 #define PIN_SMOSI PA_2
 #define PIN_CS PA_3

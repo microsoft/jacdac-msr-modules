@@ -10,6 +10,7 @@ extern int i2c_read_reg_buf(uint8_t addr, uint8_t reg, void *dst, unsigned len);
 #define ADS1115_ADDR 0b1001000
 #define SPI_CS      PA_3
 #define LDO_EN      PA_6
+#define DATA_EN     PA_4
 
 #define CMD_WRITE_DATA 0x10 
 #define POT_CHAN_SEL_0 0x01
@@ -57,6 +58,32 @@ const power_supply_params_t psu = {
 };
 
 void app_init_services() {
+
+    mcp41010.init();
+    mcp41010.set_wiper(0, 0);
+    ads1115.init(ADS1115_ADDR);
+    ads1115.set_gain(100);
+    pin_setup_output(LDO_EN);
+    pin_set(LDO_EN, 0);
+
+    pin_setup_output(DATA_EN);
+    pin_set(DATA_EN, 1);
+
+    target_wait_us(500000);
+
+    while(1) {
+        volatile int PWR_DUT = ads1115.read_differential(0, 1);
+        // volatile int PWR_DUT = ads1115.read_absolute(0);
+        // volatile float trans = (float)PWR_DUT * 0.0625;
+        // volatile float trans = (float)PWR_DUT * 0.1875;
+        // while(1);
+        target_wait_us(5000);
+        // uint16_t DATA_DUT = ads1115.read_differential(2, 3);
+        // target_wait_us(50);
+        DMESG("PWR_DUT %d", PWR_DUT);
+        // DMESG("DATA_DUT %d", DATA_DUT);
+    }
+
     powersupply_init(psu);
 
     // target_wait_us(10000);
