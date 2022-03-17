@@ -19,9 +19,10 @@
 #define PIN_P0 NO_PIN
 #define PIN_P1 NO_PIN
 
-#define PIN_ASCK PA_1
-#define PIN_AMOSI PA_2
+#define PIN_SSCK PA_1
+#define PIN_SMOSI PA_2
 #define PIN_CS PA_3
+#define USE_SSPI
 
 #define PIN_SDA PA_10
 #define PIN_SCL PA_9
