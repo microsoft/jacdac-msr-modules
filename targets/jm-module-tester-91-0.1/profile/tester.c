@@ -2,6 +2,7 @@
 #include "jd_services.h"
 #include "jacdac-c/jacdac/dist/c/voltagemeasurement.h"
 #include "jacdac-c/jacdac/dist/c/relay.h"
+#include "jacdac-c/jacdac/dist/c/led.h"
 
 FIRMWARE_IDENTIFIER(0x3d82829b, "JM Module Tester v0.1");
 
@@ -132,9 +133,33 @@ const relay_params_t data_en = {
     .relay_variant = JD_RELAY_VARIANT_SOLID_STATE
 };
 
+#define PIN_LED_R PA_8
+#define PIN_LED_G PA_7
+#define PIN_LED_B PB_8
+#define LED_R_MULT 250
+#define LED_G_MULT 150
+#define LED_B_MULT 42
+#define RGB_LED_PERIOD 600
+
+const led_params_t test_status = {
+    .active_high = false,
+    .pin_b = PIN_LED_B,
+    .pin_g = PIN_LED_G,
+    .pin_r = PIN_LED_R,
+    .mult_b = LED_B_MULT,
+    .mult_g = LED_G_MULT,
+    .mult_r = LED_R_MULT,
+    .led_count = 1,
+    .variant = JD_LED_VARIANT_SMD,
+    .pwm_period = RGB_LED_PERIOD,
+    .max_power = 60,
+    .wave_length = 0,
+};
+
 void app_init_services() {
     powersupply_init(psu);
     currentmeasurement_init(pwr_diff);
     voltagemeasurement_init(pwr_abs);
     relay_service_init(&data_en);
+    led_service_init(&test_status);
 }

@@ -1,19 +1,5 @@
-#define PIN_LED NO_PIN
+#define PIN_LED PC_14
 #define PIN_LED_GND NO_PIN
-
-// RGB LED sink connected to these pins
-#define PIN_LED_R PA_8
-#define PIN_LED_G PA_7
-#define PIN_LED_B PB_8
-
-// these values calibrate to ~60lux for each of ff0000, 00ff00, 0000ff
-#define LED_R_MULT 250
-#define LED_G_MULT 150
-#define LED_B_MULT 42
-#define RGB_LED_PERIOD 600
-
-#define PIN_BL_LED PIN_LED_B
-#define PIN_BL_PERIOD 300
 
 #define PIN_PWR NO_PIN
 #define PIN_P0 NO_PIN
