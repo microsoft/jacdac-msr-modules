@@ -57,11 +57,10 @@ static sensor_api_t pwr_diff_glue = {.init = pwr_diff_hw_init,
                             .process = adc_hw_process,
                             .sleep = adc_hw_sleep};
 
-const voltagemeasurement_params_t pwr_diff = {
+const currentmeasurement_params_t pwr_diff = {
     .adc = &ads1115,
     .i2c_address = ADS1115_ADDR,
     .measurement_name = "JD_PWR/JD_PWR_DUT",
-    .measurement_type = JD_VOLTAGE_MEASUREMENT_VOLTAGE_MEASUREMENT_TYPE_DIFFERENTIAL,
     .channel1 = 0,
     .channel2 = 1,
     .gain_mv = 100,
@@ -87,6 +86,8 @@ static void pwr_diff_hw_init(void) {
 static void* pwr_diff_hw_reading(void) {
     float f = pwr_diff.adc->read_differential(pwr_diff.channel1,
                                                              pwr_diff.channel2);
+    // 200 ohm current sense resistor.
+    f /= 0.2;
     static double reading = 0;
     reading = f;
     return &reading;
@@ -133,7 +134,7 @@ const relay_params_t data_en = {
 
 void app_init_services() {
     powersupply_init(psu);
-    voltagemeasurement_init(pwr_diff);
+    currentmeasurement_init(pwr_diff);
     voltagemeasurement_init(pwr_abs);
     relay_service_init(&data_en);
 }
