@@ -1,6 +1,6 @@
 #include "jdprofile.h"
 #include "jd_services.h"
-#include "jacdac-c/jacdac/dist/c/analogmeasurement.h"
+#include "jacdac-c/jacdac/dist/c/voltagemeasurement.h"
 #include "jacdac-c/jacdac/dist/c/relay.h"
 
 FIRMWARE_IDENTIFIER(0x3d82829b, "JM Module Tester v0.1");
@@ -57,22 +57,22 @@ static sensor_api_t pwr_diff_glue = {.init = pwr_diff_hw_init,
                             .process = adc_hw_process,
                             .sleep = adc_hw_sleep};
 
-const analogmeasurement_params_t pwr_diff = {
+const voltagemeasurement_params_t pwr_diff = {
     .adc = &ads1115,
     .i2c_address = ADS1115_ADDR,
     .measurement_name = "JD_PWR/JD_PWR_DUT",
-    .measurement_type = JD_ANALOG_MEASUREMENT_ADCMEASUREMENT_TYPE_DIFFERENTIAL,
+    .measurement_type = JD_VOLTAGE_MEASUREMENT_VOLTAGE_MEASUREMENT_TYPE_DIFFERENTIAL,
     .channel1 = 0,
     .channel2 = 1,
     .gain_mv = 100,
     .api = &pwr_diff_glue
 };
 
-const analogmeasurement_params_t pwr_abs = {
+const voltagemeasurement_params_t pwr_abs = {
     .adc = &ads1115,
     .i2c_address = ADS1115_ADDR,
     .measurement_name = "JD_PWR",
-    .measurement_type = JD_ANALOG_MEASUREMENT_ADCMEASUREMENT_TYPE_ABSOLUTE,
+    .measurement_type = JD_VOLTAGE_MEASUREMENT_VOLTAGE_MEASUREMENT_TYPE_ABSOLUTE,
     .channel1 = 0,
     .channel2 = 255,
     .gain_mv = 7000,
@@ -131,81 +131,9 @@ const relay_params_t data_en = {
     .relay_variant = JD_RELAY_VARIANT_SOLID_STATE
 };
 
-static analogmeasurement_params_t analog_measurement_params;
-
 void app_init_services() {
-
-    // mcp41010.init();
-    // mcp41010.set_wiper(0, 0);
-    // ads1115.init(ADS1115_ADDR);
-    // ads1115.set_gain(100);
-    // pin_setup_output(LDO_EN);
-    // pin_set(LDO_EN, 0);
-
-    // pin_setup_output(DATA_EN);
-    // pin_set(DATA_EN, 1);
-
-    // target_wait_us(500000);
-
-    // while(1) {
-    //     volatile int PWR_DUT = ads1115.read_differential(0, 1);
-    //     // volatile int PWR_DUT = ads1115.read_absolute(0);
-    //     // volatile float trans = (float)PWR_DUT * 0.0625;
-    //     // volatile float trans = (float)PWR_DUT * 0.1875;
-    //     // while(1);
-    //     target_wait_us(500000);
-    //     // uint16_t DATA_DUT = ads1115.read_differential(2, 3);
-    //     // target_wait_us(50);
-    //     DMESG("PWR_DUT %d", PWR_DUT);
-    //     // DMESG("DATA_DUT %d", DATA_DUT);
-    // }
-
     powersupply_init(psu);
-    analogmeasurement_init(pwr_diff);
-    analogmeasurement_init(pwr_abs);
+    voltagemeasurement_init(pwr_diff);
+    voltagemeasurement_init(pwr_abs);
     relay_service_init(&data_en);
-
-    // target_wait_us(10000);
-
-    // i2c_init();
-    // uint8_t d[] = {0, 0};
-    // int res = i2c_read_reg_buf(ADS1115_ADDR, 0, &d, 2);
-    // DMESG("ADS1115 WRITE RESULT %d", res);
-    // pin_setup_output(SPI_CS);
-    // pin_set(SPI_CS, 1);
-    // pin_setup_output(LDO_EN);
-    // pin_set(LDO_EN, 0);
-    // // pin_setup_output(PIN_ASCK);
-    // // pin_setup_output(PIN_AMOSI);
-    // // pin_set(PIN_ASCK, 1);
-    // // pin_set(PIN_AMOSI, 1);
-    // // while(1) {
-    // //     pin_set(PIN_ASCK, 0);
-    // //     pin_set(PIN_AMOSI, 0);
-    // //     pin_set(SPI_CS, 0);
-    // //     target_wait_us(500000);
-    // //     pin_set(PIN_ASCK, 1);
-    // //     pin_set(PIN_AMOSI, 1);
-    // //     pin_set(SPI_CS, 1);
-    // //     target_wait_us(500000);
-    // // }
-
-    // dspi_init(true, 0, 0);
-
-    
-
-    // data[0] = CMD_WRITE_DATA | POT_CHAN_SEL_0;
-    // data[1] = 0;
-
-    // uint8_t v_array[] = {0, 127, 255};
-
-    // while(1) {
-    //     for (int i = 0; i < 3; i++) {
-    //         data[1] = v_array[i];
-    //         DMESG("TX with %d", data[0]);
-    //         spi_tx(data, 2);
-    //         target_wait_us(500000);
-    //     }
-    // }
-    
 }
