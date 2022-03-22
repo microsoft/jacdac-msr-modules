@@ -1,6 +1,6 @@
 #include "jdprofile.h"
 #include "jd_services.h"
-#include "jacdac-c/jacdac/dist/c/voltagemeasurement.h"
+#include "jacdac-c/jacdac/dist/c/dcvoltagemeasurement.h"
 #include "jacdac-c/jacdac/dist/c/relay.h"
 #include "jacdac-c/jacdac/dist/c/led.h"
 
@@ -17,8 +17,8 @@ FIRMWARE_IDENTIFIER(0x3d82829b, "JM Module Tester v0.1");
 // extern void dspi_init(bool slow, int cpol, int cpha);
 // extern void dspi_tx(const void *data, uint32_t numbytes, cb_t doneHandler)
 
-int32_t voltage_mapper(int32_t voltage) {
-    float v = ((float) voltage)/1000.0;
+int32_t voltage_to_wiper_value(float voltage) {
+    float v = voltage * 1000.0;
     float refv = 1.1834;
     float r12 = 1.3;
     float r11 = 4.3;
@@ -58,7 +58,7 @@ static sensor_api_t pwr_diff_glue = {.init = pwr_diff_hw_init,
                             .process = adc_hw_process,
                             .sleep = adc_hw_sleep};
 
-const currentmeasurement_params_t pwr_diff = {
+const dccurrentmeasurement_params_t pwr_diff = {
     .adc = &ads1115,
     .i2c_address = ADS1115_ADDR,
     .measurement_name = "JD_PWR/JD_PWR_DUT",
@@ -68,11 +68,11 @@ const currentmeasurement_params_t pwr_diff = {
     .api = &pwr_diff_glue
 };
 
-const voltagemeasurement_params_t pwr_abs = {
+const dcvoltagemeasurement_params_t pwr_abs = {
     .adc = &ads1115,
     .i2c_address = ADS1115_ADDR,
     .measurement_name = "JD_PWR",
-    .measurement_type = JD_VOLTAGE_MEASUREMENT_VOLTAGE_MEASUREMENT_TYPE_ABSOLUTE,
+    .measurement_type = JD_D_CVOLTAGE_MEASUREMENT_VOLTAGE_MEASUREMENT_TYPE_ABSOLUTE,
     .channel1 = 0,
     .channel2 = 255,
     .gain_mv = 7000,
@@ -111,10 +111,10 @@ static void adc_hw_sleep(void) {}
 
 const power_supply_params_t psu = {
     .potentiometer = &mcp41010,
-    .voltage_to_wiper = voltage_mapper,
-    .min_voltage = (1600 << 10), // 1.6V min
-    .max_voltage = (5200 << 10), // 5.2V max
-    .initial_voltage = (2000 << 10), // by default, the wiper is set to 127, giving 2V
+    .voltage_to_wiper = voltage_to_wiper_value,
+    .min_voltage = 1.6, // 1.6V min
+    .max_voltage = 5.2, // 5.2V max
+    .initial_voltage = 2.0, // by default, the wiper is set to 127, giving 2V
     // voltage values are mapped between min_voltage_wiper_value and max_voltage_wiper_value
     .min_voltage_wiper_value = 255, 
     .max_voltage_wiper_value = 0,
@@ -158,8 +158,8 @@ const led_params_t test_status = {
 
 void app_init_services() {
     powersupply_init(psu);
-    currentmeasurement_init(pwr_diff);
-    voltagemeasurement_init(pwr_abs);
+    dccurrentmeasurement_init(pwr_diff);
+    dcvoltagemeasurement_init(pwr_abs);
     relay_service_init(&data_en);
     led_service_init(&test_status);
 }
