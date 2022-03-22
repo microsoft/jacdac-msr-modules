@@ -11,8 +11,8 @@ FIRMWARE_IDENTIFIER(0x3d82829b, "JM Module Tester v0.1");
 // extern int i2c_read_reg_buf(uint8_t addr, uint8_t reg, void *dst, unsigned len);
 
 #define ADS1115_ADDR 0b1001000
-#define PIN_LDO_EN      PA_6
-#define PIN_DATA_EN     PA_4
+#define PIN_LDO_EN PA_6
+#define PIN_DATA_EN PA_4
 
 // extern void dspi_init(bool slow, int cpol, int cpha);
 // extern void dspi_tx(const void *data, uint32_t numbytes, cb_t doneHandler)
@@ -42,31 +42,29 @@ int32_t voltage_to_wiper_value(float voltage) {
 }
 
 static void pwr_diff_hw_init(void);
-static void* pwr_diff_hw_reading(void);
+static void *pwr_diff_hw_reading(void);
 static void pwr_abs_hw_init(void);
-static void* pwr_abs_hw_reading(void);
+static void *pwr_abs_hw_reading(void);
 static void adc_hw_process(void);
 static void adc_hw_sleep(void);
 
 static sensor_api_t pwr_abs_glue = {.init = pwr_abs_hw_init,
-                            .get_reading = pwr_abs_hw_reading,
-                            .process = adc_hw_process,
-                            .sleep = adc_hw_sleep};
+                                    .get_reading = pwr_abs_hw_reading,
+                                    .process = adc_hw_process,
+                                    .sleep = adc_hw_sleep};
 
 static sensor_api_t pwr_diff_glue = {.init = pwr_diff_hw_init,
-                            .get_reading = pwr_diff_hw_reading,
-                            .process = adc_hw_process,
-                            .sleep = adc_hw_sleep};
+                                     .get_reading = pwr_diff_hw_reading,
+                                     .process = adc_hw_process,
+                                     .sleep = adc_hw_sleep};
 
-const dccurrentmeasurement_params_t pwr_diff = {
-    .adc = &ads1115,
-    .i2c_address = ADS1115_ADDR,
-    .measurement_name = "JD_PWR/JD_PWR_DUT",
-    .channel1 = 0,
-    .channel2 = 1,
-    .gain_mv = 100,
-    .api = &pwr_diff_glue
-};
+const dccurrentmeasurement_params_t pwr_diff = {.adc = &ads1115,
+                                                .i2c_address = ADS1115_ADDR,
+                                                .measurement_name = "JD_PWR/JD_PWR_DUT",
+                                                .channel1 = 0,
+                                                .channel2 = 1,
+                                                .gain_mv = 100,
+                                                .api = &pwr_diff_glue};
 
 const dcvoltagemeasurement_params_t pwr_abs = {
     .adc = &ads1115,
@@ -76,20 +74,18 @@ const dcvoltagemeasurement_params_t pwr_abs = {
     .channel1 = 0,
     .channel2 = 255,
     .gain_mv = 7000,
-    .api = &pwr_abs_glue
-};
+    .api = &pwr_abs_glue};
 
 static void pwr_diff_hw_init(void) {
     pwr_diff.adc->init(pwr_diff.i2c_address);
     pwr_diff.adc->set_gain(pwr_diff.gain_mv);
 }
 
-static void* pwr_diff_hw_reading(void) {
-    float f = pwr_diff.adc->read_differential(pwr_diff.channel1,
-                                                             pwr_diff.channel2);
+static void *pwr_diff_hw_reading(void) {
+    static double reading = 0;
+    float f = pwr_diff.adc->read_differential(pwr_diff.channel1, pwr_diff.channel2);
     // 200 ohm current sense resistor.
     f /= 0.2;
-    static double reading = 0;
     reading = f;
     return &reading;
 }
@@ -112,26 +108,23 @@ static void adc_hw_sleep(void) {}
 const power_supply_params_t psu = {
     .potentiometer = &mcp41010,
     .voltage_to_wiper = voltage_to_wiper_value,
-    .min_voltage = 1.6, // 1.6V min
-    .max_voltage = 5.2, // 5.2V max
+    .min_voltage = 1.6,     // 1.6V min
+    .max_voltage = 5.2,     // 5.2V max
     .initial_voltage = 2.0, // by default, the wiper is set to 127, giving 2V
     // voltage values are mapped between min_voltage_wiper_value and max_voltage_wiper_value
-    .min_voltage_wiper_value = 255, 
+    .min_voltage_wiper_value = 255,
     .max_voltage_wiper_value = 0,
     .enable_pin = PIN_LDO_EN,
     .enable_active_lo = true,
-    .wiper_channel = 0
-};
+    .wiper_channel = 0};
 
-const relay_params_t data_en = {
-    .drive_active_lo = false,
-    .led_active_lo = false,
-    .max_switching_current = 20,
-    .pin_relay_drive = PIN_DATA_EN,
-    .pin_relay_feedback = NO_PIN,
-    .pin_relay_led = NO_PIN,
-    .relay_variant = JD_RELAY_VARIANT_SOLID_STATE
-};
+const relay_params_t data_en = {.drive_active_lo = false,
+                                .led_active_lo = false,
+                                .max_switching_current = 20,
+                                .pin_relay_drive = PIN_DATA_EN,
+                                .pin_relay_feedback = NO_PIN,
+                                .pin_relay_led = NO_PIN,
+                                .relay_variant = JD_RELAY_VARIANT_SOLID_STATE};
 
 #define PIN_LED_R PA_8
 #define PIN_LED_G PA_7
