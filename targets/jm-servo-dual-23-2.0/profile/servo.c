@@ -34,7 +34,7 @@ const relay_params_t hi_power = {
     .pin_relay_led = NO_PIN,
     .drive_active_lo = true,
     .led_active_lo = false,
-    .initially_active = true
+    .initial_state = true
 };
 
 void app_init_services() {
