@@ -28,7 +28,7 @@ const servo_params_t servo_params1 = {
 
 const relay_params_t hi_power = {
     .relay_variant = JD_RELAY_VARIANT_ELECTROMECHANICAL,
-    .max_switch_current = 20,
+    .max_switching_current = 20,
     .pin_relay_drive = PA_0,
     .pin_relay_feedback = NO_PIN,
     .pin_relay_led = NO_PIN,
