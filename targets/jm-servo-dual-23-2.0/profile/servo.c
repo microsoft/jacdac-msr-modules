@@ -1,4 +1,5 @@
 #include "jdprofile.h"
+#include "jacdac/dist/c/relay.h"
 
 FIRMWARE_IDENTIFIER(0x3854ddfe, "JM Servo Dual v2.0");
 
@@ -23,11 +24,22 @@ const servo_params_t servo_params1 = {
     .power_pin = PC_15
 };
 
+    
+
+const relay_params_t hi_power = {
+    .relay_variant = JD_RELAY_VARIANT_ELECTROMECHANICAL,
+    .max_switching_current = 20,
+    .pin_relay_drive = PA_0,
+    .pin_relay_feedback = NO_PIN,
+    .pin_relay_led = NO_PIN,
+    .drive_active_lo = true,
+    .led_active_lo = false,
+    .initial_state = true
+};
+
 void app_init_services() {
     // high power mode when we get there
-    // pin_setup_output(PA_0);
-    // pin_set(PA_0, 0);
-    // pin_setup_input(PA_3, 1);
     servo_init(&servo_params0);
     servo_init(&servo_params1);
+    relay_service_init(&hi_power);
 }
