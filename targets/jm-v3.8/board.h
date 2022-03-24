@@ -23,6 +23,7 @@
 #define PIN_SMOSI PIN_TX_MOSI
 #define PIN_SMISO PIN_MISO
 #define PIN_SCS PIN_RX_CS
+#define SPI_RX 1
 
 // Right header
 #define PIN_PWM PA_4 // TIM14
