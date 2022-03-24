@@ -124,7 +124,8 @@ const relay_params_t data_en = {.drive_active_lo = false,
                                 .pin_relay_drive = PIN_DATA_EN,
                                 .pin_relay_feedback = NO_PIN,
                                 .pin_relay_led = NO_PIN,
-                                .relay_variant = JD_RELAY_VARIANT_SOLID_STATE};
+                                .relay_variant = JD_RELAY_VARIANT_SOLID_STATE,
+                                .initial_state = false};
 
 #define PIN_LED_R PA_8
 #define PIN_LED_G PA_7
