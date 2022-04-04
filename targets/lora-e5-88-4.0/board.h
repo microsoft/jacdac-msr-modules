@@ -56,3 +56,5 @@
 
 #define DEVICE_DMESG_BUFFER_SIZE 4000
 
+// disable for now, since it messes with debugging
+#define JD_CONFIG_WATCHDOG 0
