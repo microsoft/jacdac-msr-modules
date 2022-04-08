@@ -3,9 +3,17 @@
 
 FIRMWARE_IDENTIFIER(0x3e6654a4, "Braille Module V42");
 
-const uint8_t cell_map[] = {2,0,1,3};
+#define NUM_COLUMNS 8
+#define NUM_ROWS 4
+
+static uint32_t get_channels(int row, int col) {
+    col ^= 1;
+    row = NUM_ROWS - row - 1;
+    unsigned ch0 = (NUM_COLUMNS * NUM_ROWS) + (col >> 1);
+    unsigned ch1 = col * NUM_ROWS + row;
+    return ch0 | (ch1 << 16);
+}
 
 void app_init_services() {
-    braille_dm_init(&ncv7726b_daisy, 4, 8, cell_map);
-    //braille_char_init(&ncv7726b_daisy, 1, 4, cell_map);
+    braille_display_init(&ncv7726b_daisy, NUM_COLUMNS >> 1, get_channels);
 }
