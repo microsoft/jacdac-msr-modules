@@ -62,8 +62,3 @@
 #define PIN_BL_PERIOD 300
 
 #define PIN_ACC_INT PIN_INT
-
-
-#define ONE_WIRE
-#define PIN_TX PIN_TX_MOSI
-#define PIN_TX_AF LL_GPIO_AF_1

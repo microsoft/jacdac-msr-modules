@@ -14,7 +14,7 @@ void app_init_services() {
     eco2_init(&eco2_airquality4);
     tvoc_init(&tvoc_airquality4);
 
-    thermometer_init(&temperature_sht30);
+    temperature_init(&temperature_sht30);
     humidity_init(&humidity_sht30);
     humidity_sht30.init();
 }

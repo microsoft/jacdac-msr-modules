@@ -16,7 +16,8 @@ static const relay_params_t params = {
     .pin_relay_feedback = RELAY_FEEDBACK,
     .pin_relay_led = RELAY_LED,
     .drive_active_lo = 1,
-    .led_active_lo = 1
+    .led_active_lo = 1,
+    .initial_state = false,
 };
 
 void app_init_services() {

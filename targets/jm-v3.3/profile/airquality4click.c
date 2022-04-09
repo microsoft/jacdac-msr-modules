@@ -20,7 +20,7 @@ void app_init_services() {
     tvoc_init(&tvoc_airquality4);
 
 #ifdef SHTC3
-    thermometer_init(&temperature_shtc3);
+    temperature_init(&temperature_shtc3);
     humidity_init(&humidity_shtc3);
     humidity_shtc3.init();
 #endif
