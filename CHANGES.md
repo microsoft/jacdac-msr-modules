@@ -1,3 +1,11 @@
+## Version 0.19.6
+
+### microsoft/jacdac-msr-modules
+
+* [93ce893](https://github.com/microsoft/jacdac-msr-modules/commit/93ce893) Merge branch 'main' of https://github.com/microsoft/jacdac-msr-modules
+* [5472e8a](https://github.com/microsoft/jacdac-msr-modules/commit/5472e8a) invert hall sensor (according to spec)
+* [210d51b](https://github.com/microsoft/jacdac-msr-modules/commit/210d51b) [skip ci] firmware v0.19.5 built
+
 ## Version 0.19.5
 
 ### microsoft/jacdac-msr-modules
