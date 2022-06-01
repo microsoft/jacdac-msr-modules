@@ -107,7 +107,6 @@ void app_init_services() {
 
     if (current_input == INPUT_TYPE_DIGITAL_BUTTON) {
         DMESG("DIGITAL BUTTON");
-        jd_status(JD_STATUS_OFF);
         pin_setup_input(JACK_R1, PIN_PULL_DOWN);
         pin_setup_input(JACK_R2, PIN_PULL_DOWN);
         pin_setup_output(JACK_SLEEVE);
@@ -119,7 +118,6 @@ void app_init_services() {
     if (current_input >= INPUT_TYPE_ANALOG_TRIGGER) {
 
         DMESG("analog trigger");
-        jd_status(JD_STATUS_OFF);
 
         pin_setup_input(JACK_R2, PIN_PULL_DOWN);
         pin_setup_input(JACK_TIP, PIN_PULL_DOWN);
@@ -144,7 +142,7 @@ check_input:
     if (current_input != -1)
         target_reset();
 
-    jd_status(JD_STATUS_UNKNOWN_STATE);
+    jd_glow(JD_GLOW_UNKNOWN);
 
     while (1) {
         uint64_t now_long = tim_get_micros();
