@@ -1,3 +1,36 @@
+## Version 0.20.0
+
+### microsoft/jacdac-msr-modules
+
+* [43f98d0](https://github.com/microsoft/jacdac-msr-modules/commit/43f98d0) temp fix
+* [9d70fa5](https://github.com/microsoft/jacdac-msr-modules/commit/9d70fa5) define jacs program size not to overflow into program
+* [31a46b5](https://github.com/microsoft/jacdac-msr-modules/commit/31a46b5) make the jacscript stuff compile
+* [52a6cc4](https://github.com/microsoft/jacdac-msr-modules/commit/52a6cc4) disable temp on 204
+* [fa2c76c](https://github.com/microsoft/jacdac-msr-modules/commit/fa2c76c) add env 204 board
+* [078a687](https://github.com/microsoft/jacdac-msr-modules/commit/078a687) use new sgp30 drivers
+* [4d9069d](https://github.com/microsoft/jacdac-msr-modules/commit/4d9069d) [skip ci] firmware v0.19.7 built
+
+### microsoft/jacdac-c
+
+* [d435f40](https://github.com/microsoft/jacdac-c/commit/d435f40) fix warnings
+* [6c8ff87](https://github.com/microsoft/jacdac-c/commit/6c8ff87) blink green on startup
+* [2b1306f](https://github.com/microsoft/jacdac-c/commit/2b1306f) move proto
+* [f1ce037](https://github.com/microsoft/jacdac-c/commit/f1ce037) fix warnings
+* [2a56b1e](https://github.com/microsoft/jacdac-c/commit/2a56b1e) bugfix
+* [c70b2a8](https://github.com/microsoft/jacdac-c/commit/c70b2a8) send error with readings
+* [638af7d](https://github.com/microsoft/jacdac-c/commit/638af7d) use custom sgp30 driver
+* [3cc9609](https://github.com/microsoft/jacdac-c/commit/3cc9609) fix glow-end
+* [615f960](https://github.com/microsoft/jacdac-c/commit/615f960) add SCD40 driver
+* [29d84ba](https://github.com/microsoft/jacdac-c/commit/29d84ba) refactor jd_sgp_crc8; add util macros for sensors
+
+### microsoft/jacdac-stm32x0
+
+* [ac502ed](https://github.com/microsoft/jacdac-stm32x0/commit/ac502ed) fix temp sensor on G030
+* [efe56b9](https://github.com/microsoft/jacdac-stm32x0/commit/efe56b9) refactor common stm32.mk
+* [6a749e5](https://github.com/microsoft/jacdac-stm32x0/commit/6a749e5) fix warnings
+* [c02e36c](https://github.com/microsoft/jacdac-stm32x0/commit/c02e36c) add FLASH_SETTINGS_SIZE config
+* [97d32b1](https://github.com/microsoft/jacdac-stm32x0/commit/97d32b1) adapt to jd-c changes
+
 ## Version 0.19.7
 
 ### microsoft/jacdac-msr-modules
