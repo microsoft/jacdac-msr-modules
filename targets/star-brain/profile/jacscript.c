@@ -6,7 +6,7 @@
 
 FIRMWARE_IDENTIFIER(0x3d1fe52f, "JM-Jacscript Star-Brain v3.3");
 
-#define PROG_SIZE (8 * 1024)
+#define PROG_SIZE JD_FLASH_SETTINGS_SIZE
 #define PROG_START (0x08000000 + (JD_FLASH_SIZE - BL_SIZE - PROG_SIZE))
 
 static const jacscriptmgr_cfg_t jacs_cfg = {
