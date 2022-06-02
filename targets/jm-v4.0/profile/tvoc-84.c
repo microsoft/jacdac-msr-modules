@@ -10,7 +10,7 @@ void app_process() {
         const env_reading_t *hum = humidity_sht30.get_reading();
         const env_reading_t *temp = temperature_sht30.get_reading();
         if (hum && temp)
-            eco2_airquality4.set_temp_humidity(temp->value, hum->value);
+            eco2_sgp30.set_temp_humidity(temp->value, hum->value);
     }
 }
 

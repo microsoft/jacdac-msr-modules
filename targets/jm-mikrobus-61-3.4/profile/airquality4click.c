@@ -11,13 +11,13 @@ void app_process() {
     const env_reading_t *hum = humidity_shtc3.get_reading();
     const env_reading_t *temp = temperature_shtc3.get_reading();
     if (hum && temp)
-        eco2_airquality4.set_temp_humidity(temp->value, hum->value);
+        eco2_sgp30.set_temp_humidity(temp->value, hum->value);
 }
 #endif
 
 void app_init_services() {
-    eco2_init(&eco2_airquality4);
-    tvoc_init(&tvoc_airquality4);
+    eco2_init(&eco2_sgp30);
+    tvoc_init(&tvoc_sgp30);
 
 #ifdef SHTC3
     temperature_init(&temperature_shtc3);
