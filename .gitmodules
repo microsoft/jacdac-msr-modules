@@ -1,6 +1,8 @@
 [submodule "jacdac-stm32x0"]
 	path = jacdac-stm32x0
 	url = https://github.com/microsoft/jacdac-stm32x0
+	branch = main
 [submodule "jacdac-c"]
 	path = jacdac-c
 	url = https://github.com/microsoft/jacdac-c
+	branch = main
