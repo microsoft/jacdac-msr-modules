@@ -5,13 +5,10 @@ produced by Microsoft Research:
 - https://microsoft.github.io/jacdac-docs/devices/microsoft/research
 
 If you're building your own modules, please follow instructions at
-- https://github.com/microsoft/jacdac-stm32x0/blob/master/README.md
+- https://github.com/microsoft/jacdac-stm32x0/blob/main/README.md
 
-This is also where you learn more about this repo. To pull the submodule sources, run
-
-```
-git submodule update --init --recursive && git pull
-```
+In particular, fork the template repo https://github.com/microsoft/jacdac-module-template
+**Do not fork this repo.**
 
 ## Contributing
 
