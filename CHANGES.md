@@ -1,3 +1,40 @@
+## Version 0.20.1
+
+### microsoft/jacdac-msr-modules
+
+* [b02b515](https://github.com/microsoft/jacdac-msr-modules/commit/b02b515) update submodules (fix build)
+* [3438141](https://github.com/microsoft/jacdac-msr-modules/commit/3438141) add new pressure and PIR modules
+* [0ec1c75](https://github.com/microsoft/jacdac-msr-modules/commit/0ec1c75) set default branch
+* [7616e09](https://github.com/microsoft/jacdac-msr-modules/commit/7616e09) readme clarifications; update stm submod
+
+### microsoft/jacdac-c
+
+* [93ac655](https://github.com/microsoft/jacdac-c/commit/93ac655) fix warnings
+* [b3ab396](https://github.com/microsoft/jacdac-c/commit/b3ab396) add dps310 pressure sensor
+* [5c5dced](https://github.com/microsoft/jacdac-c/commit/5c5dced) add tracing
+* [2042587](https://github.com/microsoft/jacdac-c/commit/2042587) run empty program if nothing deployed
+* [27681f9](https://github.com/microsoft/jacdac-c/commit/27681f9) add jd_lstore_is_enabled()
+* [30d37ff](https://github.com/microsoft/jacdac-c/commit/30d37ff) add rolemgr_serialize_role
+* [a82f8bd](https://github.com/microsoft/jacdac-c/commit/a82f8bd) fixes
+* [044cf53](https://github.com/microsoft/jacdac-c/commit/044cf53) lstor: user APIs
+* [6d46f6c](https://github.com/microsoft/jacdac-c/commit/6d46f6c) lstor: rename; start on block struct
+* [606b6a7](https://github.com/microsoft/jacdac-c/commit/606b6a7) add crc32
+* [ea78e7e](https://github.com/microsoft/jacdac-c/commit/ea78e7e) remove unused files
+* [7c3f7e1](https://github.com/microsoft/jacdac-c/commit/7c3f7e1) start logstore
+* [38ce693](https://github.com/microsoft/jacdac-c/commit/38ce693) add JD_CHK() macro
+* [ae4fac2](https://github.com/microsoft/jacdac-c/commit/ae4fac2) import FatFs module http://elm-chan.org/fsw/ff/00index_e.html
+* [33ddb4e](https://github.com/microsoft/jacdac-c/commit/33ddb4e) fix crash
+
+### microsoft/jacdac-stm32x0
+
+* [e7df1f6](https://github.com/microsoft/jacdac-stm32x0/commit/e7df1f6) compile storage/* in client profile
+* [1039a47](https://github.com/microsoft/jacdac-stm32x0/commit/1039a47) Add info on manual deploy
+* [8b0043c](https://github.com/microsoft/jacdac-stm32x0/commit/8b0043c) button is new example; add 'update-submodules' target
+* [7c81f16](https://github.com/microsoft/jacdac-stm32x0/commit/7c81f16) emphasize on not
+* [bd6ec51](https://github.com/microsoft/jacdac-stm32x0/commit/bd6ec51) instructions on submodules
+* [b583ac6](https://github.com/microsoft/jacdac-stm32x0/commit/b583ac6) update build for new template repo
+* [00d0044](https://github.com/microsoft/jacdac-stm32x0/commit/00d0044) RTC drift seems to larger sometimes
+
 ## Version 0.20.0
 
 ### microsoft/jacdac-msr-modules
