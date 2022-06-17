@@ -13,7 +13,7 @@ TRG = jm-v2.1 servo
 #BMP = 
 
 # set to say COM3 if that's where your BMP is connected; on macOS the value is auto-detected
-#BMP_PORT = COM3
+#BMP_PORT = //./COM3
 
 # which folders to build on 'make drop'
 #DROP_TARGETS = jm-v2.1
