@@ -1,3 +1,51 @@
+## Version 0.20.2
+
+### microsoft/jacdac-msr-modules
+
+* [2984cc6](https://github.com/microsoft/jacdac-msr-modules/commit/2984cc6) haptic updates
+* [39985dc](https://github.com/microsoft/jacdac-msr-modules/commit/39985dc) add gyro-215 use default gyro transform
+* [9c859fc](https://github.com/microsoft/jacdac-msr-modules/commit/9c859fc) Add MSR temp&rh 116
+* [5a1b185](https://github.com/microsoft/jacdac-msr-modules/commit/5a1b185) add rpihat 212
+* [95ee1d2](https://github.com/microsoft/jacdac-msr-modules/commit/95ee1d2) update windows com instructions
+* [812a19b](https://github.com/microsoft/jacdac-msr-modules/commit/812a19b) add co2 209 module; update submodules
+* [648ec27](https://github.com/microsoft/jacdac-msr-modules/commit/648ec27) add separate profile for temp/hum env204
+* [5289b70](https://github.com/microsoft/jacdac-msr-modules/commit/5289b70) [skip ci] firmware v0.20.1 built
+
+### microsoft/jacdac-c
+
+* [f6d8d85](https://github.com/microsoft/jacdac-c/commit/f6d8d85) fix up vibration motor
+* [6d2c94f](https://github.com/microsoft/jacdac-c/commit/6d2c94f) SPI bridge fixes
+* [ed1d1bb](https://github.com/microsoft/jacdac-c/commit/ed1d1bb) pwm_ -> jd_pwm_
+* [73e9944](https://github.com/microsoft/jacdac-c/commit/73e9944) avoid name collisions with pico-sdk
+* [0732ecc](https://github.com/microsoft/jacdac-c/commit/0732ecc) support LSM6DS3TR-C (in addition to LSM6DSOX)
+* [c437942](https://github.com/microsoft/jacdac-c/commit/c437942) default gyro transform to accel
+* [9e5e261](https://github.com/microsoft/jacdac-c/commit/9e5e261) build fix
+* [8172cfe](https://github.com/microsoft/jacdac-c/commit/8172cfe) add better usb/spi bridge support
+* [5c77062](https://github.com/microsoft/jacdac-c/commit/5c77062) blink once for error
+* [c7ff391](https://github.com/microsoft/jacdac-c/commit/c7ff391) avoid race in setup_rx_timeout
+* [964c3e6](https://github.com/microsoft/jacdac-c/commit/964c3e6) limit line breaking
+* [8f8f5b9](https://github.com/microsoft/jacdac-c/commit/8f8f5b9) add jd_lstore_panic_*() functions
+* [b805147](https://github.com/microsoft/jacdac-c/commit/b805147) add SD card CRC funs
+* [0c5991c](https://github.com/microsoft/jacdac-c/commit/0c5991c) log tsagg in second log
+* [d03cf21](https://github.com/microsoft/jacdac-c/commit/d03cf21) add second log file
+* [3e26dda](https://github.com/microsoft/jacdac-c/commit/3e26dda) don't crash when lstore not inited
+
+### microsoft/jacdac-stm32x0
+
+* [7ea9e83](https://github.com/microsoft/jacdac-stm32x0/commit/7ea9e83) add SRST=1 option to Makefile to assert srst before attach
+* [5a6ab15](https://github.com/microsoft/jacdac-stm32x0/commit/5a6ab15) renames for latest jd-c
+* [40a7f87](https://github.com/microsoft/jacdac-stm32x0/commit/40a7f87) add info comment
+* [59aeba4](https://github.com/microsoft/jacdac-stm32x0/commit/59aeba4) add missing pkg info
+* [2cb94f7](https://github.com/microsoft/jacdac-stm32x0/commit/2cb94f7) simplify gpiod impl
+* [e7c5055](https://github.com/microsoft/jacdac-stm32x0/commit/e7c5055) start on gpiod impl of rpi bridge
+* [c530106](https://github.com/microsoft/jacdac-stm32x0/commit/c530106) moving to gpiod
+* [0a9014e](https://github.com/microsoft/jacdac-stm32x0/commit/0a9014e) more details on using J-Link and ST-LINK
+* [e334761](https://github.com/microsoft/jacdac-stm32x0/commit/e334761) avoid warning
+* [4b0c3fb](https://github.com/microsoft/jacdac-stm32x0/commit/4b0c3fb) update SPI bridge to latest jd-c
+* [ad5b0e7](https://github.com/microsoft/jacdac-stm32x0/commit/ad5b0e7) fix warnings
+* [266b626](https://github.com/microsoft/jacdac-stm32x0/commit/266b626) update windows com instructions
+* [1139620](https://github.com/microsoft/jacdac-stm32x0/commit/1139620) setup pin as output in pin_pulse()
+
 ## Version 0.20.1
 
 ### microsoft/jacdac-msr-modules
