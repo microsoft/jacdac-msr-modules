@@ -4,7 +4,7 @@
 // RGB LED sink connected to these pins
 #define PIN_LED_R PA_10
 #define PIN_LED_G PA_9
-#define PIN_LED_B PB_1
+#define PIN_LED_B PA_8
 
 // these values calibrate to ~60lux for each of ff0000, 00ff00, 0000ff
 #define LED_R_MULT 250
