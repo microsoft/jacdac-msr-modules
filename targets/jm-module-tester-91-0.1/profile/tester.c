@@ -125,7 +125,7 @@ const relay_params_t data_en = {.drive_active_lo = false,
                                 .pin_relay_feedback = NO_PIN,
                                 .pin_relay_led = NO_PIN,
                                 .relay_variant = JD_RELAY_VARIANT_SOLID_STATE,
-                                .initial_state = false};
+                                .initial_state = true};
 
 #define PIN_LED_R PA_8
 #define PIN_LED_G PA_7
@@ -144,7 +144,7 @@ const led_params_t test_status = {
     .mult_g = LED_G_MULT,
     .mult_r = LED_R_MULT,
     .led_count = 1,
-    .variant = JD_LED_VARIANT_SMD,
+    .variant = JD_LED_VARIANT_STRIP,
     .pwm_period = RGB_LED_PERIOD,
     .max_power = 60,
     .wave_length = 0,
