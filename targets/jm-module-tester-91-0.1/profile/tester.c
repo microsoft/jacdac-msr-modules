@@ -18,10 +18,11 @@ FIRMWARE_IDENTIFIER(0x3d82829b, "JM Module Tester v0.1");
 // extern void dspi_tx(const void *data, uint32_t numbytes, cb_t doneHandler)
 
 int32_t voltage_to_wiper_value(float voltage) {
-    float v = voltage * 1000.0;
+    float v = voltage;
     float refv = 1.1834;
     float r12 = 1.3;
     float r11 = 4.3;
+
     float minr = 0.0;
     float maxr = 10.0;
     float max_wiper = 255.0;
@@ -37,6 +38,8 @@ int32_t voltage_to_wiper_value(float voltage) {
         wresist = maxr;
 
     float wiper_value = (wresist - minr) * (max_wiper - min_wiper) / (maxr - minr) + min_wiper;
+
+    // DMESG("%dmV -> %d", (int)(voltage*1000), (int)wiper_value );
 
     return (int32_t)wiper_value;
 }
@@ -78,11 +81,11 @@ const dcvoltagemeasurement_params_t pwr_abs = {
 
 static void pwr_diff_hw_init(void) {
     pwr_diff.adc->init(pwr_diff.i2c_address);
-    pwr_diff.adc->set_gain(pwr_diff.gain_mv);
 }
 
 static void *pwr_diff_hw_reading(void) {
     static double reading = 0;
+    pwr_diff.adc->set_gain(pwr_diff.gain_mv);
     float f = pwr_diff.adc->read_differential(pwr_diff.channel1, pwr_diff.channel2);
     // 200 ohm current sense resistor.
     f /= 0.2;
@@ -92,9 +95,9 @@ static void *pwr_diff_hw_reading(void) {
 
 static void pwr_abs_hw_init(void) {
     pwr_abs.adc->init(pwr_abs.i2c_address);
-    pwr_abs.adc->set_gain(pwr_abs.gain_mv);
 }
 static void *pwr_abs_hw_reading(void) {
+    pwr_abs.adc->set_gain(pwr_abs.gain_mv);
     float f = pwr_abs.adc->read_absolute(pwr_abs.channel1);
     static double reading = 0;
     reading = f;
@@ -105,18 +108,14 @@ static void adc_hw_process(void) {}
 
 static void adc_hw_sleep(void) {}
 
-const power_supply_params_t psu = {
-    .potentiometer = &mcp41010,
-    .voltage_to_wiper = voltage_to_wiper_value,
-    .min_voltage = 1.6,     // 1.6V min
-    .max_voltage = 5.2,     // 5.2V max
-    .initial_voltage = 2.0, // by default, the wiper is set to 127, giving 2V
-    // voltage values are mapped between min_voltage_wiper_value and max_voltage_wiper_value
-    .min_voltage_wiper_value = 255,
-    .max_voltage_wiper_value = 0,
-    .enable_pin = PIN_LDO_EN,
-    .enable_active_lo = true,
-    .wiper_channel = 0};
+const power_supply_params_t psu = {.potentiometer = &mcp41010,
+                                   .voltage_to_wiper = voltage_to_wiper_value,
+                                   .min_voltage = 1.6, // 1.6V min
+                                   .max_voltage = 5.2, // 5.2V max
+                                   .initial_voltage = 4.0,
+                                   .enable_pin = PIN_LDO_EN,
+                                   .enable_active_lo = true,
+                                   .wiper_channel = 0};
 
 const relay_params_t data_en = {.drive_active_lo = false,
                                 .led_active_lo = false,
