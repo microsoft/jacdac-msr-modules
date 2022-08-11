@@ -63,3 +63,12 @@
 #define PIN_BL_PERIOD 300
 
 #define PIN_ACC_INT PIN_INT
+
+#define JD_USB_BRIDGE 1
+#define DUPLEX_UART 2
+#define DISABLE_PLL 1
+
+#define PIN_TX PIN_TX_MOSI
+#define PIN_RX PIN_RX_CS
+
+#define JD_USB_QUEUE_SIZE 512
