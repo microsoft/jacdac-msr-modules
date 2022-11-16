@@ -58,3 +58,5 @@
 
 // disable for now, since it messes with debugging
 #define JD_CONFIG_WATCHDOG 0
+
+#define JD_LSTORE 0

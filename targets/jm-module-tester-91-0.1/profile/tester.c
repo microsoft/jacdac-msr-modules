@@ -151,8 +151,8 @@ const led_params_t test_status = {
 
 void app_init_services() {
     powersupply_init(psu);
-    dccurrentmeasurement_init(pwr_diff);
-    dcvoltagemeasurement_init(pwr_abs);
+    dccurrentmeasurement_init(&pwr_diff);
+    dcvoltagemeasurement_init(&pwr_abs);
     relay_service_init(&data_en);
     led_service_init(&test_status);
 }
