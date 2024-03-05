@@ -6,7 +6,7 @@ function lines(fn) {
     return fs.readFileSync(fn, "utf-8").split(/\r?\n/)
 }
 
-for (const ln of lines("srcsizes.txt")) {
+for (const ln of lines("pldi24/srcsizes.txt")) {
     if (!ln) continue
     const m = /^\s*(\d+)\s+\d+\s+(\d+)\s+(.*)/.exec(ln)
     const numLines = parseInt(m[1])
@@ -18,7 +18,7 @@ for (const ln of lines("srcsizes.txt")) {
     }
 }
 
-for (const ln of lines("binsizes.txt").slice(1)) {
+for (const ln of lines("pldi24/binsizes.txt").slice(1)) {
     if (!ln) continue
     const m = /^\s*(\d+)\s+(\d+)\s+\d+\s+\d+\s+[a-f\d+]+\s+(.*)/.exec(ln)
     const text = parseInt(m[1])
@@ -107,7 +107,7 @@ for (const fn of Object.keys(byfile)) {
         ent.flash_variance = (ent.flash_max - ent.flash_min) / ent.flash_max
 }
 
-const specs = JSON.parse(fs.readFileSync("services.json", "utf-8"))
+const specs = JSON.parse(fs.readFileSync("pldi24/services.json", "utf-8"))
 
 let tableout = []
 
@@ -178,12 +178,12 @@ function printTable(basename, fn) {
         latex += arr.map((w, i) => pad(w, tablelens[i])).join(" &") + " \\\\ \n"
     }
 
-    fs.writeFileSync("out/" + basename + ".csv", csv)
-    fs.writeFileSync("out/" + basename + ".tex", latex)
+    fs.writeFileSync("pldi24_out/" + basename + ".csv", csv)
+    fs.writeFileSync("pldi24_out/" + basename + ".tex", latex)
     console.log(basename + "\n" + latex + "\n")
 }
 
-try { fs.mkdirSync("out") } catch { }
+try { fs.mkdirSync("pldi24_out") } catch { }
 
 printTable("services", servicesTable)
 printTable("drivers", driversTable)
