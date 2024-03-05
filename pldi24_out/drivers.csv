@@ -1,0 +1,22 @@
+name,description,C lines,flash
+ADS1115,Analog-to-digital converter,269,602
+AW86224FCR,Vibration motor controller,110,172
+CAP1298,Capacitive touch controller,85,286
+CPS122,Pressure sensor,111,396
+DS18B20,Temperature probe,91,361
+KX023,Accelerometer,137,303
+KXTJ3,Accelerometer,118,431
+LPS33HWTR,Pressure sensor,228,711
+LSM6DS,Accelerometer + gyroscope,179,741
+LTR390UV,Visible + UV light sensor,137,517
+MAX31855,Thermocouple interface,71,
+MAX6675,Thermocouple interface,71,
+MCP41010,Digital potentiometer,49,
+MPL3115A2,Pressure sensor,157,522
+NCV7726B,12 channel H-bridge driver,92,
+QMA7981,Accelerometer,218,294
+SGPC3,TVOC (air quality) sensor,183,696
+SHT30,Temperature and humidity sensor,123,537
+SHTC3,Temperature and humidity sensor,123,636
+SPIFLASH,NOR flash connected over SPI,201,
+TH02,Temperature and humidity sensor,125,503

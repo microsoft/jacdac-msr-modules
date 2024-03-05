@@ -65,7 +65,7 @@ const services = [
     { service:  "servo", kind: "actuator"},
     { service: "buzzer", kind: "UX-out"},
     { service: "dot matrix",  kind: "UX-out"},
-    { service: "LED display",  kind: "UX-out"},
+    // { service: "LED display",  kind: "UX-out"},
     { service: "Vibration motor",  kind: "UX-out"},
 ]
 
