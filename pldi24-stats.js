@@ -32,7 +32,7 @@ for (const ln of lines("pldi24/binsizes.txt").slice(1)) {
 
     if (/jd\/prof-/.test(filename))
         continue
-
+    console.log(filename)
     const ent = byfile[filename]
     if (ent.flash) {
         ent.flash_max = Math.max(ent.flash_max, size)
