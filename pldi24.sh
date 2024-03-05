@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# before running this script, do 'make drop', which will take a few minutes
 mkdir -p pldi24
 cp jacdac-c/jacdac/dist/services.json pldi24/services.json
 find built -regex '.*\/services\/.*\.o' -o -regex '.*\/drivers\/.*\.o' | xargs arm-none-eabi-size > pldi24/binsizes.txt
