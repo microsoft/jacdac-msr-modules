@@ -1,23 +1,4 @@
    text	   data	    bss	    dec	    hex	filename
-   1368	      0	      4	   1372	    55c	built/jm-v2.1/bl/jacdac-c/source/jd_util.o
-      0	      0	      0	      0	      0	built/jm-v2.1/bl/jacdac-stm32x0/bl/boothandler.o
-    476	      0	   1588	   2064	    810	built/jm-v2.1/bl/jacdac-stm32x0/bl/blmain.o
-      0	      0	      0	      0	      0	built/jm-v2.1/bl/jacdac-stm32x0/bl/blpwm.o
-    388	      0	      0	    388	    184	built/jm-v2.1/bl/jacdac-stm32x0/bl/bljd.o
-    108	      0	      4	    112	     70	built/jm-v2.1/bl/jacdac-stm32x0/bl/bltim.o
-    566	      0	      0	    566	    236	built/jm-v2.1/bl/jacdac-stm32x0/bl/bluart.o
-     56	      0	      0	     56	     38	built/jm-v2.1/bl/jacdac-stm32x0/bl/blutils.o
-     78	      0	      0	     78	     4e	built/jm-v2.1/bl/jacdac-stm32x0/bl/blled.o
-    484	      0	      0	    484	    1e4	built/jm-v2.1/bl/jacdac-stm32x0/bl/blproto.o
-    262	      1	      0	    263	    107	built/jm-v2.1/bl/jacdac-stm32x0/stm32/init.o
-    604	      0	      0	    604	    25c	built/jm-v2.1/bl/jacdac-stm32x0/stm32/pins.o
-    294	      0	      0	    294	    126	built/jm-v2.1/bl/jacdac-stm32x0/stm32/cmsis_device_f0/Source/Templates/gcc/startup_stm32f030x6.o
-    804	      0	      1	    805	    325	built/jm-v2.1/bl/jacdac-stm32x0/stm32/adc.o
-    210	      0	      0	    210	     d2	built/jm-v2.1/bl/jacdac-stm32x0/stm32/flash.o
-      0	      0	      0	      0	      0	built/jm-v2.1/bl/jacdac-stm32x0/src/dmesg.o
-     64	     32	      0	     96	     60	built/jm-v2.1/bl/jd/prof-motor_led.o
-     32	     32	      0	     64	     40	built/jm-v2.1/bl/jd/prof-servo.o
-     14	     32	      0	     46	     2e	built/jm-v2.1/bl/jd/prof-motor.o
     466	      0	      0	    466	    1d2	built/jm-v2.1/app/jacdac-c/services/hidmouse.o
     272	      0	      0	    272	    110	built/jm-v2.1/app/jacdac-c/services/magneticfieldlevel.o
      66	      0	      0	     66	     42	built/jm-v2.1/app/jacdac-c/services/oled.o
@@ -64,29 +45,6 @@
     246	      0	      0	    246	     f6	built/jm-v2.1/app/jacdac-c/services/vibrationmotor.o
     473	      0	      0	    473	    1d9	built/jm-v2.1/app/jacdac-c/services/motor.o
       0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-c/services/lorawan.o
-    134	      0	    256	    390	    186	built/jm-v2.1/app/jacdac-c/source/interfaces/simple_rx.o
-    295	      0	      8	    303	    12f	built/jm-v2.1/app/jacdac-c/source/interfaces/simple_alloc.o
-    303	      0	      9	    312	    138	built/jm-v2.1/app/jacdac-c/source/interfaces/tx_queue.o
-    388	      0	     12	    400	    190	built/jm-v2.1/app/jacdac-c/source/interfaces/event_queue.o
-    430	      0	      0	    430	    1ae	built/jm-v2.1/app/jacdac-c/source/jd_control.o
-    830	      0	    292	   1122	    462	built/jm-v2.1/app/jacdac-c/source/jd_physical.o
-    748	      0	    256	   1004	    3ec	built/jm-v2.1/app/jacdac-c/source/jd_bqueue.o
-    525	      0	    252	    777	    309	built/jm-v2.1/app/jacdac-c/source/jd_queue.o
-    244	      0	      4	    248	     f8	built/jm-v2.1/app/jacdac-c/source/jd_ipipe.o
-   1082	      0	      0	   1082	    43a	built/jm-v2.1/app/jacdac-c/source/jd_numfmt.o
-      8	      0	      0	      8	      8	built/jm-v2.1/app/jacdac-c/source/jd_io.o
-     34	      0	      0	     34	     22	built/jm-v2.1/app/jacdac-c/source/jd_protocol.o
-    738	      0	      4	    742	    2e6	built/jm-v2.1/app/jacdac-c/source/jd_opipe.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-c/source/jd_usb.o
-   1397	      0	     20	   1417	    589	built/jm-v2.1/app/jacdac-c/source/jd_services.o
-    215	      0	      0	    215	     d7	built/jm-v2.1/app/jacdac-c/source/jd_send_util.o
-   1478	      0	      4	   1482	    5ca	built/jm-v2.1/app/jacdac-c/source/jd_util.o
-   1076	      0	      0	   1076	    434	built/jm-v2.1/app/jacdac-c/click/color.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-c/click/color_glue.o
-    128	      0	      0	    128	     80	built/jm-v2.1/app/jacdac-c/click/tts_hal.o
-  33750	      8	     41	  33799	   8407	built/jm-v2.1/app/jacdac-c/click/tts.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-c/click/tts_glue.o
-    574	      0	   1152	   1726	    6be	built/jm-v2.1/app/jacdac-c/click/tts_hw.o
     536	      1	     40	    577	    241	built/jm-v2.1/app/jacdac-c/drivers/sht30.o
     522	      0	     40	    562	    232	built/jm-v2.1/app/jacdac-c/drivers/mpl3115a2.o
       0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-c/drivers/ncv7726b.o
@@ -113,51 +71,3 @@
     788	      0	     45	    833	    341	built/jm-v2.1/app/jacdac-c/drivers/sgp30.o
     430	      1	     16	    447	    1bf	built/jm-v2.1/app/jacdac-c/drivers/kxtj3.o
     601	      1	      1	    603	    25b	built/jm-v2.1/app/jacdac-c/drivers/ads1115.o
-    270	      1	      0	    271	    10f	built/jm-v2.1/app/jacdac-stm32x0/stm32/init.o
-   1488	      0	     32	   1520	    5f0	built/jm-v2.1/app/jacdac-stm32x0/stm32/rtc.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/display.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/usbserial.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/spis.o
-    120	      0	      1	    121	     79	built/jm-v2.1/app/jacdac-stm32x0/stm32/target_utils.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/onewire.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/sspi.o
-    316	      0	     64	    380	    17c	built/jm-v2.1/app/jacdac-stm32x0/stm32/exti.o
-   1256	      0	     56	   1312	    520	built/jm-v2.1/app/jacdac-stm32x0/stm32/dspi.o
-    604	      0	      0	    604	    25c	built/jm-v2.1/app/jacdac-stm32x0/stm32/pins.o
-    294	      0	      0	    294	    126	built/jm-v2.1/app/jacdac-stm32x0/stm32/cmsis_device_f0/Source/Templates/gcc/startup_stm32f030x6.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/i2c.o
-    830	      0	      1	    831	    33f	built/jm-v2.1/app/jacdac-stm32x0/stm32/adc.o
-   1005	      0	      0	   1005	    3ed	built/jm-v2.1/app/jacdac-stm32x0/stm32/uart.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/bitbang_spi.o
-   1396	      0	      0	   1396	    574	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_tim.o
-    386	      0	      0	    386	    182	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_adc.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_dac.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_comp.o
-    186	      0	      0	    186	     ba	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_i2c.o
-    178	      0	      0	    178	     b2	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_spi.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_crs.o
-    249	      0	      0	    249	     f9	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_dma.o
-    528	      0	      0	    528	    210	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_utils.o
-     32	      0	      0	     32	     20	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_pwr.o
-    316	      0	      0	    316	    13c	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_usart.o
-   1178	      0	      0	   1178	    49a	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_rtc.o
-    208	      0	      0	    208	     d0	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_exti.o
-    484	      0	      0	    484	    1e4	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_rcc.o
-    358	      0	      0	    358	    166	built/jm-v2.1/app/jacdac-stm32x0/stm32/stm32f0xx_hal_driver/Src/stm32f0xx_ll_gpio.o
-    524	      0	     14	    538	    21a	built/jm-v2.1/app/jacdac-stm32x0/stm32/tim.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/stm32/duart.o
-    210	      0	      0	    210	     d2	built/jm-v2.1/app/jacdac-stm32x0/stm32/flash.o
-    676	      0	      0	    676	    2a4	built/jm-v2.1/app/jacdac-stm32x0/stm32/pwm.o
-      0	      0	      0	      0	      0	built/jm-v2.1/app/jacdac-stm32x0/src/bridgespi.o
-    172	      0	    836	   1008	    3f0	built/jm-v2.1/app/jacdac-stm32x0/src/dmesg.o
-     48	      0	      0	     48	     30	built/jm-v2.1/app/jacdac-stm32x0/src/blhw.o
-    274	      0	      3	    277	    115	built/jm-v2.1/app/jacdac-stm32x0/src/pwr.o
-    526	      0	      0	    526	    20e	built/jm-v2.1/app/jacdac-stm32x0/src/namestore.o
-    187	      0	      0	    187	     bb	built/jm-v2.1/app/jacdac-stm32x0/src/ssd1306.o
-    308	      0	      4	    312	    138	built/jm-v2.1/app/jacdac-stm32x0/src/main.o
-    162	      0	      0	    162	     a2	built/jm-v2.1/app/jacdac-stm32x0/src/utils.o
-      2	      0	      0	      2	      2	built/jm-v2.1/app/addons/example.o
-     82	      0	      0	     82	     52	built/jm-v2.1/app/jd/prof-motor_led.o
-     50	      0	      0	     50	     32	built/jm-v2.1/app/jd/prof-servo.o
-     28	      0	      0	     28	     1c	built/jm-v2.1/app/jd/prof-motor.o
-     20	      0	      0	     20	     14	built/jm-v2.1/version.o

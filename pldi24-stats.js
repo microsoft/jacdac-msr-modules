@@ -32,7 +32,6 @@ for (const ln of lines("pldi24/binsizes.txt").slice(1)) {
 
     if (/jd\/prof-/.test(filename))
         continue
-    console.log(filename)
     const ent = byfile[filename]
     if (ent.flash) {
         ent.flash_max = Math.max(ent.flash_max, size)
@@ -129,12 +128,12 @@ function servicesTable() {
 
     for (const s of services) {
         const base = s.service.toLowerCase().replace(/ /g, "")
+        console.log(base)
         const cfile = "jacdac-c/services/" + (cmap[base] ?? base) + ".c"
         const ent = byfile[cfile]
         const spec = specs.find(s => s.shortId == base)
 
         const counts = {}
-
         let name = spec.name
         if (spec.shortId == "tvoc") name = "TVOC" // too long
 

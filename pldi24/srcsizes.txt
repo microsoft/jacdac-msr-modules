@@ -1,11 +1,3 @@
-    40    175   2352 jacdac-c/jacdac/dist/c/jd_spec_pack.c
-   239    670   6631 jacdac-c/network/wssk.c
-   316   2154  15539 jacdac-c/network/tiny-AES-c/test.c
-   572   2693  19017 jacdac-c/network/tiny-AES-c/aes.c
-   549   1464  16372 jacdac-c/network/wssk_health.c
-    26     45    440 jacdac-c/network/soft_aes.c
-   105    319   3295 jacdac-c/network/aes_ccm.c
-   348   1179  10544 jacdac-c/network/websock_conn.c
    110    338   3237 jacdac-c/services/jd_env.c
     25     52    580 jacdac-c/services/humidity.c
    309    960  10991 jacdac-c/services/power.c
@@ -52,58 +44,6 @@
     73    160   2347 jacdac-c/services/powersupply.c
    251    805   7980 jacdac-c/services/accelerometer.c
    168    470   4378 jacdac-c/services/hidmouse.c
-    81    203   1737 jacdac-c/source/interfaces/simple_alloc.c
-   190    397   3939 jacdac-c/source/interfaces/tx_queue.c
-   120    396   3476 jacdac-c/source/interfaces/event_queue.c
-    84    161   1703 jacdac-c/source/interfaces/simple_rx.c
-   255    673   6503 jacdac-c/source/jd_physical.c
-   806   2660  19425 jacdac-c/source/jd_util.c
-    85    251   2557 jacdac-c/source/jd_ipipe.c
-    11     22    185 jacdac-c/source/jd_io.c
-    50    149   1674 jacdac-c/source/jd_send_util.c
-   321    802   9067 jacdac-c/source/jd_usb.c
-    25     48    444 jacdac-c/source/jd_protocol.c
-   191    572   5868 jacdac-c/source/jd_opipe.c
-   473   1294  12800 jacdac-c/source/jd_services.c
-   234    560   7882 jacdac-c/source/jd_numfmt.c
-   149    326   3912 jacdac-c/source/jd_control.c
-   133    384   3211 jacdac-c/source/jd_queue.c
-   182    537   4555 jacdac-c/source/jd_bqueue.c
-   302   1053   8333 jacdac-c/click/color.c
-   960   2614  22032 jacdac-c/click/tts.c
-    97    209   2110 jacdac-c/click/tts_glue.c
-    48    139   1288 jacdac-c/click/color_glue.c
-   253    723   6368 jacdac-c/click/tts_hw.c
-   100    176   2914 jacdac-c/click/tts_hal.c
-   817   2344  22725 jacdac-c/storage/lstore.c
-  6982  38421 246972 jacdac-c/storage/ff/ff.c
-    95    670   6332 jacdac-c/storage/crc32.c
-   429   1250  12397 jacdac-c/devicescript/gc_alloc.c
-   286    776   8398 jacdac-c/devicescript/fibers.c
-   194    542   5410 jacdac-c/devicescript/aggbuffer.c
-    82    240   2457 jacdac-c/devicescript/vm_main.c
-   105    322   3512 jacdac-c/devicescript/regcache.c
-   814   2457  26389 jacdac-c/devicescript/vm_ops.c
-    80    252   2341 jacdac-c/devicescript/settingsflash.c
-   164    408   4759 jacdac-c/devicescript/devicescript.c
-   101    286   2906 jacdac-c/devicescript/devscloud.c
-   445   1222  13735 jacdac-c/devicescript/tsagg.c
-   223    639   7078 jacdac-c/devicescript/sha-2/test.c
-   222   1097   7307 jacdac-c/devicescript/sha-2/sha-256.c
-   460   1297  15484 jacdac-c/devicescript/jdiface.c
-   399   1254  13173 jacdac-c/devicescript/devicescriptmgr.c
-   103    321   2913 jacdac-c/devicescript/strformat.c
-   105    229   2577 jacdac-c/devicescript/vm_util.c
-   165    520   4546 jacdac-c/devicescript/objects.c
-   339    845   9221 jacdac-c/devicescript/value.c
-    57    152   1572 jacdac-c/devicescript/buffer.c
-   125    341   3655 jacdac-c/devicescript/extcloud.c
-   148    342   5300 jacdac-c/devicescript/soft_sha256.c
-    98    346   4201 jacdac-c/devicescript/verify.c
-   267    665   6887 jacdac-c/client/hclient.c
-   135    302   3479 jacdac-c/client/thr_pthread.c
-   406   1249  14417 jacdac-c/client/routing.c
-   334    820   9492 jacdac-c/client/rolemgr.c
    218    572   4888 jacdac-c/drivers/qma7981.c
     91    259   2493 jacdac-c/drivers/ds18b20.c
    179    514   4910 jacdac-c/drivers/sgp30.c
@@ -130,4 +70,4 @@
    137    317   2542 jacdac-c/drivers/kx023.c
    137    388   3726 jacdac-c/drivers/ltr390uv.c
    125    377   3481 jacdac-c/drivers/th02.c
- 30299 107398 919434 total
+  8774  24741 243626 total
