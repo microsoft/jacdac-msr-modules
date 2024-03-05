@@ -65,7 +65,7 @@ const services = [
     { service:  "servo", kind: "actuator"},
     { service: "buzzer", kind: "UX-out"},
     { service: "dot matrix",  kind: "UX-out"},
-    // { service: "LED display",  kind: "UX-out"},
+    { service: "LED display",  kind: "UX-out", realService: "led"},
     { service: "Vibration motor",  kind: "UX-out"},
 ]
 
@@ -127,10 +127,12 @@ function servicesTable() {
     printcsv(["service", "kind", "rw", "ro", "const", "cmds", "events", "LOC", "flash", ])
 
     for (const s of services) {
-        const base = s.service.toLowerCase().replace(/ /g, "")
-        console.log(base)
+        let base = s.service.toLowerCase().replace(/ /g, "")
         const cfile = "jacdac-c/services/" + (cmap[base] ?? base) + ".c"
         const ent = byfile[cfile]
+        if (s.realService) {
+            base = s.realService
+        }
         const spec = specs.find(s => s.shortId == base)
 
         const counts = {}
