@@ -47,10 +47,11 @@ const services = [
     { service: "potentiometer",  kind: "UX-in"},
     { service: "rotary encoder", kind: "UX-in"},
     { service: "switch", kind: "UX-in"},
+    //
     { service: "accelerometer",  kind: "sensor"},
     { service: "air pressure",  kind: "sensor"},
-    { service: "color",  kind: "sensor"},
-    { service: "eCO2",  kind: "sensor"},
+    // { service: "color",  kind: "sensor"},
+    // { service: "eCO2",  kind: "sensor"},
     { service: "flex",  kind: "sensor"},
     { service: "humidity",  kind: "sensor"},
     { service: "illuminance",  kind: "sensor"},
@@ -60,9 +61,11 @@ const services = [
     { service: "temperature",  kind: "sensor"},
     { service: "TVOC",  kind: "sensor"},
     { service: "UV index",  kind: "sensor"},
+    //
     { service: "motor", kind: "actuator"},
     { service:  "relay", kind: "actuator"},
     { service:  "servo", kind: "actuator"},
+    //
     { service: "buzzer", kind: "UX-out"},
     { service: "dot matrix",  kind: "UX-out"},
     { service: "LED display",  kind: "UX-out", realService: "led"},
@@ -78,26 +81,31 @@ const cmap = {
 
 const drivers = {
     "ads1115": "Analog-to-digital converter",
-    "aw86224fcr": "Vibration motor controller",
-    "cap1298": "Capacitive touch controller",
-    "cps122": "Pressure sensor",
-    "ds18b20": "Temperature probe",
+    //
     "kx023": "Accelerometer",
     "kxtj3": "Accelerometer",
-    "lps33hwtr": "Pressure sensor",
-    "lsm6ds": "Accelerometer + gyroscope",
-    "ltr390uv": "Visible + UV light sensor",
-    "max31855": "Thermocouple interface",
-    "max6675": "Thermocouple interface",
-    "mcp41010": "Digital potentiometer",
-    "mpl3115a2": "Pressure sensor",
-    "ncv7726b_daisy": "12 channel H-bridge driver",
     "qma7981": "Accelerometer",
-    "sgpc3": "TVOC (air quality) sensor",
+    "lsm6ds": "Accelerometer + gyroscope",
+    //
+    "cps122": "Air pressure",
+    "lps33hwtr": "Air pressure",
+    "mpl3115a2": "Air pressure",
+    // 
     "sht30": "Temperature and humidity sensor",
     "shtc3": "Temperature and humidity sensor",
-    "spiflash": "NOR flash connected over SPI",
     "th02": "Temperature and humidity sensor",
+    //
+    "ds18b20": "Temperature probe",
+    "max31855": "Thermocouple interface",
+    "max6675": "Thermocouple interface",
+    //
+    "aw86224fcr": "Vibration motor controller",
+    "ltr390uv": "Visible + UV light sensor",
+    "sgpc3": "TVOC (air quality) sensor",
+    // "cap1298": "Capacitive touch controller",
+    // "mcp41010": "Digital potentiometer",
+    // "ncv7726b_daisy": "12 channel H-bridge driver",
+    // "spiflash": "NOR flash connected over SPI",
 }
 
 for (const fn of Object.keys(byfile)) {
