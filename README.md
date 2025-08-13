@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repo has moved to https://github.com/jacdac/jacdac-msr-modules. 
+
 # Firmware for MSR prototype Jacdac modules
 
 This repository defines configuration for experimental [Jacdac](https://aka.ms/jacdac) modules
